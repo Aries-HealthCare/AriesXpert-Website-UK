@@ -32,7 +32,7 @@ export default function Footer() {
                 {/* Light Mode Logo */}
                 <Image
                   src="/logo-light.png"
-                  alt="Aries PhysioCare"
+                  alt="Aries PhysioCare - UK"
                   fill
                   sizes="(max-width: 640px) 208px, 288px"
                   className="object-contain block dark:hidden object-center md:object-left"
@@ -40,7 +40,7 @@ export default function Footer() {
                 {/* Dark Mode Logo */}
                 <Image
                   src="/logo-dark.png"
-                  alt="Aries PhysioCare"
+                  alt="Aries PhysioCare - UK"
                   fill
                   sizes="(max-width: 640px) 208px, 288px"
                   className="object-contain hidden dark:block object-center md:object-left"
