@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Flutter Mobile Light Theme (#F6F5FB) */
+    --background: 250 24% 97%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    /* Rich Violet Accent (#4A154B / #5E17EB) */
+    --primary: 262 83% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 250 20% 94%;
+    --secondary-foreground: 262 83% 40%;
+    --muted: 250 20% 92%;
+    --muted-foreground: 220 9% 46%;
+    /* Metallic Gold Accent (#D4AF37) */
+    --accent: 43 74% 49%;
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 250 20% 88%;
+    --input: 250 20% 88%;
+    --ring: 262 83% 51%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    /* OLED Deep Pitch Black (#000000) */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    /* Dark Charcoal (#121212) */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+    /* Neon Blue Accent (#0088FF) */
+    --primary: 208 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 240 5% 65%;
+    /* Cyan / Turquoise Neon Accent */
+    --accent: 187 92% 55%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 208 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom UI Utilities */
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glassmorphic {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.premium-card {
+  @apply bg-card text-card-foreground rounded-[2rem] border border-border/60 transition-all duration-300;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.dark .premium-card {
+  box-shadow: 0 4px 30px -2px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 136, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+}
+
+.premium-gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shiny-border {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #F9D976 0%, #E9B642 50%, #C1932E 100%);
+  color: #1A1A1A;
+  font-weight: 700;
+}
+
+.neon-primary-border {
+  box-shadow: 0 0 20px rgba(var(--primary), 0.25);
+}
+
+.healthcare-motion {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+.pb-safe-offset-4 {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
+}
