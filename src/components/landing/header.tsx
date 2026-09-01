@@ -1,169 +1,162 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import CountrySelector from "@/components/country-selector";
-import BookAppointmentButton from "../book-appointment-button";
-import { useRequestCallback } from "@/components/request-callback-provider";
-import {
-  Activity,
-  MapPin,
-  ChevronDown,
-  ShieldCheck,
-  Stethoscope,
-  Compass,
-  PhoneCall,
-  Menu,
-  X,
-  Sparkles,
-  ArrowRight
-} from "lucide-react";
+import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  DropdownMenuSeparator,
   DropdownMenuLabel,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { UK_CITY_HUBS, UK_NATIONS } from "@/lib/uk-geo";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { 
+  Menu, 
+  ChevronDown, 
+  Plus, 
+  Minus, 
+  MapPin, 
+  Video, 
+  Users, 
+  Stethoscope, 
+  Compass, 
+  Activity, 
+  ShieldCheck, 
+  HeartPulse 
+} from "lucide-react";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import BookAppointmentButton from "../book-appointment-button";
+import { usePathname } from "next/navigation";
+import { UK_CITY_HUBS } from "@/lib/uk-geo";
+import { Button } from "@/components/ui/button";
+
+const staticServices = [
+  { id: "s1", name: "In-Home Chartered Physiotherapy", slug: "in-home-physiotherapy" },
+  { id: "s2", name: "Virtual Tele-Physiotherapy", slug: "virtual-physiotherapy" },
+  { id: "s3", name: "Post-Op & NHS Step-Down Rehabilitation", slug: "post-surgical-rehabilitation" },
+  { id: "s4", name: "Sports Injury & Concussion Management", slug: "sports-rehabilitation" },
+  { id: "s5", name: "Neurological & Stroke Recovery", slug: "neurological-rehabilitation" },
+  { id: "s6", name: "Elderly Fall Prevention & Mobility", slug: "geriatric-physiotherapy" },
+];
+
+function LocationSelector({ current }: { current: string | null }) {
+  const [selectedCity, setSelectedCity] = useState(current || "Greater London");
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="sm" className="h-9 px-3 gap-2 rounded-xl glassmorphic border-border/40 text-xs font-semibold text-foreground hover:text-primary">
+          <MapPin className="h-3.5 w-3.5 text-primary" />
+          <span>{selectedCity}</span>
+          <ChevronDown className="h-3 w-3 opacity-60" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-64 glassmorphic p-2" align="start">
+        <DropdownMenuLabel className="text-[11px] font-mono uppercase text-muted-foreground tracking-wider">
+          United Kingdom Hubs
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        {UK_CITY_HUBS.map((hub) => (
+          <DropdownMenuItem
+            key={hub.id}
+            onClick={() => setSelectedCity(hub.name)}
+            asChild
+          >
+            <Link href={`/locations/${hub.slug}`} className="flex items-center justify-between py-2 text-xs">
+              <span className="font-medium text-foreground">{hub.name}</span>
+              <span className="text-[10px] font-mono text-primary font-bold">{hub.nation}</span>
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
 
 export default function Header() {
   const pathname = usePathname();
-  const { openModal } = useRequestCallback();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedHub, setSelectedHub] = useState<string>("Greater London");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled
-          ? "glassmorphic border-b border-border/60 shadow-md py-2.5"
-          : "bg-background/80 backdrop-blur-md border-b border-border/30 py-3.5"
-      }`}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-xl border-b border-border/10 shadow-sm transition-all duration-300">
+      <div className="w-full max-w-7xl 2xl:max-w-[1720px] mx-auto flex h-20 md:h-24 items-center px-4 sm:px-6 lg:px-8 relative justify-between">
         
-        {/* Brand Logo & Region Indicator */}
-        <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center gap-3 group" prefetch={false}>
-            <div className="w-10 h-10 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:scale-105 group-hover:bg-primary/20 transition-all shadow-sm">
-              <Activity className="w-5 h-5 text-primary" />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-headline font-black text-xl tracking-tight text-foreground">
-                  ARIES<span className="premium-gradient-text">XPERT</span>
-                </span>
-                <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-500">
-                  🇬🇧 UK
-                </span>
-              </div>
-              <span className="text-[10px] font-medium tracking-wide text-muted-foreground -mt-0.5">
-                HCPC Chartered Physical Rehabilitation
-              </span>
-            </div>
-          </Link>
-
-          {/* UK City Hub Selector */}
-          <div className="hidden xl:flex items-center">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button
-                  type="button"
-                  className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-secondary/80 hover:bg-secondary border border-border text-xs font-semibold text-foreground transition-all cursor-pointer"
-                >
-                  <MapPin className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="truncate max-w-[130px]">{selectedHub}</span>
-                  <ChevronDown className="w-3.5 h-3.5 text-muted-foreground" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="premium-card p-2 w-72">
-                <DropdownMenuLabel className="text-[11px] font-mono uppercase text-muted-foreground tracking-wider px-2 py-1">
-                  Select UK Service Hub
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                {UK_CITY_HUBS.map((hub) => (
-                  <DropdownMenuItem
-                    key={hub.id}
-                    onClick={() => setSelectedHub(hub.name)}
-                    asChild
-                  >
-                    <Link
-                      href={`/locations/${hub.slug}`}
-                      className="flex items-center justify-between px-2.5 py-2 text-xs rounded-lg cursor-pointer hover:bg-muted"
-                      prefetch={false}
-                    >
-                      <div className="flex flex-col">
-                        <span className="font-bold text-foreground">{hub.name}</span>
-                        <span className="text-[10px] text-muted-foreground">{hub.nation} • {hub.inHomeLeadTime}</span>
-                      </div>
-                      <span className="text-[10px] font-mono font-bold text-primary">Explore</span>
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+        {/* Mobile Left Corner: Theme Toggle */}
+        <div className="xl:hidden flex items-center">
+          <ThemeToggle />
         </div>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-6 text-xs font-semibold">
-          {/* 3D Medical Labs Dropdown */}
+        {/* Logo Section */}
+        <div className="absolute left-1/2 -translate-x-1/2 xl:relative xl:left-0 xl:translate-x-0 flex items-center shrink-0">
+          <Link href="/" className="flex items-center group py-1" prefetch={false}>
+            <div className="relative h-12 w-40 sm:w-48 md:h-14 md:w-56 xl:h-16 xl:w-60 2xl:w-72 transition-all duration-300 group-hover:opacity-95">
+              <Image
+                src="/logo-light.png"
+                alt="Aries PhysioCare"
+                fill
+                sizes="(max-width: 640px) 160px, (max-width: 1024px) 224px, 288px"
+                className="object-contain block dark:hidden object-center xl:object-left"
+                priority
+              />
+              <Image
+                src="/logo-dark.png"
+                alt="Aries PhysioCare"
+                fill
+                sizes="(max-width: 640px) 160px, (max-width: 1024px) 224px, 288px"
+                className="object-contain hidden dark:block object-center xl:object-left"
+                priority
+              />
+            </div>
+          </Link>
+        </div>
+
+        {/* Navigation Menu (Desktop Only) */}
+        <nav className="hidden xl:flex items-center gap-x-2 min-[1350px]:gap-x-3 min-[1500px]:gap-x-5 px-2">
+          <Link href="/" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
+            Home
+          </Link>
+          <Link href="/about" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
+            About
+          </Link>
+
+          {/* 3D Medical Labs */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button
-                type="button"
-                className="flex items-center gap-1.5 text-foreground/80 hover:text-primary transition-colors py-1 cursor-pointer"
-              >
-                <Compass className="w-3.5 h-3.5 text-primary" />
-                <span>3D Medical Labs</span>
-                <ChevronDown className="w-3 h-3 text-muted-foreground" />
-              </button>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors px-1 focus:outline-none text-foreground whitespace-nowrap">
+              <Compass className="h-3.5 w-3.5 text-primary" />
+              <span>3D Labs</span>
+              <ChevronDown className="h-3 w-3 opacity-60" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="premium-card p-2 w-64 space-y-1">
+            <DropdownMenuContent className="w-64 glassmorphic p-2">
+              <DropdownMenuLabel className="text-[11px] font-mono uppercase text-muted-foreground tracking-wider">
+                Interactive Biomechanics
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                <Link href="/anatomy-lab" className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-muted cursor-pointer" prefetch={false}>
-                  <div className="p-1.5 rounded-lg bg-primary/10 text-primary">
-                    <Compass className="w-4 h-4" />
-                  </div>
+                <Link href="/anatomy-lab" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
+                  <Compass className="h-4 w-4 text-primary" />
                   <div>
-                    <span className="font-bold text-foreground block text-xs">3D Anatomy Lab</span>
-                    <span className="text-[10px] text-muted-foreground">Interactive spine, knee, &amp; joint models</span>
+                    <span className="font-bold text-foreground block">3D Anatomy Lab</span>
+                    <span className="text-[10px] text-muted-foreground">Spine, Knee &amp; Shoulder Models</span>
                   </div>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/movement-lab" className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-muted cursor-pointer" prefetch={false}>
-                  <div className="p-1.5 rounded-lg bg-accent/10 text-accent">
-                    <Activity className="w-4 h-4" />
-                  </div>
+                <Link href="/movement-lab" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
+                  <Activity className="h-4 w-4 text-accent" />
                   <div>
-                    <span className="font-bold text-foreground block text-xs">Kinematics Movement Lab</span>
-                    <span className="text-[10px] text-muted-foreground">ROM angle telemetry simulator</span>
+                    <span className="font-bold text-foreground block">Kinematics Movement Lab</span>
+                    <span className="text-[10px] text-muted-foreground">Real-time Kinematics Diagnostics</span>
                   </div>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/surgery-and-rehabilitation" className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-muted cursor-pointer" prefetch={false}>
-                  <div className="p-1.5 rounded-lg bg-primary/10 text-primary">
-                    <Stethoscope className="w-4 h-4" />
-                  </div>
+                <Link href="/surgery-and-rehabilitation" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
+                  <HeartPulse className="h-4 w-4 text-rose-500" />
                   <div>
-                    <span className="font-bold text-foreground block text-xs">Surgery to Movement</span>
-                    <span className="text-[10px] text-muted-foreground">Phased post-op recovery pathways</span>
+                    <span className="font-bold text-foreground block">Surgery to Movement</span>
+                    <span className="text-[10px] text-muted-foreground">Phased Post-Op NHS Pathways</span>
                   </div>
                 </Link>
               </DropdownMenuItem>
@@ -172,151 +165,172 @@ export default function Header() {
 
           {/* Services Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button
-                type="button"
-                className="flex items-center gap-1.5 text-foreground/80 hover:text-primary transition-colors py-1 cursor-pointer"
-              >
-                <span>Services</span>
-                <ChevronDown className="w-3 h-3 text-muted-foreground" />
-              </button>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors px-1 focus:outline-none text-foreground whitespace-nowrap">
+              <span>Services</span>
+              <ChevronDown className="h-3 w-3 opacity-60" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="premium-card p-2 w-64 space-y-1">
+            <DropdownMenuContent className="w-72 glassmorphic p-2">
+              <DropdownMenuLabel className="text-[11px] font-mono uppercase text-muted-foreground tracking-wider">
+                Clinical Care Pathways
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {staticServices.map((service) => (
+                <DropdownMenuItem key={service.id} asChild>
+                  <Link href={`/services/${service.slug}`} className="py-2 text-xs font-medium" prefetch={false}>
+                    {service.name}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+              <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                <Link href="/services/in-home-physiotherapy" className="p-2 rounded-xl hover:bg-muted cursor-pointer block" prefetch={false}>
-                  <span className="font-bold text-foreground block text-xs">🏡 In-Home Physiotherapy</span>
-                  <span className="text-[10px] text-muted-foreground">1-on-1 Chartered PT at your home</span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/virtual-physiotherapy" className="p-2 rounded-xl hover:bg-muted cursor-pointer block" prefetch={false}>
-                  <span className="font-bold text-foreground block text-xs">💻 Virtual Tele-Physiotherapy</span>
-                  <span className="text-[10px] text-muted-foreground">Encrypted HD video care nationwide</span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/post-surgical-rehabilitation" className="p-2 rounded-xl hover:bg-muted cursor-pointer block" prefetch={false}>
-                  <span className="font-bold text-foreground block text-xs">🏥 Post-Op &amp; NHS Step-Down</span>
-                  <span className="text-[10px] text-muted-foreground">TKR, THR, and spinal recovery</span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/services/sports-rehabilitation" className="p-2 rounded-xl hover:bg-muted cursor-pointer block" prefetch={false}>
-                  <span className="font-bold text-foreground block text-xs">⚡ Sports &amp; Concussion</span>
-                  <span className="text-[10px] text-muted-foreground">High-performance return-to-sport</span>
+                <Link href="/services" className="text-xs font-bold text-primary" prefetch={false}>
+                  Explore All Services →
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/conditions" className="text-foreground/80 hover:text-primary transition-colors" prefetch={false}>
+          <Link href="/conditions" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
             Conditions
           </Link>
-          <Link href="/experts" className="text-foreground/80 hover:text-primary transition-colors" prefetch={false}>
-            HCPC Clinicians
+          <Link href="/experts" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors flex items-center gap-1 whitespace-nowrap px-1" prefetch={false}>
+            <Users className="h-3.5 w-3.5" /> HCPC Clinicians
           </Link>
-          <Link href="/locations" className="text-foreground/80 hover:text-primary transition-colors" prefetch={false}>
+          <Link href="/locations" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
             UK Coverage
           </Link>
-          <Link href="/resources" className="text-foreground/80 hover:text-primary transition-colors" prefetch={false}>
-            Clinical Evidence
+          <Link href="/faq" className="hidden 2xl:flex text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
+            FAQ
           </Link>
+
+          <div className="hidden min-[1600px]:flex items-center gap-2 border-l ml-1 pl-3 border-border/50">
+            <Link href="/virtual-physiotherapy" className="text-[13px] 2xl:text-[14px] font-black hover:text-primary transition-colors flex items-center gap-1.5 text-accent whitespace-nowrap" prefetch={false}>
+              <Video className="h-4 w-4 animate-pulse" /> Free Consultation
+            </Link>
+          </div>
         </nav>
 
-        {/* Right CTA Actions */}
-        <div className="flex items-center gap-2.5">
-          {/* Direct Billing Badge */}
-          <div className="hidden 2xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-[11px] font-mono text-primary">
-            <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-            <span>Bupa &amp; AXA Direct Billing</span>
+        {/* Actions Section */}
+        <div className="flex items-center gap-2 sm:gap-2.5 2xl:gap-3 shrink-0">
+          <div className="hidden md:block">
+            <LocationSelector current="Greater London" />
           </div>
-
-          <CountrySelector />
-          <ThemeToggle />
-
-          {/* Book Assessment Button */}
-          <BookAppointmentButton size="sm" className="hidden sm:inline-flex text-xs font-bold px-4 py-2 rounded-xl shadow-md">
-            Book Assessment
-          </BookAppointmentButton>
-
-          {/* Mobile Menu Trigger */}
-          <button
-            type="button"
-            className="lg:hidden p-2 rounded-xl bg-secondary text-foreground hover:bg-muted transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Navigation Menu"
+          <div className="flex items-center">
+            <ThemeToggle />
+          </div>
+          <Link
+            href="/contact"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 2xl:px-4 2xl:py-2.5 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 text-primary text-xs 2xl:text-[13px] font-bold transition-all hover:scale-105 whitespace-nowrap shrink-0"
+            prefetch={false}
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+            <Stethoscope className="w-3.5 h-3.5" />
+            <span>Triage</span>
+          </Link>
+          <div className="hidden sm:inline-flex shrink-0">
+            <BookAppointmentButton className="neon-primary-border bg-primary text-white hover:bg-primary/95 shadow-xl transition-all rounded-full px-4 py-2 2xl:px-6 2xl:py-2.5 text-xs 2xl:text-sm font-black tracking-wide hover:-translate-y-0.5 whitespace-nowrap shrink-0">
+              Book Home Assessment
+            </BookAppointmentButton>
+          </div>
+          <div className="xl:hidden flex items-center">
+            <MobileMenu currentLocationName="Greater London" />
+          </div>
         </div>
 
       </div>
-
-      {/* Mobile Menu Modal */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[65px] bg-background/95 backdrop-blur-2xl border-b border-border p-6 shadow-2xl space-y-5 animate-reveal-up">
-          <div className="grid grid-cols-2 gap-2 text-xs font-bold">
-            <Link
-              href="/anatomy-lab"
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-3 rounded-xl bg-secondary border border-border flex items-center gap-2"
-              prefetch={false}
-            >
-              <Compass className="w-4 h-4 text-primary" />
-              <span>3D Anatomy Lab</span>
-            </Link>
-            <Link
-              href="/movement-lab"
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-3 rounded-xl bg-secondary border border-border flex items-center gap-2"
-              prefetch={false}
-            >
-              <Activity className="w-4 h-4 text-accent" />
-              <span>Movement Lab</span>
-            </Link>
-          </div>
-
-          <nav className="flex flex-col space-y-3 text-sm font-semibold pt-2 border-t border-border/40">
-            <Link href="/services/in-home-physiotherapy" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              🏡 In-Home Physiotherapy
-            </Link>
-            <Link href="/services/virtual-physiotherapy" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              💻 Virtual Tele-Physiotherapy
-            </Link>
-            <Link href="/services/post-surgical-rehabilitation" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              🏥 Post-Op &amp; NHS Step-Down
-            </Link>
-            <Link href="/conditions" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              Conditions Directory
-            </Link>
-            <Link href="/experts" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              HCPC Registered Clinicians
-            </Link>
-            <Link href="/locations" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              UK Coverage &amp; Postcodes
-            </Link>
-            <Link href="/resources" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors" prefetch={false}>
-              Clinical Evidence Library
-            </Link>
-          </nav>
-
-          <div className="pt-4 border-t border-border/40 space-y-2">
-            <BookAppointmentButton className="w-full text-xs font-bold py-3">
-              Book In-Home Assessment
-            </BookAppointmentButton>
-            <Button
-              variant="outline"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                openModal();
-              }}
-              className="w-full text-xs font-bold py-3 border-border"
-            >
-              Request Free 15-Min Callback
-            </Button>
-          </div>
-        </div>
-      )}
     </header>
+  );
+}
+
+function MobileMenu({ currentLocationName }: { currentLocationName: string | null }) {
+  const [openCollapsible, setOpenCollapsible] = useState<string | null>(null);
+
+  const handleCollapsibleChange = (name: string) => {
+    setOpenCollapsible(prev => (prev === name ? null : name));
+  };
+
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="h-10 w-10">
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Toggle navigation menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-[300px] bg-background/95 backdrop-blur-md flex flex-col p-0 border-l">
+        <SheetHeader className="p-6 pb-4 border-b">
+          <SheetTitle>
+            <Link href="/" className="flex items-center" prefetch={false}>
+              <div className="relative h-12 w-48">
+                <Image
+                  src="/logo-light.png"
+                  alt="Aries PhysioCare"
+                  fill
+                  className="object-contain block dark:hidden object-left"
+                />
+                <Image
+                  src="/logo-dark.png"
+                  alt="Aries PhysioCare"
+                  fill
+                  className="object-contain hidden dark:block object-left"
+                />
+              </div>
+            </Link>
+          </SheetTitle>
+        </SheetHeader>
+        <div className="flex-1 overflow-y-auto">
+          <nav className="flex flex-col gap-1 p-4 text-sm font-medium">
+            <div className="mb-4">
+              <LocationSelector current={currentLocationName} />
+            </div>
+
+            <Link href="/" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Home</Link>
+            <Link href="/about" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>About Us</Link>
+
+            <Collapsible open={openCollapsible === '3d'} onOpenChange={() => handleCollapsibleChange('3d')}>
+              <CollapsibleTrigger className="flex justify-between items-center w-full py-2.5 px-2 hover:text-primary transition-colors">
+                <span className="flex items-center gap-2">
+                  <Compass className="w-4 h-4 text-primary" /> 3D Medical Labs
+                </span>
+                {openCollapsible === '3d' ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <div className="pl-6 flex flex-col gap-1 border-l ml-4 mt-1">
+                  <Link href="/anatomy-lab" className="py-2 text-xs text-muted-foreground hover:text-primary" prefetch={false}>3D Anatomy Lab</Link>
+                  <Link href="/movement-lab" className="py-2 text-xs text-muted-foreground hover:text-primary" prefetch={false}>Kinematics Movement Lab</Link>
+                  <Link href="/surgery-and-rehabilitation" className="py-2 text-xs text-muted-foreground hover:text-primary" prefetch={false}>Surgery to Movement</Link>
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible open={openCollapsible === 'services'} onOpenChange={() => handleCollapsibleChange('services')}>
+              <CollapsibleTrigger className="flex justify-between items-center w-full py-2.5 px-2 hover:text-primary transition-colors">
+                <span>Services</span>
+                {openCollapsible === 'services' ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <div className="pl-6 flex flex-col gap-1 border-l ml-4 mt-1">
+                  {staticServices.map(service => (
+                    <Link key={service.id} href={`/services/${service.slug}`} className="py-2 text-xs text-muted-foreground hover:text-primary" prefetch={false}>
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Link href="/conditions" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Conditions Directory</Link>
+            <Link href="/experts" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>HCPC Registered Clinicians</Link>
+            <Link href="/locations" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>UK Coverage &amp; Postcodes</Link>
+            <Link href="/resources" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Clinical Evidence Library</Link>
+            <Link href="/contact" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Contact &amp; Triage</Link>
+          </nav>
+        </div>
+        <div className="p-4 border-t mt-auto">
+          <BookAppointmentButton className="w-full neon-accent-border">
+            Book In-Home Assessment
+          </BookAppointmentButton>
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 }
