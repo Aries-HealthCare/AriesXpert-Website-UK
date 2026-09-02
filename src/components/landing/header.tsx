@@ -141,29 +141,29 @@ export default function Header() {
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                <Link href="/anatomy-lab" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
-                  <Compass className="h-4 w-4 text-primary" />
+                <Link href="/anatomy-lab" className="flex items-center gap-2 py-2" prefetch={false}>
+                  <Activity className="h-4 w-4 text-primary" />
                   <div>
-                    <span className="font-bold text-foreground block">3D Anatomy Lab</span>
-                    <span className="text-[10px] text-muted-foreground">Spine, Knee &amp; Shoulder Models</span>
+                    <div className="font-semibold text-xs">3D Anatomy Lab</div>
+                    <div className="text-[10px] text-muted-foreground">Interactive 3D Musculoskeletal Model</div>
                   </div>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/movement-lab" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
-                  <Activity className="h-4 w-4 text-accent" />
+                <Link href="/movement-lab" className="flex items-center gap-2 py-2" prefetch={false}>
+                  <Sparkles className="h-4 w-4 text-accent" />
                   <div>
-                    <span className="font-bold text-foreground block">Kinematics Movement Lab</span>
-                    <span className="text-[10px] text-muted-foreground">Real-time Kinematics Diagnostics</span>
+                    <div className="font-semibold text-xs">Kinematics Lab</div>
+                    <div className="text-[10px] text-muted-foreground">Gait &amp; Range of Motion Engine</div>
                   </div>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/surgery-and-rehabilitation" className="flex items-center gap-2.5 py-2 text-xs" prefetch={false}>
-                  <HeartPulse className="h-4 w-4 text-rose-500" />
+                <Link href="/surgery-and-rehabilitation" className="flex items-center gap-2 py-2" prefetch={false}>
+                  <ShieldCheck className="h-4 w-4 text-emerald-500" />
                   <div>
-                    <span className="font-bold text-foreground block">Surgery to Movement</span>
-                    <span className="text-[10px] text-muted-foreground">Phased Post-Op NHS Pathways</span>
+                    <div className="font-semibold text-xs">Surgery to Movement</div>
+                    <div className="text-[10px] text-muted-foreground">Pre &amp; Post-Surgical Pathways</div>
                   </div>
                 </Link>
               </DropdownMenuItem>
@@ -178,7 +178,7 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-72 glassmorphic p-2">
               <DropdownMenuLabel className="text-[11px] font-mono uppercase text-muted-foreground tracking-wider">
-                Clinical Care Pathways
+                Clinical Disciplines
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               {staticServices.map((service) => (
@@ -203,14 +203,8 @@ export default function Header() {
           <Link href="/experts" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors flex items-center gap-1 whitespace-nowrap px-1" prefetch={false}>
             <Users className="h-3.5 w-3.5" /> HCPC Clinicians
           </Link>
-          <Link href="/locations" className="text-[13px] 2xl:text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
-            UK Coverage
-          </Link>
-          <Link href="/faq" className="hidden 2xl:flex text-[14px] font-bold hover:text-primary transition-colors whitespace-nowrap px-1" prefetch={false}>
-            FAQ
-          </Link>
 
-          <div className="hidden min-[1600px]:flex items-center gap-2 border-l ml-1 pl-3 border-border/50">
+          <div className="flex items-center gap-2 border-l ml-1 pl-3 border-border/50">
             <Link href="/virtual-physiotherapy" className="text-[13px] 2xl:text-[14px] font-black hover:text-primary transition-colors flex items-center gap-1.5 text-accent whitespace-nowrap" prefetch={false}>
               <Video className="h-4 w-4 animate-pulse" /> Free Consultation
             </Link>
@@ -330,7 +324,7 @@ function MobileMenu({ currentLocationName }: { currentLocationName: string | nul
 
             <Link href="/conditions" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Conditions Directory</Link>
             <Link href="/experts" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>HCPC Registered Clinicians</Link>
-            <Link href="/locations" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>UK Coverage &amp; Postcodes</Link>
+            <Link href="/virtual-physiotherapy" className="py-2.5 px-2 text-accent font-bold hover:text-primary transition-colors" prefetch={false}>Free Tele-Consultation</Link>
             <Link href="/resources" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Clinical Evidence Library</Link>
             <Link href="/contact" className="py-2.5 px-2 hover:text-primary transition-colors" prefetch={false}>Contact &amp; Triage</Link>
           </nav>
