@@ -5,6 +5,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import SiteLayoutWrapper from '@/components/SiteLayoutWrapper';
 import { RequestCallbackProvider } from '@/components/request-callback-provider';
 import { AttributionCapture } from '@/components/attribution-capture';
+import { FirebaseClientProvider } from '@/firebase';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -101,10 +103,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <RequestCallbackProvider>
-            <AttributionCapture />
-            <SiteLayoutWrapper>{children}</SiteLayoutWrapper>
-          </RequestCallbackProvider>
+          <FirebaseClientProvider>
+            <RequestCallbackProvider>
+              <AttributionCapture />
+              <SiteLayoutWrapper>{children}</SiteLayoutWrapper>
+              <Toaster />
+            </RequestCallbackProvider>
+          </FirebaseClientProvider>
         </ThemeProvider>
       </body>
     </html>

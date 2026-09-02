@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { CONDITIONS_LIBRARY } from "@/lib/canadian-data";
+import { CONDITIONS_LIBRARY } from "@/lib/uk-data";
 import { Search, ChevronRight, Activity, Sparkles, Filter } from "lucide-react";
 import { BodyRegion } from "@/lib/types";
 
@@ -31,7 +31,7 @@ export default function ConditionsPage() {
   const filteredConditions = CONDITIONS_LIBRARY.filter((cond) => {
     const matchesSearch =
       cond.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      cond.shortDescription.toLowerCase().includes(searchTerm.toLowerCase());
+      ((cond.shortDescription || cond.description || "").toLowerCase()).includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === "all" || cond.category === selectedCategory;
     const matchesRegion = selectedRegion === "all" || cond.bodyRegion === selectedRegion;
     return matchesSearch && matchesCategory && matchesRegion;

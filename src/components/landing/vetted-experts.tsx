@@ -22,7 +22,7 @@ import {
   Stethoscope
 } from "lucide-react";
 
-export default function VettedExperts() {
+export default function VettedExperts({ locationName, className }: { locationName?: string; className?: string; country?: string; state?: string; city?: string; area?: string; specialization?: string } = {}) {
   return (
     <section className="py-12 md:py-20 relative overflow-hidden bg-background">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(var(--primary),0.02)_0%,transparent_70%)] pointer-events-none" />
@@ -96,7 +96,7 @@ export default function VettedExperts() {
                       </p>
 
                       <div className="flex flex-wrap gap-1 pt-1">
-                        {expert.specialties.slice(0, 2).map((spec, i) => (
+                        {expert.specialties.slice(0, 2).map((spec: string, i: number) => (
                           <span key={i} className="text-[10px] font-mono px-2 py-0.5 rounded bg-muted text-foreground/80">
                             {spec}
                           </span>
