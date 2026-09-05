@@ -17,4 +17,4 @@ Allow: /clinic
 Allow: /physiotherapy-in-*
 
 # Sitemap location
-Sitemap: https://www.ariesphysiocare.com/sitemap.xml
+Sitemap: https://www.ariesxpert.co.uk/sitemap.xml

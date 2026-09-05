@@ -1,6 +1,7 @@
 import { UKCityHub, UKNation } from './types';
 
 export const UK_CITY_HUBS: UKCityHub[] = [
+  // ─── ENGLAND ────────────────────────────────────────────────────────
   {
     id: "hub-london",
     name: "Greater London",
@@ -8,9 +9,9 @@ export const UK_CITY_HUBS: UKCityHub[] = [
     region: "London",
     slug: "england/london",
     headline: "In-Home & Virtual Physiotherapy across London & M25 Corridor",
-    description: "Hospital-grade clinical physical therapy delivered directly to your home, mews, or office across Central London, West End, City, and surrounding commuter boroughs.",
+    description: "Hospital-grade clinical physical therapy delivered directly to your home, mews, or office across Central London, West End, City, and all 32 London boroughs.",
     keyPostcodes: ["EC1-EC4", "WC1-WC2", "W1-W14", "SW1-SW20", "NW1-NW11", "SE1-SE28", "N1-N22", "E1-E18"],
-    keyHubs: ["Westminster & Mayfair", "Kensington & Chelsea", "City of London & Canary Wharf", "Richmond & Wimbledon", "Hampstead & St John's Wood", "Islington & Shoreditch"],
+    keyHubs: ["Westminster & Mayfair", "Kensington & Chelsea", "City of London & Canary Wharf", "Richmond & Wimbledon", "Camden & Hampstead", "Islington & Shoreditch"],
     image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800",
     inHomeLeadTime: "Same Day / < 45 Mins",
     directBillingSupported: true
@@ -44,6 +45,134 @@ export const UK_CITY_HUBS: UKCityHub[] = [
     directBillingSupported: true
   },
   {
+    id: "hub-leeds",
+    name: "Leeds & West Yorkshire",
+    nation: "England",
+    region: "Yorkshire and the Humber",
+    slug: "england/leeds",
+    headline: "Orthopaedic & Chronic Pain Physical Therapy in Yorkshire",
+    description: "In-home physiotherapy across Leeds City Centre, Headingley, Roundhay, Alwoodley, Horsforth, Bradford, and Harrogate.",
+    keyPostcodes: ["LS1-LS18", "LS29", "BD1-BD8", "HG1-HG3"],
+    keyHubs: ["Leeds City Centre", "Headingley & Far Headingley", "Roundhay & Alwoodley", "Horsforth & Guiseley", "Bradford & Saltaire"],
+    image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-newcastle",
+    name: "Newcastle & North East",
+    nation: "England",
+    region: "North East",
+    slug: "england/newcastle",
+    headline: "Chartered Physiotherapy in Newcastle upon Tyne & North East",
+    description: "In-home clinical physiotherapy covering Newcastle City Centre, Jesmond, Gosforth, Gateshead, Sunderland, and County Durham.",
+    keyPostcodes: ["NE1-NE12", "SR1-SR6", "DH1-DH9"],
+    keyHubs: ["Newcastle City Centre & Quayside", "Jesmond & Gosforth", "Gateshead & Low Fell", "Sunderland & Durham"],
+    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-sheffield",
+    name: "Sheffield & South Yorkshire",
+    nation: "England",
+    region: "Yorkshire and the Humber",
+    slug: "england/sheffield",
+    headline: "In-Home Rehabilitation in Sheffield & South Yorkshire",
+    description: "Hospital-grade home physiotherapy across Ecclesall, Broomhill, Dore, Totley, Rotherham, and Doncaster.",
+    keyPostcodes: ["S1-S12", "S17", "S60-S66"],
+    keyHubs: ["Sheffield City Centre", "Ecclesall & Millhouses", "Broomhill & Crookes", "Dore & Totley", "Rotherham & Doncaster"],
+    image: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-liverpool",
+    name: "Liverpool & Merseyside",
+    nation: "England",
+    region: "North West",
+    slug: "england/liverpool",
+    headline: "In-Home Physiotherapy in Liverpool & Merseyside",
+    description: "Evidence-based home physical therapy in Liverpool City Centre, Baltic Triangle, Allerton, Sefton Park, Crosby, and the Wirral.",
+    keyPostcodes: ["L1-L19", "L22-L23", "CH41-CH49"],
+    keyHubs: ["Liverpool City Centre & Waterfront", "Allerton & Sefton Park", "Crosby & Southport", "Wirral & Birkenhead"],
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-bristol",
+    name: "Bristol & Bath",
+    nation: "England",
+    region: "South West",
+    slug: "england/bristol",
+    headline: "Restoring Active Movement across Bristol & Bath",
+    description: "Evidence-based home physical therapy in Clifton, Redland, Harbourside, Central Bristol, and the historic Georgian city of Bath.",
+    keyPostcodes: ["BS1-BS9", "BS16", "BA1-BA2"],
+    keyHubs: ["Clifton & Redland", "Bristol Harbourside", "Bath City Centre & Lansdown", "Cotham & Henleaze"],
+    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-nottingham",
+    name: "Nottingham & East Midlands",
+    nation: "England",
+    region: "East Midlands",
+    slug: "england/nottingham",
+    headline: "In-Home Physical Therapy in Nottingham & Leicester",
+    description: "Specialized clinical physiotherapy delivered to West Bridgford, Wollaton, Nottingham City, Derby, and Leicester.",
+    keyPostcodes: ["NG1-NG9", "DE1-DE3", "LE1-LE3"],
+    keyHubs: ["Nottingham City Centre", "West Bridgford", "Wollaton & Beeston", "Derby & Leicester"],
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-cambridge",
+    name: "Cambridge & East of England",
+    nation: "England",
+    region: "East of England",
+    slug: "england/cambridge",
+    headline: "Chartered Physiotherapy in Cambridge & East Anglia",
+    description: "Hospital-grade home visits in Cambridge City Centre, Trumpington, Newnham, Ely, and Peterborough.",
+    keyPostcodes: ["CB1-CB5", "CB22-CB24", "PE1-PE4"],
+    keyHubs: ["Cambridge City Centre", "Trumpington & Newnham", "Peterborough & Ely", "Norwich & Ipswich"],
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-oxford",
+    name: "Oxford & Thames Valley",
+    nation: "England",
+    region: "South East",
+    slug: "england/oxford",
+    headline: "In-Home Physiotherapy in Oxford & Reading",
+    description: "Comprehensive home physical therapy in Oxford, Summertown, Headington, Reading, and Berkshire.",
+    keyPostcodes: ["OX1-OX4", "RG1-RG4", "SL1-SL4"],
+    keyHubs: ["Oxford Historic Centre", "Summertown & Jericho", "Headington & Cowley", "Reading & Windsor"],
+    image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-southampton",
+    name: "Southampton & South Coast",
+    nation: "England",
+    region: "South East",
+    slug: "england/southampton",
+    headline: "In-Home Physiotherapy in Southampton & Portsmouth",
+    description: "Rapid mobile physiotherapy visits across Southampton, Portsmouth, Winchester, and Hampshire coast.",
+    keyPostcodes: ["SO14-SO19", "PO1-PO6", "SO22-SO23"],
+    keyHubs: ["Southampton City Centre", "Portsmouth & Southsea", "Winchester", "Basingstoke"],
+    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+
+  // ─── SCOTLAND ───────────────────────────────────────────────────────
+  {
     id: "hub-edinburgh",
     name: "Edinburgh & Lothians",
     nation: "Scotland",
@@ -72,33 +201,35 @@ export const UK_CITY_HUBS: UKCityHub[] = [
     directBillingSupported: true
   },
   {
-    id: "hub-bristol",
-    name: "Bristol & Bath",
-    nation: "England",
-    region: "South West",
-    slug: "england/bristol",
-    headline: "Restoring Active Movement across the West of England",
-    description: "Evidence-based home physical therapy in Clifton, Redland, Harbourside, Central Bristol, and the historic Georgian city of Bath.",
-    keyPostcodes: ["BS1-BS9", "BS16", "BA1-BA2"],
-    keyHubs: ["Clifton & Redland", "Bristol Harbourside", "Bath City Centre & Lansdown", "Cotham & Henleaze"],
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=800",
+    id: "hub-aberdeen",
+    name: "Aberdeen & North East Scotland",
+    nation: "Scotland",
+    region: "North East Scotland",
+    slug: "scotland/aberdeen",
+    headline: "In-Home Physiotherapy in Aberdeen & Aberdeenshire",
+    description: "Expert physical therapy across Aberdeen City, Peterhead, Fraserburgh, and Stonehaven.",
+    keyPostcodes: ["AB10-AB25", "AB41-AB51"],
+    keyHubs: ["Aberdeen City", "Aberdeenshire", "Peterhead & Stonehaven", "Inverurie"],
+    image: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&q=80&w=800",
     inHomeLeadTime: "< 60 Mins",
     directBillingSupported: true
   },
   {
-    id: "hub-leeds",
-    name: "Leeds & West Yorkshire",
-    nation: "England",
-    region: "Yorkshire",
-    slug: "england/leeds",
-    headline: "Orthopaedic & Chronic Pain Physical Therapy in Yorkshire",
-    description: "In-home physiotherapy across Leeds City Centre, Headingley, Roundhay, Alwoodley, Horsforth, and Bradford outskirts.",
-    keyPostcodes: ["LS1-LS18", "LS29", "BD1-BD8"],
-    keyHubs: ["Leeds City Centre", "Headingley & Far Headingley", "Roundhay & Alwoodley", "Horsforth & Guiseley"],
+    id: "hub-dundee",
+    name: "Dundee & Angus",
+    nation: "Scotland",
+    region: "Tayside",
+    slug: "scotland/dundee",
+    headline: "Chartered Physiotherapy in Dundee & Tayside",
+    description: "Comprehensive in-home care in Dundee City, Arbroath, Montrose, and Perthshire.",
+    keyPostcodes: ["DD1-DD5", "PH1-PH2"],
+    keyHubs: ["Dundee City Centre", "Broughty Ferry", "Arbroath & Angus", "Perth & Kinross"],
     image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&q=80&w=800",
     inHomeLeadTime: "< 60 Mins",
     directBillingSupported: true
   },
+
+  // ─── WALES ──────────────────────────────────────────────────────────
   {
     id: "hub-cardiff",
     name: "Cardiff & South Wales",
@@ -114,6 +245,36 @@ export const UK_CITY_HUBS: UKCityHub[] = [
     directBillingSupported: true
   },
   {
+    id: "hub-swansea",
+    name: "Swansea & South West Wales",
+    nation: "Wales",
+    region: "South West Wales",
+    slug: "wales/swansea",
+    headline: "In-Home Physiotherapy in Swansea & Gower",
+    description: "Hospital-grade home physiotherapy in Swansea Marina, Mumbles, Gower Peninsula, Neath, and Llanelli.",
+    keyPostcodes: ["SA1-SA8"],
+    keyHubs: ["Swansea Marina & Centre", "Mumbles & Gower", "Neath Port Talbot", "Llanelli"],
+    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-wrexham",
+    name: "Wrexham & North Wales",
+    nation: "Wales",
+    region: "North Wales",
+    slug: "wales/wrexham",
+    headline: "Chartered Physiotherapy in North Wales",
+    description: "In-home physical therapy across Wrexham City, Flintshire, Denbighshire, Conwy, and Bangor.",
+    keyPostcodes: ["LL11-LL14", "LL18-LL19", "LL30-LL32", "LL57"],
+    keyHubs: ["Wrexham City", "Flintshire (Mold/Deeside)", "Conwy & Llandudno", "Bangor & Gwynedd"],
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+
+  // ─── NORTHERN IRELAND ───────────────────────────────────────────────
+  {
     id: "hub-belfast",
     name: "Belfast & Greater Area",
     nation: "Northern Ireland",
@@ -124,6 +285,20 @@ export const UK_CITY_HUBS: UKCityHub[] = [
     keyPostcodes: ["BT1-BT15", "BT18-BT20", "BT27-BT28"],
     keyHubs: ["Belfast City Centre & Titanic Quarter", "Malone Road & Stranmillis", "Holywood & Bangor (North Down)", "Lisburn & Hillsborough"],
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
+    inHomeLeadTime: "< 60 Mins",
+    directBillingSupported: true
+  },
+  {
+    id: "hub-derry",
+    name: "Derry & North West NI",
+    nation: "Northern Ireland",
+    region: "North West NI",
+    slug: "northern-ireland/derry",
+    headline: "In-Home Physiotherapy in Derry / Londonderry & Strabane",
+    description: "Chartered physical therapy delivered to homes across Derry City, Waterside, Cityside, Strabane, and Causeway Coast.",
+    keyPostcodes: ["BT47-BT48", "BT51-BT52", "BT82"],
+    keyHubs: ["Derry City Centre", "Waterside & Cityside", "Strabane", "Coleraine & Causeway Coast"],
+    image: "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?auto=format&fit=crop&q=80&w=800",
     inHomeLeadTime: "< 60 Mins",
     directBillingSupported: true
   }
@@ -137,7 +312,7 @@ export const UK_NATIONS: UKNation[] = [
     capital: "London",
     majorHubs: UK_CITY_HUBS.filter(h => h.nation === "England"),
     regulatoryCollegeName: "Health and Care Professions Council (HCPC)",
-    hpcFrameworkNote: "Chartered Society of Physiotherapy (CSP) recognized practice."
+    hpcFrameworkNote: "Chartered Society of Physiotherapy (CSP) recognized practice across all 9 English regions."
   },
   {
     code: "SCT",
@@ -146,7 +321,7 @@ export const UK_NATIONS: UKNation[] = [
     capital: "Edinburgh",
     majorHubs: UK_CITY_HUBS.filter(h => h.nation === "Scotland"),
     regulatoryCollegeName: "Health and Care Professions Council (HCPC) Scotland",
-    hpcFrameworkNote: "NHS Scotland step-down and direct private care."
+    hpcFrameworkNote: "Full coverage across all 32 Scottish Council Areas and NHS step-down care."
   },
   {
     code: "WLS",
@@ -155,7 +330,7 @@ export const UK_NATIONS: UKNation[] = [
     capital: "Cardiff",
     majorHubs: UK_CITY_HUBS.filter(h => h.nation === "Wales"),
     regulatoryCollegeName: "Health and Care Professions Council (HCPC) Cymru",
-    hpcFrameworkNote: "Bilingual English & Welsh clinical communication available."
+    hpcFrameworkNote: "Bilingual English & Welsh clinical communication available across all 22 Principal Areas."
   },
   {
     code: "NIR",
@@ -164,6 +339,6 @@ export const UK_NATIONS: UKNation[] = [
     capital: "Belfast",
     majorHubs: UK_CITY_HUBS.filter(h => h.nation === "Northern Ireland"),
     regulatoryCollegeName: "Health and Care Professions Council (HCPC) NI",
-    hpcFrameworkNote: "Full Northern Ireland coverage and direct insurer billing."
+    hpcFrameworkNote: "Full coverage across all 11 Local Government Districts and direct private insurer billing."
   }
 ];
