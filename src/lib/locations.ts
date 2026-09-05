@@ -74,11 +74,14 @@ export const UKNations: IndianStateType[] = [
                         subAreas: [
                             { name: "Mayfair", slug: "mayfair", isActive: true, seoEnabled: true },
                             { name: "Marylebone", slug: "marylebone", isActive: true, seoEnabled: true },
-                            { name: "Soho & Covent Garden", slug: "soho-covent-garden", isActive: true, seoEnabled: true },
+                            { name: "Soho", slug: "soho", isActive: true, seoEnabled: true },
+                            { name: "Covent Garden", slug: "covent-garden", isActive: true, seoEnabled: true },
                             { name: "Belgravia", slug: "belgravia", isActive: true, seoEnabled: true },
-                            { name: "Pimlico & Victoria", slug: "pimlico-victoria", isActive: true, seoEnabled: true },
+                            { name: "Pimlico", slug: "pimlico", isActive: true, seoEnabled: true },
+                            { name: "Victoria", slug: "victoria", isActive: true, seoEnabled: true },
                             { name: "St James's", slug: "st-jamess", isActive: true, seoEnabled: true },
-                            { name: "Paddington & Bayswater", slug: "paddington-bayswater", isActive: true, seoEnabled: true }
+                            { name: "Paddington", slug: "paddington", isActive: true, seoEnabled: true },
+                            { name: "Bayswater", slug: "bayswater", isActive: true, seoEnabled: true }
                         ]
                     },
                     {
@@ -102,9 +105,11 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Camden Town", slug: "camden-town", isActive: true, seoEnabled: true },
-                            { name: "Hampstead & Belsize Park", slug: "hampstead", isActive: true, seoEnabled: true },
-                            { name: "Bloomsbury & King's Cross", slug: "bloomsbury", isActive: true, seoEnabled: true },
-                            { name: "Kentish Town & Gospel Oak", slug: "kentish-town", isActive: true, seoEnabled: true },
+                            { name: "Hampstead", slug: "hampstead", isActive: true, seoEnabled: true },
+                            { name: "Bloomsbury", slug: "bloomsbury", isActive: true, seoEnabled: true },
+                            { name: "Holborn & King's Cross", slug: "holborn", isActive: true, seoEnabled: true },
+                            { name: "Kentish Town", slug: "kentish-town", isActive: true, seoEnabled: true },
+                            { name: "Highgate", slug: "highgate", isActive: true, seoEnabled: true },
                             { name: "Highgate (Camden)", slug: "highgate-camden", isActive: true, seoEnabled: true },
                             { name: "Primrose Hill", slug: "primrose-hill", isActive: true, seoEnabled: true }
                         ]
@@ -115,6 +120,7 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Angel", slug: "angel", isActive: true, seoEnabled: true },
                             { name: "Angel & Upper Street", slug: "angel-islington", isActive: true, seoEnabled: true },
                             { name: "Highbury & Canonbury", slug: "highbury", isActive: true, seoEnabled: true },
                             { name: "Clerkenwell & Farringdon", slug: "clerkenwell", isActive: true, seoEnabled: true },
@@ -127,6 +133,7 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Shoreditch", slug: "shoreditch", isActive: true, seoEnabled: true },
                             { name: "Shoreditch & Hoxton", slug: "shoreditch-hoxton", isActive: true, seoEnabled: true },
                             { name: "Stoke Newington", slug: "stoke-newington", isActive: true, seoEnabled: true },
                             { name: "Hackney Central & London Fields", slug: "hackney-central", isActive: true, seoEnabled: true },
@@ -165,6 +172,7 @@ export const UKNations: IndianStateType[] = [
                         subAreas: [
                             { name: "Waterloo & South Bank", slug: "waterloo-south-bank", isActive: true, seoEnabled: true },
                             { name: "Brixton & Herne Hill", slug: "brixton", isActive: true, seoEnabled: true },
+                            { name: "Clapham", slug: "clapham", isActive: true, seoEnabled: true },
                             { name: "Clapham (Lambeth)", slug: "clapham-lambeth", isActive: true, seoEnabled: true },
                             { name: "Vauxhall & Kennington", slug: "vauxhall-kennington", isActive: true, seoEnabled: true },
                             { name: "Streatham", slug: "streatham", isActive: true, seoEnabled: true }
@@ -189,6 +197,7 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Richmond", slug: "richmond", isActive: true, seoEnabled: true },
                             { name: "Richmond Town & Green", slug: "richmond-town", isActive: true, seoEnabled: true },
                             { name: "Twickenham & St Margarets", slug: "twickenham", isActive: true, seoEnabled: true },
                             { name: "Barnes & Mortlake", slug: "barnes", isActive: true, seoEnabled: true },
@@ -237,6 +246,7 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Wimbledon", slug: "wimbledon", isActive: true, seoEnabled: true },
                             { name: "Wimbledon Town", slug: "wimbledon-town", isActive: true, seoEnabled: true },
                             { name: "Wimbledon Village", slug: "wimbledon-village", isActive: true, seoEnabled: true },
                             { name: "Mitcham", slug: "mitcham", isActive: true, seoEnabled: true },
@@ -481,7 +491,8 @@ export const UKNations: IndianStateType[] = [
                             { name: "Sunderland City Centre", slug: "sunderland-city-centre", isActive: true, seoEnabled: true },
                             { name: "Ashbrooke & Tunstall", slug: "ashbrooke", isActive: true, seoEnabled: true },
                             { name: "Roker & Seaburn", slug: "roker-seaburn", isActive: true, seoEnabled: true },
-                            { name: "Washington", slug: "washington-sunderland", isActive: true, seoEnabled: true }
+                            { name: "Washington", slug: "washington", isActive: true, seoEnabled: true },
+                            { name: "Washington (Tyne and Wear)", slug: "washington-sunderland", isActive: true, seoEnabled: true }
                         ]
                     },
                     {
@@ -628,7 +639,8 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Wirral & Birkenhead", slug: "wirral", isActive: true, seoEnabled: true },
-                            { name: "Sefton & Southport", slug: "southport", isActive: true, seoEnabled: true },
+                            { name: "Sefton", slug: "sefton", isActive: true, seoEnabled: true },
+                            { name: "Southport", slug: "southport", isActive: true, seoEnabled: true },
                             { name: "St Helens", slug: "st-helens", isActive: true, seoEnabled: true },
                             { name: "Knowsley & Huyton", slug: "knowsley", isActive: true, seoEnabled: true }
                         ]
@@ -731,8 +743,10 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Wakefield", slug: "wakefield", isActive: true, seoEnabled: true },
-                            { name: "Huddersfield & Kirklees", slug: "huddersfield", isActive: true, seoEnabled: true },
-                            { name: "Halifax & Calderdale", slug: "halifax", isActive: true, seoEnabled: true }
+                            { name: "Kirklees", slug: "kirklees", isActive: true, seoEnabled: true },
+                            { name: "Huddersfield", slug: "huddersfield", isActive: true, seoEnabled: true },
+                            { name: "Calderdale", slug: "calderdale", isActive: true, seoEnabled: true },
+                            { name: "Halifax", slug: "halifax", isActive: true, seoEnabled: true }
                         ]
                     },
                     {
@@ -780,9 +794,34 @@ export const UKNations: IndianStateType[] = [
                             { name: "Goole", slug: "goole", isActive: true, seoEnabled: true }
                         ]
                     },
-                    { name: "Kingston upon Hull", slug: "hull", isActive: true, seoEnabled: true },
-                    { name: "North East Lincolnshire", slug: "north-east-lincolnshire", isActive: true, seoEnabled: true },
-                    { name: "North Lincolnshire", slug: "north-lincolnshire", isActive: true, seoEnabled: true }
+                    {
+                        name: "Kingston upon Hull",
+                        slug: "kingston-upon-hull",
+                        isActive: true,
+                        seoEnabled: true,
+                        subAreas: [
+                            { name: "Hull City Centre", slug: "hull", isActive: true, seoEnabled: true }
+                        ]
+                    },
+                    {
+                        name: "North East Lincolnshire",
+                        slug: "north-east-lincolnshire",
+                        isActive: true,
+                        seoEnabled: true,
+                        subAreas: [
+                            { name: "Grimsby", slug: "grimsby", isActive: true, seoEnabled: true },
+                            { name: "Cleethorpes", slug: "cleethorpes", isActive: true, seoEnabled: true }
+                        ]
+                    },
+                    {
+                        name: "North Lincolnshire",
+                        slug: "north-lincolnshire",
+                        isActive: true,
+                        seoEnabled: true,
+                        subAreas: [
+                            { name: "Scunthorpe", slug: "scunthorpe", isActive: true, seoEnabled: true }
+                        ]
+                    }
                 ]
             },
 
@@ -880,7 +919,7 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Grantham", slug: "grantham", isActive: true, seoEnabled: true },
-                            { name: "Boston", slug: "boston-uk", isActive: true, seoEnabled: true },
+                            { name: "Boston", slug: "boston", isActive: true, seoEnabled: true },
                             { name: "Stamford", slug: "stamford", isActive: true, seoEnabled: true },
                             { name: "Spalding & Skegness", slug: "spalding", isActive: true, seoEnabled: true }
                         ]
@@ -1247,6 +1286,8 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Brighton", slug: "brighton", isActive: true, seoEnabled: true },
+                            { name: "Hove", slug: "hove", isActive: true, seoEnabled: true },
                             { name: "Brighton and Hove", slug: "brighton-and-hove", isActive: true, seoEnabled: true },
                             { name: "Eastbourne", slug: "eastbourne", isActive: true, seoEnabled: true },
                             { name: "Hastings & Bexhill", slug: "hastings", isActive: true, seoEnabled: true },
@@ -1359,7 +1400,8 @@ export const UKNations: IndianStateType[] = [
                         subAreas: [
                             { name: "Plymouth", slug: "plymouth", isActive: true, seoEnabled: true },
                             { name: "Exeter", slug: "exeter", isActive: true, seoEnabled: true },
-                            { name: "Torquay & Paignton (Torbay)", slug: "torquay", isActive: true, seoEnabled: true },
+                            { name: "Torquay", slug: "torquay", isActive: true, seoEnabled: true },
+                            { name: "Paignton", slug: "paignton", isActive: true, seoEnabled: true },
                             { name: "Barnstaple & North Devon", slug: "barnstaple", isActive: true, seoEnabled: true }
                         ]
                     },
@@ -1476,7 +1518,8 @@ export const UKNations: IndianStateType[] = [
                     { name: "Falkirk", slug: "falkirk", isActive: true, seoEnabled: true },
                     { name: "Clackmannanshire", slug: "clackmannanshire", isActive: true, seoEnabled: true },
                     { name: "Perth and Kinross", slug: "perth-and-kinross", isActive: true, seoEnabled: true },
-                    { name: "Perth", slug: "perth-scotland", isActive: true, seoEnabled: true }
+                    { name: "Perth", slug: "perth", isActive: true, seoEnabled: true },
+                    { name: "Perth (Scotland)", slug: "perth-scotland", isActive: true, seoEnabled: true }
                 ]
             },
             {
@@ -1501,9 +1544,11 @@ export const UKNations: IndianStateType[] = [
                     { name: "North Lanarkshire", slug: "north-lanarkshire", isActive: true, seoEnabled: true },
                     { name: "South Lanarkshire", slug: "south-lanarkshire", isActive: true, seoEnabled: true },
                     { name: "Motherwell & Wishaw", slug: "motherwell", isActive: true, seoEnabled: true },
-                    { name: "Coatbridge & Airdrie", slug: "coatbridge", isActive: true, seoEnabled: true },
+                    { name: "Coatbridge", slug: "coatbridge", isActive: true, seoEnabled: true },
+                    { name: "Airdrie", slug: "airdrie", isActive: true, seoEnabled: true },
                     { name: "East Kilbride", slug: "east-kilbride", isActive: true, seoEnabled: true },
-                    { name: "Hamilton", slug: "hamilton-scotland", isActive: true, seoEnabled: true },
+                    { name: "Hamilton", slug: "hamilton", isActive: true, seoEnabled: true },
+                    { name: "Hamilton (Scotland)", slug: "hamilton-scotland", isActive: true, seoEnabled: true },
                     { name: "Cumbernauld", slug: "cumbernauld", isActive: true, seoEnabled: true },
                     { name: "Renfrewshire", slug: "renfrewshire", isActive: true, seoEnabled: true },
                     { name: "Paisley", slug: "paisley", isActive: true, seoEnabled: true },
@@ -1761,7 +1806,8 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
-                            { name: "Bangor", slug: "bangor-wales", isActive: true, seoEnabled: true },
+                            { name: "Bangor", slug: "bangor", isActive: true, seoEnabled: true },
+                            { name: "Bangor (Gwynedd)", slug: "bangor-wales", isActive: true, seoEnabled: true },
                             { name: "Caernarfon", slug: "caernarfon", isActive: true, seoEnabled: true },
                             { name: "Pwllheli & Snowdonia", slug: "pwllheli", isActive: true, seoEnabled: true }
                         ]
@@ -1782,7 +1828,8 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
-                            { name: "Newtown", slug: "newtown-powys", isActive: true, seoEnabled: true },
+                            { name: "Newtown", slug: "newtown", isActive: true, seoEnabled: true },
+                            { name: "Newtown (Powys)", slug: "newtown-powys", isActive: true, seoEnabled: true },
                             { name: "Brecon", slug: "brecon", isActive: true, seoEnabled: true },
                             { name: "Welshpool & Llandrindod Wells", slug: "welshpool", isActive: true, seoEnabled: true }
                         ]
@@ -1837,6 +1884,7 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Bangor", slug: "bangor-ni", isActive: true, seoEnabled: true },
+                            { name: "Holywood", slug: "holywood", isActive: true, seoEnabled: true },
                             { name: "Holywood & Cultra", slug: "holywood-north-down", isActive: true, seoEnabled: true },
                             { name: "Newtownards & Comber", slug: "newtownards", isActive: true, seoEnabled: true }
                         ]
@@ -1848,6 +1896,7 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Newtownabbey & Glengormley", slug: "newtownabbey", isActive: true, seoEnabled: true },
+                            { name: "Antrim", slug: "antrim", isActive: true, seoEnabled: true },
                             { name: "Antrim Town", slug: "antrim-town", isActive: true, seoEnabled: true }
                         ]
                     }
@@ -1865,6 +1914,8 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Derry", slug: "derry", isActive: true, seoEnabled: true },
+                            { name: "Londonderry", slug: "londonderry", isActive: true, seoEnabled: true },
                             { name: "Derry / Londonderry City", slug: "derry-city", isActive: true, seoEnabled: true },
                             { name: "Strabane", slug: "strabane", isActive: true, seoEnabled: true }
                         ]
@@ -1875,9 +1926,11 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Armagh", slug: "armagh", isActive: true, seoEnabled: true },
                             { name: "Armagh City", slug: "armagh-city", isActive: true, seoEnabled: true },
                             { name: "Portadown", slug: "portadown", isActive: true, seoEnabled: true },
-                            { name: "Lurgan & Craigavon", slug: "craigavon", isActive: true, seoEnabled: true },
+                            { name: "Lurgan", slug: "lurgan", isActive: true, seoEnabled: true },
+                            { name: "Craigavon", slug: "craigavon", isActive: true, seoEnabled: true },
                             { name: "Banbridge", slug: "banbridge", isActive: true, seoEnabled: true }
                         ]
                     },
@@ -1887,6 +1940,7 @@ export const UKNations: IndianStateType[] = [
                         isActive: true,
                         seoEnabled: true,
                         subAreas: [
+                            { name: "Newry", slug: "newry", isActive: true, seoEnabled: true },
                             { name: "Newry City", slug: "newry-city", isActive: true, seoEnabled: true },
                             { name: "Downpatrick", slug: "downpatrick", isActive: true, seoEnabled: true },
                             { name: "Warrenpoint & Kilkeel", slug: "warrenpoint", isActive: true, seoEnabled: true }
@@ -1921,7 +1975,8 @@ export const UKNations: IndianStateType[] = [
                         seoEnabled: true,
                         subAreas: [
                             { name: "Dungannon", slug: "dungannon", isActive: true, seoEnabled: true },
-                            { name: "Cookstown & Magherafelt", slug: "cookstown", isActive: true, seoEnabled: true }
+                            { name: "Cookstown", slug: "cookstown", isActive: true, seoEnabled: true },
+                            { name: "Magherafelt", slug: "magherafelt", isActive: true, seoEnabled: true }
                         ]
                     },
                     {

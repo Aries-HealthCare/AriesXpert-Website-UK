@@ -120,6 +120,9 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-6">
             <h3 className="font-headline font-bold text-xs text-primary uppercase tracking-[0.2em]">Quick Links</h3>
             <ul className="space-y-3.5">
+              <li><Link href="/surgery-and-rehabilitation" className="text-sm font-semibold text-primary hover:text-primary/80 transition-colors inline-block hover:translate-x-1 duration-200" prefetch={false}>Surgery &amp; Post-Op Rehab</Link></li>
+              <li><Link href="/locations" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block hover:translate-x-1 duration-200" prefetch={false}>UK Coverage Directory</Link></li>
+              <li><Link href="/conditions" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block hover:translate-x-1 duration-200" prefetch={false}>Conditions &amp; Anatomy</Link></li>
               <li><Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block hover:translate-x-1 duration-200" prefetch={false}>About AriesXpert UK</Link></li>
               <li><Link href="/therapist" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block hover:translate-x-1 duration-200" prefetch={false}>Our HCPC Therapists</Link></li>
               <li><Link href="/clinic" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block hover:translate-x-1 duration-200 font-semibold text-primary" prefetch={false}>Flagship Clinics (Canary Wharf)</Link></li>

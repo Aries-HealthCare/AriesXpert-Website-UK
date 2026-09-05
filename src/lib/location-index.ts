@@ -29,6 +29,49 @@ function buildLocationIndex(): LocationPageData[] {
     const pages: LocationPageData[] = [];
     const registeredSlugs = new Set<string>();
 
+    // 0. Index Constituent Nations (England, Scotland, Wales, Northern Ireland)
+    for (const nation of UKNations) {
+        if (!nation.seoEnabled) continue;
+
+        const nationPageSlug = `physiotherapy-in-${nation.slug}`;
+        if (!registeredSlugs.has(nationPageSlug)) {
+            registeredSlugs.add(nationPageSlug);
+
+            const majorCities = nation.cities
+                .filter(c => c.seoEnabled)
+                .map(c => ({
+                    name: c.name,
+                    slug: c.slug,
+                    pageSlug: `physiotherapy-in-${c.slug}`,
+                }));
+
+            pages.push({
+                type: 'city',
+                pageSlug: nationPageSlug,
+                locationSlug: nation.slug,
+                locationName: nation.name,
+                cityName: nation.name,
+                citySlug: nation.slug,
+                stateName: 'United Kingdom',
+                stateSlug: 'uk',
+                canonicalUrl: `${BASE}/${nationPageSlug}`,
+                metaTitle: `Best In-Home Physiotherapy in ${nation.name} | HCPC & CSP Registered | AriesXpert UK`,
+                metaDescription: `Chartered in-home and virtual physical therapy across ${nation.name}. HCPC & CSP registered clinicians, same-day appointments, direct billing to Bupa, AXA Health, Aviva & Vitality.`,
+                keywords: [
+                    `physiotherapy in ${nation.name.toLowerCase()}`,
+                    `home physiotherapy ${nation.name.toLowerCase()}`,
+                    `physiotherapist near me ${nation.name.toLowerCase()}`,
+                    `chartered physio ${nation.name.toLowerCase()}`,
+                    'chartered physiotherapy uk',
+                    'private health insurance physiotherapy'
+                ],
+                heroHeading: `In-Home Physiotherapy in ${nation.name}`,
+                heroSubheading: `Hospital-grade chartered physical therapy delivered directly to your doorstep across ${nation.name}. Statutory HCPC and CSP registered clinicians.`,
+                nearbyAreas: majorCities.slice(0, 10),
+            });
+        }
+    }
+
     for (const nation of UKNations) {
         if (!nation.seoEnabled) continue;
 
@@ -166,10 +209,87 @@ for (const page of locationIndex) {
     locationMap.set(page.locationSlug.toLowerCase(), page);
 }
 
+// Canonical UK Geographic Aliases
+const ALIAS_MAP: Record<string, string> = {
+    'city-of-edinburgh': 'edinburgh',
+    'glasgow-city': 'glasgow',
+    'brighton': 'brighton-and-hove',
+    'hove': 'brighton-and-hove',
+    'hull': 'kingston-upon-hull',
+    'kingston-upon-hull': 'kingston-upon-hull',
+    'washington': 'washington-sunderland',
+    'sefton': 'southport',
+    'kirklees': 'huddersfield',
+    'calderdale': 'halifax',
+    'boston': 'boston-uk',
+    'paignton': 'torquay',
+    'perth': 'perth-scotland',
+    'hamilton': 'hamilton-scotland',
+    'airdrie': 'coatbridge',
+    'bangor': 'bangor-wales',
+    'newtown': 'newtown-powys',
+    'derry': 'derry-city',
+    'londonderry': 'derry-city',
+    'newry': 'newry-city',
+    'armagh': 'armagh-city',
+    'antrim': 'antrim-town',
+    'holywood': 'holywood-north-down',
+    'magherafelt': 'cookstown',
+    'lurgan': 'craigavon',
+    'soho': 'soho-covent-garden',
+    'covent-garden': 'soho-covent-garden',
+    'pimlico': 'pimlico-victoria',
+    'victoria': 'pimlico-victoria',
+    'paddington': 'paddington-bayswater',
+    'bayswater': 'paddington-bayswater',
+    'camden-town': 'camden-town',
+    'hampstead': 'hampstead',
+    'kentish-town': 'kentish-town',
+    'bloomsbury': 'bloomsbury',
+    'highgate': 'highgate-camden',
+    'holborn': 'bloomsbury',
+    'shoreditch': 'shoreditch-hoxton',
+    'angel': 'angel-islington',
+    'wimbledon': 'wimbledon-town',
+    'clapham': 'clapham-lambeth',
+    'richmond': 'richmond-town',
+    'greater-london': 'london',
+    'derry-londonderry': 'derry',
+    'united-kingdom': 'england',
+};
+
 export function getLocationPageData(slug: string): LocationPageData | undefined {
     if (!slug) return undefined;
     const cleanSlug = slug.toLowerCase();
-    return locationMap.get(cleanSlug);
+
+    // 1. Direct match
+    const direct = locationMap.get(cleanSlug);
+    if (direct) return direct;
+
+    // 2. Prefix / unprefix match
+    if (cleanSlug.startsWith('physiotherapy-in-')) {
+        const raw = cleanSlug.replace('physiotherapy-in-', '');
+        const matchRaw = locationMap.get(raw);
+        if (matchRaw) return matchRaw;
+
+        // Try alias on raw
+        const aliasTarget = ALIAS_MAP[raw];
+        if (aliasTarget) {
+            return locationMap.get(aliasTarget) || locationMap.get(`physiotherapy-in-${aliasTarget}`);
+        }
+    } else {
+        const prefixed = `physiotherapy-in-${cleanSlug}`;
+        const matchPrefixed = locationMap.get(prefixed);
+        if (matchPrefixed) return matchPrefixed;
+
+        // Try alias on cleanSlug
+        const aliasTarget = ALIAS_MAP[cleanSlug];
+        if (aliasTarget) {
+            return locationMap.get(aliasTarget) || locationMap.get(`physiotherapy-in-${aliasTarget}`);
+        }
+    }
+
+    return undefined;
 }
 
 export function getAllLocationPageSlugs(): string[] {

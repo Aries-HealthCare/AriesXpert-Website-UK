@@ -147,7 +147,7 @@ export default function WhatWeTreat() {
         {/* Global Registry Summary */}
         <div className="mt-20 text-center animate-reveal-up stagger-3">
           <p className="text-[10px] font-bold text-muted-foreground/80 uppercase tracking-[0.3em] mb-4 drop-shadow-sm">
-            A Division of Aries HealthCare International Pvt Ltd
+            A Trading Brand of Aries HealthCare (UK) Ltd
           </p>
           <div className="h-px w-24 bg-primary/20 mx-auto" />
         </div>

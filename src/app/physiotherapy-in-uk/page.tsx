@@ -20,9 +20,11 @@ import {
   Users,
   ChevronRight,
   ArrowRight,
+  Globe,
 } from 'lucide-react';
 import BookAppointmentButton from '@/components/book-appointment-button';
 import { citySeoPages } from '@/lib/city-seo-data';
+import { UK_NATIONS } from '@/lib/uk-geo';
 import PricingPackagesSection from '@/components/landing/pricing-packages-section';
 import GoogleReviews from '@/components/google-reviews';
 
@@ -111,6 +113,64 @@ export default function PhysiotherapyInUKPage() {
                 <div className="font-headline text-3xl md:text-4xl font-extrabold text-primary">{stat.value}</div>
                 <div className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider font-semibold">{stat.label}</div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CONSTITUENT NATIONS DIRECTORY ───────────────────────────────── */}
+      <section className="py-16 md:py-20 bg-muted/20 border-b border-border/40">
+        <div className="container mx-auto px-4 md:px-6 space-y-12">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-mono text-primary font-bold uppercase tracking-wider">
+              <Globe className="w-4 h-4" />
+              <span>United Kingdom Coverage</span>
+            </div>
+            <h2 className="font-headline text-3xl md:text-5xl font-extrabold text-foreground">
+              Coverage Across All <span className="premium-gradient-text">4 Constituent Nations</span>
+            </h2>
+            <p className="text-muted-foreground text-base md:text-lg">
+              Explore dedicated chartered in-home physiotherapy networks across England, Scotland, Wales, and Northern Ireland.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {UK_NATIONS.map((nation) => (
+              <Card key={nation.code} className="premium-card p-6 flex flex-col justify-between space-y-6 hover:border-primary/40 transition-all group">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-border/40">
+                    <h3 className="font-headline font-bold text-2xl text-foreground group-hover:text-primary transition-colors">
+                      {nation.name}
+                    </h3>
+                    <Badge variant="outline" className="text-primary border-primary/20 text-[10px] font-bold uppercase">
+                      {nation.code}
+                    </Badge>
+                  </div>
+                  <p className="text-xs text-muted-foreground font-mono">
+                    {nation.regulatoryCollegeName}
+                  </p>
+                  <p className="text-xs text-muted-foreground line-clamp-3 leading-relaxed">
+                    {nation.hpcFrameworkNote}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-border/40 space-y-2">
+                  <Link
+                    href={`/physiotherapy-in-${nation.slug}`}
+                    className="w-full py-2.5 rounded-xl bg-primary text-primary-foreground hover:brightness-110 text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-sm"
+                  >
+                    <span>{nation.name} Services</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href={`/locations/${nation.slug}`}
+                    className="w-full py-2 rounded-xl bg-secondary/80 hover:bg-muted text-foreground text-xs font-semibold flex items-center justify-center gap-1 transition-colors border border-border/60"
+                  >
+                    <span>Regional Directory</span>
+                    <ChevronRight className="w-3.5 h-3.5 text-muted-foreground" />
+                  </Link>
+                </div>
+              </Card>
             ))}
           </div>
         </div>

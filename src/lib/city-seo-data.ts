@@ -715,6 +715,27 @@ export const citySeoPages: CitySeoData[] = [
     }
 ];
 
+const CITY_ALIASES: Record<string, string> = {
+    'city-of-edinburgh': 'edinburgh',
+    'physiotherapy-in-city-of-edinburgh': 'physiotherapy-in-edinburgh',
+    'glasgow-city': 'glasgow',
+    'physiotherapy-in-glasgow-city': 'physiotherapy-in-glasgow',
+    'londonderry': 'derry',
+    'physiotherapy-in-londonderry': 'physiotherapy-in-derry',
+    'derry-londonderry': 'derry',
+    'physiotherapy-in-derry-londonderry': 'physiotherapy-in-derry',
+    'greater-london': 'london',
+    'physiotherapy-in-greater-london': 'physiotherapy-in-london',
+};
+
 export function getCityData(slug: string): CitySeoData | undefined {
-    return citySeoPages.find(c => c.citySlug === slug || c.pageSlug === slug);
+    if (!slug) return undefined;
+    const clean = slug.toLowerCase();
+    const match = citySeoPages.find(c => c.citySlug === clean || c.pageSlug === clean);
+    if (match) return match;
+    const alias = CITY_ALIASES[clean];
+    if (alias) {
+        return citySeoPages.find(c => c.citySlug === alias || c.pageSlug === alias);
+    }
+    return undefined;
 }

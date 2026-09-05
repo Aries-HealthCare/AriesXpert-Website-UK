@@ -34,7 +34,9 @@ export default function LocationsPage() {
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-border/40">
-                <h2 className="text-xl font-headline font-bold text-foreground">{nation.name}</h2>
+                <Link href={`/locations/${nation.slug}`} className="text-xl font-headline font-bold text-foreground hover:text-primary transition-colors">
+                  {nation.name}
+                </Link>
                 <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-[10px] font-mono text-primary font-bold border border-primary/20">
                   {nation.code}
                 </span>
@@ -66,7 +68,14 @@ export default function LocationsPage() {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-border/40">
+            <div className="pt-4 border-t border-border/40 space-y-2">
+              <Link
+                href={`/locations/${nation.slug}`}
+                className="w-full py-2 rounded-xl bg-muted/80 hover:bg-primary/10 border border-border text-xs font-bold text-foreground flex items-center justify-center gap-1.5 transition-all"
+              >
+                <span>Explore {nation.name} Directory</span>
+                <ChevronRight className="w-3.5 h-3.5 text-primary" />
+              </Link>
               <button
                 onClick={() => setBookingModalOpen(true)}
                 className="w-full py-2.5 rounded-xl bg-primary text-primary-foreground hover:brightness-110 text-xs font-bold transition-all shadow-sm"

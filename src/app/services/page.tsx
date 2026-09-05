@@ -21,7 +21,7 @@ export default function ServicesPage() {
           EVIDENCE-BASED REHABILITATION SERVICES
         </h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          From acute sports injury recovery and spinal disc rehabilitation to complex neurological motor retraining and in-home geriatric mobility across Canada.
+          From acute sports injury recovery and spinal disc rehabilitation to complex neurological motor retraining and in-home geriatric mobility across the United Kingdom.
         </p>
       </div>
 

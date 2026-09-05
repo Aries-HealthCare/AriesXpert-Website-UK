@@ -405,7 +405,7 @@ class ProviderApiService {
                 totalReviews: 0,
                 walletAmount: 0,
                 totalEarnings: 0,
-                ariesId: `AX-IND-${cleanMobile.slice(-4)}`,
+                ariesId: `AX-UK-${cleanMobile.slice(-4)}`,
               },
               message: data.message,
             };
@@ -523,7 +523,7 @@ class ProviderApiService {
         expert.qualification ||
         'Musculoskeletal & Orthopedic',
       designation: expert.designation || pInfo.professionalRole || expert.therapistProfessionalRole || 'Physiotherapist',
-      ariesId: expert.ariesId || expert.employeeId || expert.axId || expert.therapistId || (`AX-IND-${cleanMobile.slice(-4)}`),
+      ariesId: expert.ariesId || expert.employeeId || expert.axId || expert.therapistId || (`AX-UK-${cleanMobile.slice(-4)}`),
       degreeCertificateUrl: degCertUrl,
       registrationCertificateUrl: regCertUrl,
       experience: expert.experience || (typeof pInfo.yearOfExperience === 'number' ? pInfo.yearOfExperience : parseInt(pInfo.yearOfExperience || '0', 10)) || 0,

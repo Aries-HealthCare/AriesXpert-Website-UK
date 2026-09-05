@@ -20,7 +20,7 @@ export default function SurgeryAndRehabilitationPage() {
           FROM SURGERY TO RECOVERY
         </h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Your surgical team performs the critical procedure. Your AriesXpert physiotherapy team guides your daily recovery from day one to unrestricted active living across Canada.
+          Your surgical team performs the critical procedure. Your AriesXpert physiotherapy team guides your daily recovery from day one to unrestricted active living across the United Kingdom.
         </p>
       </div>
 

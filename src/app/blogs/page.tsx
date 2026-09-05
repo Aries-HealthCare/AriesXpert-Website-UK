@@ -10,9 +10,9 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export const metadata = {
-    title: "Health Insights Blog | Aries PhysioCare",
-    description: "Expert advice, evidence-based care, and home healthcare guidance from the Aries PhysioCare clinical team. Stay informed on physiotherapy, recovery, and wellness.",
-    keywords: "Healthcare Blog, Physiotherapy Tips, Home Care, Wellness, Aries PhysioCare, Recovery Advice"
+    title: "Health Insights Blog | AriesXpert UK",
+    description: "Expert advice, evidence-based care, and home healthcare guidance from the AriesXpert UK clinical team. Stay informed on physiotherapy, recovery, and wellness.",
+    keywords: "Healthcare Blog, Physiotherapy Tips, Home Care, Wellness, AriesXpert UK, Recovery Advice"
 };
 
 function getBlogCover(topic?: string, territory?: string, title?: string) {
@@ -59,7 +59,7 @@ export default async function BlogsPage() {
     serviceTag: p.territory || p.topic || 'Clinical Insights',
     readTime: `${Math.max(3, Math.ceil((p.content?.length || 400) / 900))} min read`,
     date: p.publishedAt
-      ? new Date(p.publishedAt).toLocaleDateString('en-IN', { month: 'short', day: 'numeric', year: 'numeric' })
+      ? new Date(p.publishedAt).toLocaleDateString('en-GB', { month: 'short', day: 'numeric', year: 'numeric' })
       : 'Recently',
     author: 'Aries Clinical Board',
     imageUrl: p.imageUrl || getBlogCover(p.topic, p.territory, p.title),
@@ -84,7 +84,7 @@ export default async function BlogsPage() {
               The Aries <span className="text-primary">Health Journal</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Scientific guidance, clinical excellence, and recovery protocols curated by the Aries PhysioCare specialist team.
+              Scientific guidance, clinical excellence, and recovery protocols curated by the AriesXpert UK specialist team.
             </p>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default async function BlogsPage() {
               <Input placeholder="Enter your email" className="h-12 bg-background border-primary/10" />
               <Button className="h-12 px-8 font-bold">Subscribe</Button>
             </div>
-            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-medium">A division of Aries HealthCare International Pvt Ltd</p>
+            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-medium">A trading brand of Aries HealthCare (UK) Ltd</p>
           </div>
         </div>
       </section>

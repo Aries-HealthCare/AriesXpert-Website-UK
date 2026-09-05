@@ -342,7 +342,7 @@ export default function ServiceOfferedDetailPage() {
             </div>
 
             <div className="mt-16 text-[10px] uppercase tracking-[0.4em] font-black text-primary/40">
-              A Division of Aries HealthCare International Pvt Ltd
+              A Trading Brand of Aries HealthCare (UK) Ltd
             </div>
           </div>
         </section>
