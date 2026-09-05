@@ -45,7 +45,7 @@ export async function generateMetadata(
                 description: city.metaDescription,
                 url: city.canonicalUrl,
                 type: 'website',
-                locale: 'en_IN',
+                locale: 'en_GB',
             },
             twitter: {
                 card: 'summary_large_image',
@@ -68,7 +68,7 @@ export async function generateMetadata(
                 description: location.metaDescription,
                 url: location.canonicalUrl,
                 type: 'website',
-                locale: 'en_IN',
+                locale: 'en_GB',
             },
             twitter: {
                 card: 'summary_large_image',

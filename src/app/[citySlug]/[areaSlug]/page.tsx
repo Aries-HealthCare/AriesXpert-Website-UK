@@ -1,10 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Header from '@/components/landing/header';
-import Footer from '@/components/landing/footer';
 import { fetchTherapistsServer } from '@/services/therapists-server';
-import AreaProfessionTemplate from '../../../components/location/area-profession-template';
+import AreaProfessionTemplate from '@/components/location/area-profession-template';
 
 interface PageProps {
     params: Promise<{
@@ -31,14 +29,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const { citySlug, areaSlug } = await params;
     const prof = PROFESSION_MAP[citySlug];
 
-    if (!prof) return { title: 'Professional Services | Aries PhysioCare' };
+    if (!prof) return { title: 'Professional Services | AriesXpert UK' };
 
     const areaName = areaSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
     return {
-        title: `Best ${prof.title} in ${areaName} | Home Visit ${prof.title} | Aries PhysioCare`,
+        title: `Best ${prof.title} in ${areaName} | Home Visit ${prof.title} | AriesXpert UK`,
         description: `Book expert ${prof.title.toLowerCase()} specialists in ${areaName} for home sessions. Professional care for rehabilitation and recovery at your doorstep.`,
         keywords: [`${prof.title} in ${areaName}`, `home ${prof.title.toLowerCase()} ${areaName}`, `best ${prof.title.toLowerCase()} specialist ${areaName}`],
+        openGraph: {
+            title: `Best ${prof.title} in ${areaName} | AriesXpert UK`,
+            description: `Book expert ${prof.title.toLowerCase()} specialists in ${areaName} for home sessions.`,
+            locale: 'en_GB',
+            type: 'website',
+        },
     };
 }
 
@@ -47,8 +51,6 @@ export default async function AreaProfessionPage({ params }: PageProps) {
 
     const prof = PROFESSION_MAP[citySlug];
     if (!prof) {
-        // Fallback: check if it's a city slug instead of a profession
-        // But the user specifically wants [citySlug]/[areaSlug]
         notFound();
     }
 
@@ -62,17 +64,13 @@ export default async function AreaProfessionPage({ params }: PageProps) {
     });
 
     return (
-        <main>
-            <Header />
-            <AreaProfessionTemplate
-                profession={prof.title}
-                professionSlug={citySlug}
-                areaName={areaName}
-                areaSlug={areaSlug}
-                therapists={therapists}
-            />
-            <Footer />
-        </main>
+        <AreaProfessionTemplate
+            profession={prof.title}
+            professionSlug={citySlug}
+            areaName={areaName}
+            areaSlug={areaSlug}
+            therapists={therapists}
+        />
     );
 }
 
