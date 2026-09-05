@@ -40,8 +40,8 @@ const chartConfig = {
 };
 
 const upcomingAppointments = [
-  { date: 'Mar 12', day: 'Wed', time: '10:00 AM', service: 'Home Physiotherapy', therapist: 'Dr. Kajal Vora', status: 'Confirmed' },
-  { date: 'Mar 15', day: 'Sat', time: '03:30 PM', service: 'Neuromuscular Rehab', therapist: 'Dr. Twinkle Patel', status: 'Pending' },
+  { date: 'Mar 12', day: 'Wed', time: '10:00 AM', service: 'In-Home Physiotherapy', therapist: 'Alastair Wright, MCSP (HCPC PH124891)', status: 'Confirmed' },
+  { date: 'Mar 15', day: 'Sat', time: '03:30 PM', service: 'Neuromuscular Rehab', therapist: 'Charlotte Sinclair, MCSP (HCPC PH119420)', status: 'Pending' },
 ];
 
 const milestones = [

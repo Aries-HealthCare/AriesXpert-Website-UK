@@ -8,9 +8,9 @@ import MobileCtaFooter from '@/components/mobile-cta-footer';
 
 export default function SiteLayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-white">
+    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-white w-full max-w-full overflow-x-clip">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow w-full max-w-full overflow-x-clip">
         {children}
       </main>
       <Footer />

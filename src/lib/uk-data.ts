@@ -575,8 +575,7 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "High-level randomized controlled trials demonstrate that manual therapy combined with active therapeutic exercise yields superior pain and functional outcomes compared to passive modalities or exercise alone.",
     treatedConditions: ["lumbar-spondylosis", "rotator-cuff-injury", "sciatica", "cervical-spondylosis", "frozen-shoulder"],
-    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)",
-    cadPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
+    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
   },
   {
     id: "exercise-therapy",
@@ -600,8 +599,7 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Therapeutic exercise is universally recognized across global clinical guidelines as the primary intervention for long-term musculoskeletal recovery.",
     treatedConditions: ["acl-tear", "lumbar-spondylosis", "osteoarthritis", "rotator-cuff-injury"],
-    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)",
-    cadPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
+    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
   },
   {
     id: "dry-needling",
@@ -625,8 +623,7 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Clinical trials confirm dry needling accelerates short- and medium-term pain reduction and improves range of motion when integrated into a comprehensive rehabilitation plan.",
     treatedConditions: ["rotator-cuff-injury", "lumbar-spondylosis", "carpal-tunnel-syndrome", "plantar-fasciitis"],
-    gbpPricingEstimate: "Available within Chartered Physiotherapy sessions where certified (£85–£140/visit)",
-    cadPricingEstimate: "Available within Chartered Physiotherapy sessions where certified (£85–£140/visit)"
+    gbpPricingEstimate: "Available within Chartered Physiotherapy sessions where certified (£85–£140/visit)"
   },
   {
     id: "spinal-decompression",
@@ -650,8 +647,7 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Effective in reducing radiating neural symptoms and expanding intervertebral foramen space for nerve relief.",
     treatedConditions: ["sciatica", "lumbar-spondylosis", "cervical-spondylosis", "disc-bulge-herniation"],
-    gbpPricingEstimate: "Integrated into clinic-based spine therapy packages (£85–£145/session)",
-    cadPricingEstimate: "Integrated into clinic-based spine therapy packages (£85–£145/session)"
+    gbpPricingEstimate: "Integrated into clinic-based spine therapy packages (£85–£145/session)"
   }
 ];
 

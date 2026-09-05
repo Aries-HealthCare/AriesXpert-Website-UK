@@ -105,9 +105,9 @@ export default function TreatmentDetailPage({ params }: TreatmentPageProps) {
             <p className="text-xs text-slate-300 leading-relaxed">
               {treatment.evidenceSummary}
             </p>
-            {(treatment.gbpPricingEstimate || treatment.cadPricingEstimate) && (
+            {treatment.gbpPricingEstimate && (
               <div className="p-3 rounded-xl bg-slate-950 border border-slate-850 text-xs text-clinical-cyan">
-                <strong>Pricing & Insurance:</strong> {treatment.gbpPricingEstimate || treatment.cadPricingEstimate}
+                <strong>Pricing & Insurance:</strong> {treatment.gbpPricingEstimate}
               </div>
             )}
           </div>

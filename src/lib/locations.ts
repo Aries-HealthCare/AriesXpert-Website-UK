@@ -132,6 +132,36 @@ export const UKNations: IndianStateType[] = [
                 ]
             }
         ]
+    },
+    {
+        name: "Wales",
+        slug: "wales",
+        isActive: true,
+        seoEnabled: true,
+        cities: [
+            {
+                name: "Cardiff", slug: "cardiff", isActive: true, seoEnabled: true, areas: [
+                    { name: "Cardiff Bay & City Centre", slug: "cardiff-bay-city-centre", isActive: true, seoEnabled: true },
+                    { name: "Pontcanna & Llandaff", slug: "pontcanna-llandaff", isActive: true, seoEnabled: true },
+                    { name: "Penarth & Vale of Glamorgan", slug: "penarth-vale", isActive: true, seoEnabled: true }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Northern Ireland",
+        slug: "northern-ireland",
+        isActive: true,
+        seoEnabled: true,
+        cities: [
+            {
+                name: "Belfast", slug: "belfast", isActive: true, seoEnabled: true, areas: [
+                    { name: "Belfast City Centre & Titanic Quarter", slug: "belfast-city-centre", isActive: true, seoEnabled: true },
+                    { name: "Malone Road & Stranmillis", slug: "malone-road", isActive: true, seoEnabled: true },
+                    { name: "Holywood & North Down", slug: "holywood-north-down", isActive: true, seoEnabled: true }
+                ]
+            }
+        ]
     }
 ];
 

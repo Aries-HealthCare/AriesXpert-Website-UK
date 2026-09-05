@@ -37,7 +37,7 @@ export default function TreatmentsPage() {
                 <span className="text-xs font-mono uppercase text-clinical-cyan font-bold tracking-wider">
                   {treatment.category.replace("-", " ")}
                 </span>
-                {(treatment.gbpPricingEstimate || treatment.cadPricingEstimate) && (
+                {treatment.gbpPricingEstimate && (
                   <span className="text-[11px] font-mono text-slate-400">
                     Direct Insurer Billing (UK)
                   </span>

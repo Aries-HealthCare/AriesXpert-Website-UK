@@ -29,7 +29,6 @@ export interface Treatment {
   evidenceSummary: string;
   treatedConditions: string[];
   gbpPricingEstimate?: string;
-  cadPricingEstimate?: string;
   faqs?: {
     id?: string;
     question: string;
