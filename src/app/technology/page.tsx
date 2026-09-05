@@ -19,7 +19,7 @@ export default function TechnologyPage() {
           TECHNOLOGY THAT SUPPORTS HUMAN CARE
         </h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          How 3D WebGL rendering, biomechanical kinematics, and intelligent administrative telemetry empower Canadian clinicians and patients.
+          How 3D WebGL rendering, biomechanical kinematics, and intelligent administrative telemetry empower UK clinicians and patients.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ export default function TechnologyPage() {
         <div className="space-y-2">
           <h2 className="text-lg font-display font-bold text-white">Our Responsible Technology Charter</h2>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            At AriesXpert, artificial intelligence and 3D visual engines are strictly designed to <strong className="text-white">support clinicians and educate patients</strong>—never to replace qualified medical judgment. All clinical diagnoses, exercise prescriptions, and manual therapies are formulated and overseen by licensed Canadian Registered Physiotherapists.
+            At AriesXpert, artificial intelligence and 3D visual engines are strictly designed to <strong className="text-white">support clinicians and educate patients</strong>—never to replace qualified medical judgment. All clinical diagnoses, exercise prescriptions, and manual therapies are formulated and overseen by HCPC-registered Chartered Physiotherapists.
           </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function TechnologyPage() {
           <Globe className="w-8 h-8 text-clinical-teal" />
           <h3 className="text-xl font-display font-bold text-white">Direct Billing Automation</h3>
           <p className="text-xs text-slate-300 leading-relaxed">
-            Instant electronic claim submission to major Canadian insurance providers (Sun Life, Manulife, Canada Life, Green Shield) for effortless care access.
+            Direct clearing and electronic pre-authorisation with major UK private medical insurers (Bupa, AXA Health, Aviva, Vitality, WPA via Healthcode) for effortless care access.
           </p>
         </div>
       </div>

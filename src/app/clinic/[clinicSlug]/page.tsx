@@ -34,7 +34,7 @@ import {
 } from 'lucide-react';
 import { ARIES_CLINICS_DIRECTORY, type ClinicBranch } from '@/lib/clinics-data';
 import BookAppointmentButton from '@/components/book-appointment-button';
-import { getMedicalClinicSchema, getBreadcrumbSchema } from '@/lib/seo-schemas';
+import { getMedicalClinicSchema, getBreadcrumbSchema, getOrganizationSchema } from '@/lib/seo-schemas';
 import { cn } from '@/lib/utils';
 
 interface ClinicPageProps {
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: ClinicPageProps): Promise<Met
   const clinic = ARIES_CLINICS_DIRECTORY.find((c) => c.slug === clinicSlug) || ARIES_CLINICS_DIRECTORY[0];
 
   if (!clinic) {
-    return { title: 'Clinic Not Found | Aries PhysioCare' };
+    return { title: 'Clinic Not Found | AriesXpert UK' };
   }
 
   return {
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: ClinicPageProps): Promise<Met
       canonical: `/clinic/${clinic.slug}`,
     },
     openGraph: {
-      title: `${clinic.name} · Borivali West Mumbai`,
+      title: `${clinic.name} · ${clinic.subArea} ${clinic.city} UK`,
       description: clinic.tagline,
       images: [{ url: clinic.imageUrl, width: 1200, height: 630, alt: clinic.name }],
     },
@@ -78,9 +78,10 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
   }
 
   const jsonLd = [
+    getOrganizationSchema(),
     getBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Clinics', url: '/clinic' },
+      { name: 'Our Clinics', url: '/clinic' },
       { name: clinic.name, url: `/clinic/${clinic.slug}` },
     ]),
     getMedicalClinicSchema({
@@ -107,33 +108,25 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
         />
       ))}
 
-      <div className="flex flex-col min-h-screen bg-[#07020d] text-foreground selection:bg-primary/30 selection:text-white">
+      <div className="min-h-screen bg-background relative overflow-hidden">
         
-        {/* Ambient Glows */}
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-primary/20 via-purple-900/10 to-transparent rounded-full blur-[140px] opacity-70" />
-          <div className="absolute top-[40%] -right-48 w-96 h-96 bg-primary/15 rounded-full blur-[120px]" />
-        </div>
+        {/* Background Ambience */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] bg-gradient-to-b from-primary/10 via-purple-950/5 to-transparent blur-3xl pointer-events-none -z-10" />
 
-        {/* ── HERO HEADER ──────────────────────────────────────────── */}
-        <section className="relative pt-28 pb-14 md:pt-36 md:pb-20 overflow-hidden z-10">
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-white/50 text-xs mb-8" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <ChevronRight className="w-3.5 h-3.5 text-white/30" />
-              <Link href="/clinic" className="hover:text-white transition-colors">Clinics</Link>
-              <ChevronRight className="w-3.5 h-3.5 text-white/30" />
-              <span className="text-accent font-semibold truncate max-w-xs">{clinic.subArea} Center</span>
-            </nav>
-
-            <div className="max-w-5xl mx-auto text-center space-y-6">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-xs font-black uppercase tracking-widest backdrop-blur-xl">
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                {clinic.badge || 'Official Clinic Center'} · Open 8:00 AM – 9:30 PM
+        {/* ── HERO BANNER ──────────────────────────────────────────── */}
+        <section className="pt-28 pb-12 md:pt-36 md:pb-16 relative z-10">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/15 text-white/90 text-xs font-semibold backdrop-blur-md">
+                <Building2 className="w-3.5 h-3.5 text-primary" />
+                <span>{clinic.badge || 'Official Clinical Hub'}</span>
+                <span className="text-white/30">·</span>
+                <span className="text-amber-400 font-bold flex items-center gap-1">
+                  <Star className="w-3 h-3 fill-amber-400" /> {clinic.googleRating} ({clinic.reviewCount}+ Reviews)
+                </span>
               </div>
 
-              <h1 className="font-headline text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white leading-[1.12]">
+              <h1 className="font-headline text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
                 {clinic.name}
               </h1>
 
@@ -153,13 +146,13 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-13 px-7 text-sm font-bold rounded-2xl border-white/15 bg-white/5 hover:bg-white/10 text-white backdrop-blur-xl hover:scale-[1.02] transition-all">
-                  <a href="tel:+919136447006" className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-emerald-400" /> Call Front Desk
+                  <a href={`tel:${clinic.phone.replace(/[^0-9+]/g, '')}`} className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-emerald-400" /> Call Front Desk ({clinic.phone})
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-13 px-7 text-sm font-bold rounded-2xl border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 backdrop-blur-xl hover:scale-[1.02] transition-all">
-                  <a href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent('Hello Aries PhysioCare, I would like to book a clinic appointment.')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <MessageCircle className="w-4 h-4 text-emerald-400" /> WhatsApp (+91 8591981880)
+                  <a href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent(`Hello Aries PhysioCare, I would like to book an appointment at ${clinic.name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <MessageCircle className="w-4 h-4 text-emerald-400" /> WhatsApp Front Desk
                   </a>
                 </Button>
               </div>
@@ -259,13 +252,13 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
                     <Button asChild className="w-full h-12 rounded-xl text-xs font-bold bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20">
                       <a href={`tel:${clinic.phone.replace(/[^0-9+]/g, '')}`} className="flex items-center justify-center gap-2">
                         <Phone className="w-4 h-4" />
-                        Call Front Desk (+91 9136447006)
+                        Call Front Desk ({clinic.phone})
                       </a>
                     </Button>
                     <Button asChild variant="outline" className="w-full h-12 rounded-xl text-xs font-bold border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400">
                       <a href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent(`Hello Aries PhysioCare, I would like to book an appointment at ${clinic.name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                         <MessageCircle className="w-4 h-4" />
-                        WhatsApp Desk (+91 8591981880)
+                        WhatsApp Front Desk
                       </a>
                     </Button>
                   </div>
@@ -343,7 +336,7 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
               {/* Consultation Block */}
               <div className="p-8 rounded-3xl bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-primary/10 border-2 border-primary/40 shadow-2xl backdrop-blur-2xl text-center max-w-xl mx-auto space-y-2">
                 <h3 className="font-headline text-xl font-bold text-white">Consultation / Regular Therapy</h3>
-                <div className="font-headline text-4xl sm:text-5xl font-black bg-gradient-to-r from-amber-300 via-rose-400 to-primary bg-clip-text text-transparent">₹ 800/-</div>
+                <div className="font-headline text-4xl sm:text-5xl font-black bg-gradient-to-r from-amber-300 via-rose-400 to-primary bg-clip-text text-transparent">{clinic.consultationFee}</div>
                 <p className="text-xs text-white/70">Per clinical session with diagnostic evaluation & therapy</p>
               </div>
 
@@ -351,7 +344,7 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="font-headline text-xl sm:text-2xl font-black text-white">
-                    Physiotherapy Packages <span className="text-xs sm:text-sm font-semibold text-amber-300 block sm:inline sm:ml-2">(Only on 100% Advance Payments)</span>
+                    Physiotherapy Care Packages <span className="text-xs sm:text-sm font-semibold text-emerald-300 block sm:inline sm:ml-2">(Direct Private Health Insurance Billing Available)</span>
                   </h3>
                 </div>
 
@@ -403,13 +396,13 @@ export default async function ClinicDetailPage({ params }: ClinicPageProps) {
                 </div>
 
                 {/* Policy Note */}
-                <div className="p-4 rounded-2xl bg-rose-500/10 border-2 border-rose-500/30 text-center space-y-1 max-w-2xl mx-auto">
-                  <div className="text-rose-400 font-headline font-bold text-sm flex items-center justify-center gap-1.5">
-                    <AlertCircle className="w-4 h-4 shrink-0 text-rose-400" />
-                    Bargaining is not permitted.
+                <div className="p-4 rounded-2xl bg-primary/10 border-2 border-primary/30 text-center space-y-1 max-w-2xl mx-auto">
+                  <div className="text-primary font-headline font-bold text-sm flex items-center justify-center gap-1.5">
+                    <ShieldCheck className="w-4 h-4 shrink-0 text-primary" />
+                    Private Health Insurance & Self-Pay Coverage
                   </div>
                   <p className="text-[11px] text-white/70">
-                    If there are any offers or discounts available, they will be clearly advertised or displayed on our board.
+                    {clinic.pricingNotice}
                   </p>
                 </div>
               </div>

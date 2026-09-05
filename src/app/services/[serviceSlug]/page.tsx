@@ -3,7 +3,7 @@
 import React, { useState, use } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getServiceBySlug } from "@/lib/canadian-data";
+import { getServiceBySlug } from "@/lib/uk-data";
 import { BookingModal } from '@/components/booking-modal';
 import { Activity, CheckCircle2, Calendar, ShieldCheck, Home, Video, Building2, ChevronRight } from "lucide-react";
 
@@ -97,7 +97,7 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
               </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 text-xs">
                 <Video className="w-4 h-4 text-clinical-cyan" />
-                <span>Secure Canadian Telehealth Video Consultations</span>
+                <span>Secure UK Telehealth Video Consultations</span>
               </div>
               <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800 text-xs">
                 <Building2 className="w-4 h-4 text-clinical-teal" />

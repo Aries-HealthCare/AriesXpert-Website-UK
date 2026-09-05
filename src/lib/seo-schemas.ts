@@ -1,20 +1,20 @@
 /**
- * SEO Schema Utilities for Aries PhysioCare
+ * SEO Schema Utilities for AriesXpert UK
  * Generates JSON-LD structured data for various page types
  */
 
-export const BASE_URL = 'https://www.ariesphysiocare.com';
-export const ORG_PHONE = '+91-9136447006';
-export const ORG_PHONE_DISPLAY = '+91 9136447006';
-export const ORG_WHATSAPP = '+91-8591981880';
-export const ORG_EMAIL = 'support@ariesphysiocare.com';
+export const BASE_URL = 'https://www.ariesxpert.co.uk';
+export const ORG_PHONE = '+44-800-274-3785';
+export const ORG_PHONE_DISPLAY = '0800 274 3785';
+export const ORG_WHATSAPP = '+44-800-274-3785';
+export const ORG_EMAIL = 'support@ariesxpert.co.uk';
 export const ORG_ADDRESS = {
     '@type': 'PostalAddress',
-    streetAddress: 'Andheri West',
-    addressLocality: 'Mumbai',
-    addressRegion: 'Maharashtra',
-    postalCode: '400053',
-    addressCountry: 'IN',
+    streetAddress: 'Level 32, 1 Canada Square',
+    addressLocality: 'Canary Wharf, London',
+    addressRegion: 'Greater London',
+    postalCode: 'E14 5AA',
+    addressCountry: 'GB',
 };
 
 // ─────────────────────────────────────────────────
@@ -24,33 +24,33 @@ export function getOrganizationSchema() {
     return {
         '@context': 'https://schema.org',
         '@type': ['Organization', 'MedicalOrganization'],
-        name: 'Aries PhysioCare',
-        legalName: 'Aries HealthCare International Pvt Ltd',
+        name: 'AriesXpert UK',
+        legalName: 'Aries HealthCare (UK) Ltd',
         url: BASE_URL,
         logo: `${BASE_URL}/logo.png`,
         telephone: ORG_PHONE,
         email: ORG_EMAIL,
-        foundingDate: '2019',
-        numberOfEmployees: { '@type': 'QuantitativeValue', value: 450 },
+        foundingDate: '2020',
+        numberOfEmployees: { '@type': 'QuantitativeValue', value: 150 },
         address: ORG_ADDRESS,
-        areaServed: { '@type': 'Country', name: 'India' },
+        areaServed: { '@type': 'Country', name: 'United Kingdom' },
         sameAs: [
-            'https://facebook.com/ariesphysiocare',
-            'https://instagram.com/ariesphysiocare',
-            'https://twitter.com/ariesphysiocare',
-            'https://linkedin.com/company/aries-physiocare',
-            'https://youtube.com/@ariesphysiocare',
+            'https://facebook.com/ariesxpertuk',
+            'https://instagram.com/ariesxpertuk',
+            'https://twitter.com/ariesxpertuk',
+            'https://linkedin.com/company/ariesxpert-uk',
+            'https://youtube.com/@ariesxpertuk',
         ],
         contactPoint: [
             {
                 '@type': 'ContactPoint',
                 telephone: ORG_PHONE,
                 contactType: 'customer service',
-                areaServed: 'IN',
-                availableLanguage: ['English', 'Hindi'],
+                areaServed: 'GB',
+                availableLanguage: ['English'],
                 hoursAvailable: [
-                    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '20:00' },
-                    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '18:00' },
+                    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '20:00' },
+                    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '17:00' },
                 ],
             },
         ],
@@ -64,12 +64,12 @@ export function getWebsiteSchema() {
     return {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Aries PhysioCare India',
+        name: 'AriesXpert UK',
         url: BASE_URL,
-        description: 'Expert home physiotherapy and healthcare services across India',
+        description: 'HCPC-registered mobile and clinic physiotherapy and healthcare services across the United Kingdom',
         potentialAction: {
             '@type': 'SearchAction',
-            target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/blogs?q={search_term_string}` },
+            target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/resources?q={search_term_string}` },
             'query-input': 'required name=search_term_string',
         },
     };
@@ -96,27 +96,27 @@ export function getLocalBusinessSchema(params: {
         telephone: ORG_PHONE,
         email: ORG_EMAIL,
         image: params.imageUrl || `${BASE_URL}/og-image.jpg`,
-        priceRange: '₹₹',
+        priceRange: '££',
         address: {
             '@type': 'PostalAddress',
             addressLocality: params.city,
             addressRegion: params.state,
             postalCode: params.postalCode || '',
-            addressCountry: 'IN',
+            addressCountry: 'GB',
         },
         geo: { '@type': 'GeoCoordinates' },
         openingHoursSpecification: [
-            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '20:00' },
-            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '18:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '20:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '17:00' },
         ],
-        hasMap: `https://www.google.com/maps/search/physiotherapy+${params.city}`,
+        hasMap: `https://www.google.co.uk/maps/search/physiotherapy+${encodeURIComponent(params.city)}`,
         areaServed: {
             '@type': 'City',
             name: params.city,
         },
         parentOrganization: {
             '@type': 'Organization',
-            name: 'Aries HealthCare International Pvt Ltd',
+            name: 'AriesXpert UK',
             url: BASE_URL,
         },
     };
@@ -143,7 +143,7 @@ export function getHealthcareServiceSchema(params: {
         telephone: ORG_PHONE,
         provider: {
             '@type': 'MedicalOrganization',
-            name: 'Aries PhysioCare',
+            name: 'AriesXpert UK',
             url: BASE_URL,
         },
         availableChannel: {
@@ -153,7 +153,7 @@ export function getHealthcareServiceSchema(params: {
         },
         areaServed: params.city
             ? { '@type': 'City', name: params.city }
-            : { '@type': 'Country', name: 'India' },
+            : { '@type': 'Country', name: 'United Kingdom' },
         serviceType: 'Physiotherapy',
     };
 }
@@ -177,13 +177,13 @@ export function getPhysicianSchema(params: {
         '@type': ['Person', 'Physician', 'MedicalBusiness'],
         name: params.name,
         jobTitle: `${params.qualification} - ${params.specialization}`,
-        description: `${params.name} is a certified physiotherapist with ${params.experience} of experience, specializing in ${params.specialization}.`,
+        description: `${params.name} is a certified HCPC-registered physiotherapist with ${params.experience} of experience, specializing in ${params.specialization}.`,
         url: `${BASE_URL}/therapist/${params.slug}`,
         image: params.imageUrl || `${BASE_URL}/og-image.jpg`,
         telephone: ORG_PHONE,
         worksFor: {
             '@type': 'MedicalOrganization',
-            name: 'Aries PhysioCare',
+            name: 'AriesXpert UK',
             url: BASE_URL,
         },
         areaServed: params.areas.map(a => ({ '@type': 'Place', name: a })),
@@ -228,17 +228,17 @@ export function getMedicalClinicSchema(params: {
             streetAddress: params.address,
             addressLocality: params.city,
             addressRegion: params.state,
-            addressCountry: 'IN',
+            addressCountry: 'GB',
         },
-        hasMap: params.mapUrl || `https://maps.google.com/?q=${encodeURIComponent(params.name + ' ' + params.city)}`,
+        hasMap: params.mapUrl || `https://maps.google.co.uk/?q=${encodeURIComponent(params.name + ' ' + params.city)}`,
         parentOrganization: {
             '@type': 'MedicalOrganization',
-            name: 'Aries PhysioCare',
+            name: 'AriesXpert UK',
             url: BASE_URL,
         },
         openingHoursSpecification: [
-            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '20:00' },
-            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '18:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '20:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '09:00', closes: '17:00' },
         ],
         ...(params.rating && {
             aggregateRating: {
@@ -311,12 +311,12 @@ export function getArticleSchema(params: {
         image: params.imageUrl || `${BASE_URL}/og-image.jpg`,
         author: {
             '@type': 'Organization',
-            name: params.author || 'Aries PhysioCare Clinical Team',
+            name: params.author || 'AriesXpert UK Clinical Team',
             url: BASE_URL,
         },
         publisher: {
             '@type': 'Organization',
-            name: 'Aries PhysioCare',
+            name: 'AriesXpert UK',
             logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png` },
         },
         datePublished: params.datePublished || new Date().toISOString(),

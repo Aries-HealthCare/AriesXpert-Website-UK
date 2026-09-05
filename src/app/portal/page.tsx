@@ -246,7 +246,7 @@ export default function PortalDashboard() {
               { icon: Calendar, label: 'Book New Session', href: '/book-appointment', variant: 'default' as const },
               { icon: Activity, label: 'Log Recovery Entry', href: '/portal/recovery', variant: 'outline' as const },
               { icon: Clock, label: 'View Appointments', href: '/portal/appointments', variant: 'outline' as const },
-              { icon: Phone, label: 'Call Your Therapist', href: 'tel:+919136447006', variant: 'outline' as const },
+              { icon: Phone, label: 'Call Your Therapist', href: 'tel:08002743785', variant: 'outline' as const },
             ].map((action, i) => (
               <Button key={i} variant={action.variant} className="w-full justify-start gap-3 font-semibold h-11" asChild>
                 <a href={action.href}>
@@ -262,8 +262,8 @@ export default function PortalDashboard() {
             <p className="font-bold text-sm mb-1">Need Help?</p>
             <p className="text-xs text-muted-foreground mb-3">Our care team is available 24x7</p>
             <Button size="sm" className="w-full font-bold h-9 gap-2" asChild>
-              <a href="tel:+919136447006">
-                <Phone className="w-3.5 h-3.5" /> +91 9136447006
+              <a href="tel:08002743785">
+                <Phone className="w-3.5 h-3.5" /> 0800 274 3785
               </a>
             </Button>
           </div>

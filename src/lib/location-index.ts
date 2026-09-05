@@ -22,7 +22,7 @@ export interface LocationPageData {
     nearbyAreas: { name: string; slug: string; pageSlug: string }[];
 }
 
-const BASE = 'https://uk.ariesphysiocare.com';
+const BASE = 'https://www.ariesxpert.co.uk';
 
 function buildLocationIndex(): LocationPageData[] {
     const pages: LocationPageData[] = [];
@@ -56,7 +56,7 @@ function buildLocationIndex(): LocationPageData[] {
                     stateName: nation.name,
                     stateSlug: nation.slug,
                     canonicalUrl: `${BASE}/${areaPageSlug}`,
-                    metaTitle: `Best In-Home Physiotherapy in ${area.name}, ${city.name} | Aries PhysioCare UK`,
+                    metaTitle: `Best In-Home Physiotherapy in ${area.name}, ${city.name} | AriesXpert UK`,
                     metaDescription: `Expert chartered physiotherapy at home in ${area.name}, ${city.name}. HCPC & CSP registered clinicians, private medical insurance direct billing (Bupa, AXA Health, Aviva). Same-day visits.`,
                     keywords: [
                         `physiotherapy in ${area.name.toLowerCase()}`,
@@ -87,7 +87,7 @@ function buildLocationIndex(): LocationPageData[] {
                             areaName: area.name,
                             areaSlug: area.slug,
                             canonicalUrl: `${BASE}/${subPageSlug}`,
-                            metaTitle: `In-Home Physiotherapy in ${sub.name}, ${area.name} | Aries PhysioCare UK`,
+                            metaTitle: `In-Home Physiotherapy in ${sub.name}, ${area.name} | AriesXpert UK`,
                             metaDescription: `Chartered home physiotherapy in ${sub.name}, ${area.name}, ${city.name}. HCPC registered practitioners, same-day clinical visits.`,
                             keywords: [`physiotherapy in ${sub.name.toLowerCase()}`, `physio ${sub.name.toLowerCase()}`],
                             heroHeading: `Home Physiotherapy in ${sub.name}`,

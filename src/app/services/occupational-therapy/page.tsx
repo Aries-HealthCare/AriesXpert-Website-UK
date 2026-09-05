@@ -5,11 +5,11 @@ import SchemaMarkup from '@/components/seo/schema-markup';
 import { services } from '@/lib/placeholder-data';
 
 export const metadata: Metadata = {
-    title: 'Expert Occupational Therapy at Home | Aries PhysioCare India',
-    description: 'Master daily living with expert in-home Occupational Therapy. Specialized clinical care for sensory processing, stroke rehab, pediatric development, and geriatric safety. Book your home visit in Mumbai, Pune, and major indian cities.',
+    title: 'Expert Occupational Therapy at Home | AriesXpert UK',
+    description: 'Master daily living with expert in-home Occupational Therapy. Specialized clinical care for sensory processing, stroke rehab, pediatric development, and geriatric safety. Book your home visit in London, Manchester, and major UK cities.',
     keywords: [
         'occupational therapy at home',
-        'OT specialist india',
+        'OT specialist UK',
         'sensory integration therapy',
         'stroke occupational therapy',
         'ADL training',
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
         'hand therapy at home'
     ],
     openGraph: {
-        title: 'Professional Occupational Therapy at Your Doorstep',
+        title: 'Professional Occupational Therapy at Your Doorstep | AriesXpert UK',
         description: 'Master the activities of daily living with our expert clinical specialists. Reclaim your independence in the comfort of your own home.',
-        url: 'https://www.ariesphysiocare.com/services/occupational-therapy',
+        url: 'https://www.ariesxpert.co.uk/services/occupational-therapy',
         images: [{ url: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=85&w=1200', width: 1200, height: 630, alt: 'Occupational Therapy' }],
     },
     alternates: {
-        canonical: 'https://www.ariesphysiocare.com/services/occupational-therapy',
+        canonical: 'https://www.ariesxpert.co.uk/services/occupational-therapy',
     },
 };
 
@@ -40,10 +40,10 @@ export default function OccupationalTherapyPage() {
         "description": service.longDescription,
         "provider": {
             "@type": "MedicalOrganization",
-            "name": "Aries PhysioCare India",
-            "url": "https://www.ariesphysiocare.com"
+            "name": "AriesXpert UK",
+            "url": "https://www.ariesxpert.co.uk"
         },
-        "areaServed": "India",
+        "areaServed": "United Kingdom",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Occupational Therapy Programs",

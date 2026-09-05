@@ -22,7 +22,7 @@ const appointmentSchema = leadAttributionSchema.merge(
     email: z.string().email('Invalid email address'),
     address: z.string().min(1, 'Address is required'),
     condition: z.string().optional(),
-    paymentMethod: z.enum(['card', 'upi', 'cash']).optional(),
+    paymentMethod: z.enum(['card', 'insurance', 'cash', 'upi']).optional(),
   }),
 );
 
@@ -44,7 +44,7 @@ export async function submitAppointmentLead(data: z.infer<typeof appointmentSche
       time: validatedData.time,
       condition: validatedData.condition,
       therapistId: validatedData.therapist,
-      paymentMethod: validatedData.paymentMethod as 'card' | 'upi' | 'cash' | undefined,
+      paymentMethod: validatedData.paymentMethod as 'card' | 'insurance' | 'cash' | 'upi' | undefined,
       attribution: attr,
     });
 

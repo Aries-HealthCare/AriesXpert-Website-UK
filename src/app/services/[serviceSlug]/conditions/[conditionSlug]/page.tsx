@@ -155,7 +155,7 @@ export default function ConditionDetailPage() {
                   <h2 className="font-headline text-3xl md:text-4xl font-bold">What is {condition.name}?</h2>
                   <div className="prose prose-lg dark:prose-invert text-muted-foreground leading-relaxed">
                     <p>{displayDesc}</p>
-                    <p>At Aries PhysioCare, we specialize in addressing {condition.name} through evidence-based clinical protocols that prioritize mobility restoration and pain reduction in the comfort of your home.</p>
+                    <p>At AriesXpert, we specialize in addressing {condition.name} through evidence-based clinical protocols that prioritize mobility restoration and pain reduction in the comfort of your home.</p>
                   </div>
                 </div>
                 <div className="relative aspect-video md:aspect-square w-full rounded-2xl overflow-hidden soft-shadow border border-primary/10">

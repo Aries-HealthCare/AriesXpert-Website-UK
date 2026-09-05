@@ -30,7 +30,7 @@ export default function DieticianClient() {
 
     if (!service) return null;
 
-    const WHATSAPP_URL = `https://wa.me/919136447006?text=Hi, I need information about Home Clinical Dietician services.`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=Hi, I need information about Home Clinical Dietician services.`;
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -116,7 +116,7 @@ export default function DieticianClient() {
                                 <h2 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">Food is your <span className="text-primary">Medical</span> cornerstone.</h2>
                             </div>
                             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                                At Aries PhysioCare, we don't believe in "diets." We believe in <span className="text-foreground font-bold">Medical Nutrition Therapy (MNT).</span> Our clinical dieticians understand the complex relationship between nutrients and disease recovery, providing you with a biological roadmap to health.
+                                At AriesXpert, we don't believe in "diets." We believe in <span className="text-foreground font-bold">Medical Nutrition Therapy (MNT).</span> Our clinical dieticians understand the complex relationship between nutrients and disease recovery, providing you with a biological roadmap to health.
                             </p>
 
                             <div className="grid sm:grid-cols-2 gap-6">
@@ -281,7 +281,7 @@ export default function DieticianClient() {
                     </div>
 
                     <div className="mt-20 flex flex-wrap justify-center gap-12 text-white/40 font-black text-[10px] uppercase tracking-[0.4em]">
-                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> +91 9136447006</span>
+                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> 0800 274 3785</span>
                         <span className="flex items-center gap-2"><Activity className="w-5 h-5 text-accent" /> Clinical Protocols</span>
                         <span className="flex items-center gap-2"><Zap className="w-5 h-5 text-accent" /> Result Oriented</span>
                     </div>

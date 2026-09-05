@@ -5,11 +5,11 @@ import SchemaMarkup from '@/components/seo/schema-markup';
 import { services } from '@/lib/placeholder-data';
 
 export const metadata: Metadata = {
-    title: 'Expert Speech Therapy at Home | Speech-Language Pathology | Aries PhysioCare',
-    description: 'Certified Speech-Language Pathology (SLP) services delivered at your home. Specialized therapy for pediatric speech delays, autism, post-stroke aphasia, stuttering, and swallowing disorders (dysphagia) in Mumbai, Pune, and major Indian cities.',
+    title: 'Expert Speech Therapy at Home | Speech-Language Therapy | AriesXpert UK',
+    description: 'Certified Speech and Language Therapy (SLT) services delivered at your home. Specialized therapy for pediatric speech delays, autism, post-stroke aphasia, stuttering, and swallowing disorders (dysphagia) across London, Manchester, and major UK cities.',
     keywords: [
         'speech therapy at home',
-        'certified speech pathologist india',
+        'certified speech language therapist uk',
         'pediatric speech therapy',
         'aphasia rehab after stroke',
         'dysphagia swallowing therapy',
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Professional Speech & Language Therapy at Your Doorstep',
         description: 'Restoring the human voice and connection. Evidence-based clinical care for speech and swallowing disorders at your home.',
-        url: 'https://www.ariesphysiocare.com/services/speech-therapy',
+        url: 'https://www.ariesxpert.co.uk/services/speech-therapy',
         images: [{ url: 'https://images.unsplash.com/photo-1543881062-8e1f5798aee8?auto=format&fit=crop&q=85&w=1200', width: 1200, height: 630, alt: 'Speech Therapy Care' }],
     },
     alternates: {
-        canonical: 'https://www.ariesphysiocare.com/services/speech-therapy',
+        canonical: 'https://www.ariesxpert.co.uk/services/speech-therapy',
     },
 };
 
@@ -40,10 +40,10 @@ export default function SpeechTherapyPage() {
         "description": service.longDescription,
         "provider": {
             "@type": "MedicalOrganization",
-            "name": "Aries PhysioCare India",
-            "url": "https://www.ariesphysiocare.com"
+            "name": "AriesXpert UK",
+            "url": "https://www.ariesxpert.co.uk"
         },
-        "areaServed": "India",
+        "areaServed": "United Kingdom",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Clinical Speech & Swallow Programs",

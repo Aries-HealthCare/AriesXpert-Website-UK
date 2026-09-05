@@ -32,7 +32,7 @@ export default function Footer() {
                 {/* Light Mode Logo */}
                 <Image
                   src="/logo-light.png"
-                  alt="Aries PhysioCare - UK"
+                  alt="AriesXpert UK"
                   fill
                   sizes="(max-width: 640px) 208px, 288px"
                   className="object-contain block dark:hidden object-center md:object-left"
@@ -40,7 +40,7 @@ export default function Footer() {
                 {/* Dark Mode Logo */}
                 <Image
                   src="/logo-dark.png"
-                  alt="Aries PhysioCare - UK"
+                  alt="AriesXpert UK"
                   fill
                   sizes="(max-width: 640px) 208px, 288px"
                   className="object-contain hidden dark:block object-center md:object-left"
@@ -58,7 +58,7 @@ export default function Footer() {
                 { icon: Twitter, href: "https://twitter.com/ariesxpertuk", label: "Twitter" },
                 { icon: Instagram, href: "https://instagram.com/ariesxpertuk", label: "Instagram" },
                 { icon: Linkedin, href: "https://linkedin.com/company/ariesxpert-uk", label: "LinkedIn" },
-                { icon: Youtube, href: "https://youtube.com/@ariesphysiocare", label: "YouTube" },
+                { icon: Youtube, href: "https://youtube.com/@ariesxpertuk", label: "YouTube" },
               ].map((social) => (
                 <Link
                   key={social.label}

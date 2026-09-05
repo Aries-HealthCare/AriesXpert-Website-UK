@@ -20,11 +20,11 @@ interface CityLandingPageTemplateProps {
 }
 
 export default function CityLandingPageTemplate({ city }: CityLandingPageTemplateProps) {
-    const WHATSAPP_URL = `https://wa.me/918591981880?text=${encodeURIComponent(`Hi! I need home physiotherapy in ${city.cityName}. Please share details.`)}`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=${encodeURIComponent(`Hi! I need home physiotherapy in ${city.cityName}. Please share details.`)}`;
 
     const jsonLd = [
         getLocalBusinessSchema({
-            name: `Aries PhysioCare — ${city.cityName}`,
+            name: `AriesXpert UK — ${city.cityName}`,
             description: city.metaDescription,
             city: city.cityName,
             state: city.stateName,
@@ -32,7 +32,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
         }),
         getBreadcrumbSchema([
             { name: 'Home', url: '/' },
-            { name: 'Physiotherapy in India', url: '/physiotherapy-in-india' },
+            { name: 'Physiotherapy in UK', url: '/physiotherapy-in-uk' },
             { name: `Physiotherapy in ${city.cityName}`, url: `/${city.pageSlug}` },
         ]),
         getFAQSchema(city.faqs),
@@ -65,7 +65,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                         <nav className="flex items-center gap-2 text-white/60 text-xs mb-8" aria-label="Breadcrumb">
                             <Link href="/" className="hover:text-white transition-colors">Home</Link>
                             <ChevronRight className="w-3 h-3" />
-                            <Link href="/physiotherapy-in-india" className="hover:text-white transition-colors">Physiotherapy in India</Link>
+                            <Link href="/physiotherapy-in-uk" className="hover:text-white transition-colors">Physiotherapy in UK</Link>
                             <ChevronRight className="w-3 h-3" />
                             <span className="text-white font-semibold">Physiotherapy in {city.cityName}</span>
                         </nav>
@@ -86,8 +86,8 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                                     Book Home Visit Now
                                 </BookAppointmentButton>
                                 <Button asChild size="lg" variant="outline" className="h-14 px-8 font-bold text-white border-white/40 hover:bg-white/10 bg-transparent">
-                                    <a href="tel:+919136447006" className="flex items-center gap-2">
-                                        <Phone className="w-5 h-5" /> Call +91 9136447006
+                                    <a href="tel:08002743785" className="flex items-center gap-2">
+                                        <Phone className="w-5 h-5" /> Call 0800 274 3785
                                     </a>
                                 </Button>
                             </div>
@@ -109,7 +109,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-6 md:gap-10">
                             {[
-                                { icon: Shield, text: 'BPT/MPT Verified Therapists' },
+                                { icon: Shield, text: 'HCPC & CSP Registered Clinicians' },
                                 { icon: Clock, text: 'Same-Day Appointments' },
                                 { icon: HeartPulse, text: 'Advanced Portable Equipment' },
                                 { icon: Star, text: `4.8★ Rated in ${city.cityName}` },
@@ -133,7 +133,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                                     <HeartPulse className="w-3.5 h-3.5" /> Home Physiotherapy in {city.cityName}
                                 </div>
                                 <h2 className="font-headline text-3xl md:text-4xl font-extrabold leading-tight">
-                                    Why {city.cityName} Residents Choose <span className="text-primary">Aries PhysioCare</span>
+                                    Why {city.cityName} Residents Choose <span className="text-primary">AriesXpert</span>
                                 </h2>
                                 <p className="text-muted-foreground leading-relaxed">{city.localIntro}</p>
                                 <p className="text-muted-foreground leading-relaxed">{city.whySection}</p>
@@ -141,7 +141,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                                     {[
                                         `Door-to-door service across ${city.cityName}`,
-                                        'Certified BPT/MPT therapists',
+                                        'HCPC & CSP registered physiotherapists',
                                         'Advanced portable equipment',
                                         'Same-day appointments available',
                                         'Digital clinical progress tracking',
@@ -170,7 +170,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 border border-primary/10">
                                     <Image
                                         src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000"
-                                        alt={`Home physiotherapy in ${city.cityName} by Aries PhysioCare`}
+                                        alt={`Home physiotherapy in ${city.cityName} by AriesXpert`}
                                         fill
                                         className="object-cover"
                                         sizes="(max-width: 1024px) 100vw, 50vw"
@@ -206,7 +206,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                                 Our Services in <span className="text-primary">{city.cityName}</span>
                             </h2>
                             <p className="text-muted-foreground max-w-xl mx-auto">
-                                All Aries PhysioCare services are available at your home in {city.cityName}.
+                                All AriesXpert services are available at your home in {city.cityName}.
                             </p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -262,8 +262,8 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                         </div>
                         <div className="text-center">
                             <Button asChild variant="outline" className="font-bold">
-                                <a href="tel:+919136447006" className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" /> Confirm Your Area — +91 9136447006
+                                <a href="tel:08002743785" className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" /> Confirm Your Area — 0800 274 3785
                                 </a>
                             </Button>
                         </div>
@@ -299,7 +299,7 @@ export default function CityLandingPageTemplate({ city }: CityLandingPageTemplat
                         </div>
                         <div className="grid md:grid-cols-4 gap-6">
                             {[
-                                { step: '01', title: 'Book or Call', desc: `Book online or call +91 9136447006. Tell us your locality in ${city.cityName} and your condition.` },
+                                { step: '01', title: 'Book or Call', desc: `Book online or call 0800 274 3785. Tell us your locality in ${city.cityName} and your condition.` },
                                 { step: '02', title: 'Get Matched', desc: `We match you with the best available certified therapist in your area of ${city.cityName}.` },
                                 { step: '03', title: 'Confirmation', desc: "You receive confirmation with your therapist's name, credentials, and arrival time." },
                                 { step: '04', title: 'Session at Home', desc: 'Your therapist arrives with all equipment and delivers hospital-grade care at your home.' },

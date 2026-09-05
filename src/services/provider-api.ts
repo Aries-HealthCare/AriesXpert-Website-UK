@@ -326,7 +326,7 @@ class ProviderApiService {
           const data = await res.json();
           return {
             success: data.success !== false,
-            message: data.message || `Verification code sent to +91 ${cleanMobile}`,
+            message: data.message || `Verification code sent to +44 ${cleanMobile}`,
             code: data.code,
           };
         }
@@ -337,7 +337,7 @@ class ProviderApiService {
 
     return {
       success: true,
-      message: `Verification code sent to +91 ${cleanMobile} via SMS.`,
+      message: `Verification code sent to +44 ${cleanMobile} via SMS.`,
     };
   }
 
@@ -495,8 +495,8 @@ class ProviderApiService {
       mobileNumber: expert.phone || cleanMobile,
       isMobileNumberVerified: expert.isMobileNumberVerified ?? expert.mobile_verified ?? true,
       isVerified: expert.isVerified ?? false,
-      countryCode: expert.countryCode || '+91',
-      countryName: expert.countryName || 'India',
+      countryCode: expert.countryCode || '+44',
+      countryName: expert.countryName || 'United Kingdom',
       streetAddress: expert.streetAddress || expert.address || '',
       addressLineTwo: expert.addressLineTwo || '',
       zipCode: expert.zipCode || expert.pincode || aInfo.pincode || '',
@@ -726,7 +726,7 @@ class ProviderApiService {
       state: (formData.get('state') as string) || '',
       zipCode: (formData.get('zipCode') as string) || '',
       streetAddress: (formData.get('streetAddress') as string) || '',
-      countryName: (formData.get('countryName') as string) || 'India',
+      countryName: (formData.get('countryName') as string) || 'United Kingdom',
       profilePhoto: (formData.get('profilePhotoUrl') as string) || '',
       onboardingStep: 1,
       status: 'Active',
@@ -1005,7 +1005,7 @@ class ProviderApiService {
         success: true,
         data: {
           status: 'COMPLETED',
-          paymentLinkUrl: payload.paymentMethod === 'online' ? `https://ariesphysiocare.com/pay/${payload.appointmentId}` : null,
+          paymentLinkUrl: payload.paymentMethod === 'online' ? `https://www.ariesxpert.co.uk/pay/${payload.appointmentId}` : null,
         },
       };
     }
@@ -1614,7 +1614,7 @@ class ProviderApiService {
     return {
       id: 'tourney_' + new Date().toISOString().slice(0, 10),
       title: 'Daily Clinical Championship: Orthopedic & Neuro Diagnostics',
-      description: 'Test your clinical reasoning against top physiotherapists across India. 10 MCQs with instant explanations.',
+      description: 'Test your clinical reasoning against top physiotherapists across the UK. 10 MCQs with instant explanations.',
       category: 'Orthopedic Special Tests',
       timeRemainingSeconds: 34200,
       entryFeeCoins: 0,

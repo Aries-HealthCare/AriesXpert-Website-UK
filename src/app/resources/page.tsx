@@ -35,7 +35,7 @@ export default function ResourcesPage() {
           EVIDENCE-BASED HEALTH EDUCATION
         </h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Written by licensed Canadian Registered Physiotherapists. Demystifying anatomy, pain neuroscience, and biomechanical rehabilitation.
+          Written by HCPC-registered Chartered Physiotherapists. Demystifying anatomy, pain neuroscience, and biomechanical rehabilitation.
         </p>
       </div>
 

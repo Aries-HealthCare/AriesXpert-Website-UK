@@ -42,7 +42,7 @@ export interface AppointmentLead {
   service: string;
   date: Date | string;
   time: string;
-  paymentMethod?: 'card' | 'upi' | 'cash';
+  paymentMethod?: 'card' | 'insurance' | 'cash' | 'upi';
   condition?: string;
   therapistId?: string;
   attribution?: LeadAttributionPayload;
@@ -125,7 +125,7 @@ class LeadsService {
         condition: data.condition || data.service,
         preferredTherapistId: data.therapistId,
         location: {
-          country: 'India',
+          country: 'United Kingdom',
           state: data.state,
           city: data.city,
           area: data.area,

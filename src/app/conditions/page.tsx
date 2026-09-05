@@ -49,7 +49,7 @@ export default function ConditionsPage() {
           CONDITIONS & ANATOMY DIRECTORY
         </h1>
         <p className="text-sm sm:text-base text-slate-300">
-          Discover comprehensive, evidence-informed Canadian physical therapy guides for 140+ orthopaedic, sports, and neurological rehabilitation conditions.
+          Discover comprehensive, evidence-informed UK physiotherapy and clinical rehabilitation guides for 140+ orthopaedic, sports, and neurological conditions.
         </p>
       </div>
 

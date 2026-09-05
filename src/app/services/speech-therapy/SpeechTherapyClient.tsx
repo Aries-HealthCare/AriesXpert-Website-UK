@@ -31,7 +31,7 @@ export default function SpeechTherapyClient() {
 
     if (!service) return null;
 
-    const WHATSAPP_URL = `https://wa.me/919136447006?text=Hi, I need information about Home Speech Therapy services.`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=Hi, I need information about Home Speech Therapy services.`;
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -117,7 +117,7 @@ export default function SpeechTherapyClient() {
                                 <h2 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">Restoring the <span className="text-primary">Human Voice.</span></h2>
                             </div>
                             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                                At Aries PhysioCare, we recognize that communication is the foundation of quality of life. Whether helping a child find their first words or an adult regain speech after a stroke, our specialized <span className="text-foreground font-bold">Speech-Language Pathologists</span> provide clinically proven therapies tailored to your unique biological needs.
+                                At AriesXpert, we recognize that communication is the foundation of quality of life. Whether helping a child find their first words or an adult regain speech after a stroke, our specialized <span className="text-foreground font-bold">Speech-Language Pathologists</span> provide clinically proven therapies tailored to your unique biological needs.
                             </p>
 
                             <div className="grid sm:grid-cols-2 gap-6">
@@ -282,7 +282,7 @@ export default function SpeechTherapyClient() {
                     </div>
 
                     <div className="mt-20 flex flex-wrap justify-center gap-12 text-white/40 font-black text-[10px] uppercase tracking-[0.4em]">
-                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> +91 9136447006</span>
+                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> 0800 274 3785</span>
                         <span className="flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-accent" /> Certified SLPs</span>
                         <span className="flex items-center gap-2"><Zap className="w-5 h-5 text-accent" /> Neuro-focused Rehab</span>
                     </div>

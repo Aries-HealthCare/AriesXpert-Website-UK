@@ -31,7 +31,7 @@ export default function HomeNursingClient() {
 
     if (!service) return null;
 
-    const WHATSAPP_URL = `https://wa.me/919136447006?text=Hi, I need information about Professional Home Nursing services.`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=Hi, I need information about Professional Home Nursing services.`;
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -117,7 +117,7 @@ export default function HomeNursingClient() {
                                 <h2 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">Professional <span className="text-primary">Clinical</span> Oversight.</h2>
                             </div>
                             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                                Home nursing at Aries PhysioCare isn't just about attendance; it's about <span className="text-foreground font-bold">medical safety.</span> Our nurses are trained in critical care, wound management, and geriatric protocols to ensure your recovery is monitored with the same precision as a hospital.
+                                Home nursing at AriesXpert isn't just about attendance; it's about <span className="text-foreground font-bold">medical safety.</span> Our nurses are trained in critical care, wound management, and geriatric protocols to ensure your recovery is monitored with the same precision as a hospital.
                             </p>
 
                             <div className="grid sm:grid-cols-2 gap-6">
@@ -282,8 +282,8 @@ export default function HomeNursingClient() {
                     </div>
 
                     <div className="mt-20 flex flex-wrap justify-center gap-12 text-white/40 font-black text-[10px] uppercase tracking-[0.4em]">
-                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> +91 9136447006</span>
-                        <span className="flex items-center gap-2"><Stethoscope className="w-5 h-5 text-accent" /> Certified GNM/B.Sc Nurses</span>
+                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> 0800 274 3785</span>
+                        <span className="flex items-center gap-2"><Stethoscope className="w-5 h-5 text-accent" /> NMC Registered Nurses</span>
                         <span className="flex items-center gap-2"><Zap className="w-5 h-5 text-accent" /> 24/7 Availability</span>
                     </div>
                 </div>

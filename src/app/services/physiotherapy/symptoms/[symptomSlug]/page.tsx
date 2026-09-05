@@ -103,7 +103,7 @@ export default function SymptomDetailPage() {
               <h4 className="font-headline font-bold text-lg mb-2">Need Immediate Help?</h4>
               <p className="text-xs text-muted-foreground mb-4 leading-relaxed">Connect with our senior clinical coordinator for a free initial guidance call.</p>
               <Button className="w-full neon-accent-border" size="sm" asChild>
-                <a href="tel:+919876543210">Call Specialist</a>
+                <a href="tel:08002743785">Call Specialist</a>
               </Button>
             </div>
           </aside>

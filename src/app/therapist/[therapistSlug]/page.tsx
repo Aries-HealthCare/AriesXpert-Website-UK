@@ -19,20 +19,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const therapist = therapists[0];
 
     if (!therapist) {
-        return { title: 'Specialist Not Found | Aries PhysioCare' };
+        return { title: 'Specialist Not Found | AriesXpert UK' };
     }
 
     return {
-        title: `${therapist.name} - ${therapist.specialization} | Aries PhysioCare`,
+        title: `${therapist.name} - ${therapist.specialization} | AriesXpert UK`,
         description: `Book appointment with ${therapist.name}, expert ${therapist.specialization} specialist with ${therapist.experience} of experience. Available in ${therapist.city}.`,
         keywords: [`${therapist.name}`, `physiotherapist ${therapist.city}`, `home physiotherapy ${therapist.city}`, therapist.specialization, 'book physiotherapist online'],
         alternates: {
-            canonical: `https://www.ariesphysiocare.com/therapist/${therapistSlug}`,
+            canonical: `https://www.ariesxpert.co.uk/therapist/${therapistSlug}`,
         },
         openGraph: {
-            title: `${therapist.name} | Expert ${therapist.specialization}`,
+            title: `${therapist.name} | Expert ${therapist.specialization} | AriesXpert UK`,
             description: `Book a session with ${therapist.name} — ${therapist.experience} clinical experience.`,
-            url: `https://www.ariesphysiocare.com/therapist/${therapistSlug}`,
+            url: `https://www.ariesxpert.co.uk/therapist/${therapistSlug}`,
             images: [{ url: therapist.imageUrl, width: 800, height: 600, alt: therapist.name }],
         },
     };

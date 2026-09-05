@@ -106,7 +106,7 @@ export default function TherapyDetailPage() {
               <h4 className="font-headline font-bold text-lg mb-2">Vetted Specialists</h4>
               <p className="text-xs text-muted-foreground mb-4 leading-relaxed">This modality is exclusively administered by certified Aries specialists with proven clinical competency.</p>
               <Button className="w-full neon-accent-border" size="sm" asChild>
-                <a href="tel:+919876543210">Call Specialist</a>
+                <a href="tel:08002743785">Call Specialist</a>
               </Button>
             </div>
           </aside>
@@ -124,7 +124,7 @@ export default function TherapyDetailPage() {
                   </div>
                   <div className="prose prose-lg dark:prose-invert text-muted-foreground leading-relaxed">
                     <p>{therapy.description}</p>
-                    <p>At Aries PhysioCare, we integrate {therapy.name} into goal-oriented recovery roadmaps to ensure optimal physiological response and long-term functional stability.</p>
+                    <p>At AriesXpert, we integrate {therapy.name} into goal-oriented recovery roadmaps to ensure optimal physiological response and long-term functional stability.</p>
                   </div>
                 </div>
                 <div className="relative aspect-square w-full rounded-[2.5rem] overflow-hidden soft-shadow border border-primary/10">

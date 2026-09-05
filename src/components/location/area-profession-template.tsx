@@ -27,7 +27,7 @@ const PROFESSION_CONTENT: Record<string, any> = {
         icon: HeartPulse,
         symptoms: ['Back Pain', 'Neck Pain', 'Joint Stiffness', 'Sports Injuries', 'Post-Op Recovery', 'Sciatica'],
         benefits: ['Reduced Pain', 'Improved Mobility', 'Faster Recovery', 'Personalized Care'],
-        about: (area: string) => `Getting professional physiotherapy in ${area} is now easier than ever. Aries PhysioCare brings expert physical therapy to your doorstep, helping you recover from musculoskeletal issues, neurological conditions, and sports injuries in the comfort of your home.`,
+        about: (area: string) => `Getting professional physiotherapy in ${area} is now easier than ever. AriesXpert brings expert physical therapy to your doorstep, helping you recover from musculoskeletal issues, neurological conditions, and sports injuries in the comfort of your home.`,
     },
     'occupational-therapy': {
         icon: Accessibility,
@@ -53,7 +53,7 @@ const DEFAULT_CONTENT = {
     icon: Users,
     symptoms: ['General Weakness', 'Recovery Support', 'Activities of Daily Living', 'Mobility Issues'],
     benefits: ['Expert Support', 'Comfortable Environment', 'Personalized Attention', 'Clinical Excellence'],
-    about: (area: string, prof: string) => `Aries PhysioCare provides expert ${prof} services in ${area}. Our team of certified specialists ensures you get the highest quality healthcare at your doorstep.`,
+    about: (area: string, prof: string) => `AriesXpert provides expert ${prof} services in ${area}. Our team of certified specialists ensures you get the highest quality healthcare at your doorstep.`,
 };
 
 export default function AreaProfessionTemplate({
@@ -67,7 +67,7 @@ export default function AreaProfessionTemplate({
     const Icon = content.icon;
     const aboutText = typeof content.about === 'function' ? content.about(areaName, profession) : content.about;
 
-    const WHATSAPP_URL = `https://wa.me/918591981880?text=${encodeURIComponent(`Hi! I need ${profession} in ${areaName}. Please share details.`)}`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=${encodeURIComponent(`Hi! I need ${profession} in ${areaName}. Please share details.`)}`;
 
     const breadcrumbs = [
         { name: 'Home', url: '/' },
@@ -82,7 +82,7 @@ export default function AreaProfessionTemplate({
         },
         {
             question: `Are your specialists qualified and background-verified?`,
-            answer: `Yes, every Aries specialist is a certified professional with verified degrees and clinical experience. We follow a multi-step verification process before onboarding.`,
+            answer: `Yes, every AriesXpert specialist is an HCPC-registered chartered professional with verified degrees and clinical experience. We follow a multi-step clinical governance and enhanced DBS check process.`,
         },
         {
             question: `Do you bring equipment for home sessions in ${areaName}?`,
@@ -95,7 +95,7 @@ export default function AreaProfessionTemplate({
         getHealthcareServiceSchema({
             name: `${profession} in ${areaName}`,
             description: `Book expert ${profession.toLowerCase()} specialists in ${areaName} for home sessions.`,
-            url: `https://www.ariesphysiocare.com/${professionSlug}/${areaSlug}`,
+            url: `https://www.ariesxpert.co.uk/${professionSlug}/${areaSlug}`,
         }),
         getFAQSchema(faqs),
     ];
@@ -133,8 +133,8 @@ export default function AreaProfessionTemplate({
                             Book Now in {areaName}
                         </BookAppointmentButton>
                         <Button asChild size="lg" variant="outline" className="h-14 px-8 font-bold text-white border-white/40 hover:bg-white/10 bg-transparent">
-                            <a href="tel:+919136447006" className="flex items-center gap-2">
-                                <Phone className="w-5 h-5" /> Call Expert
+                            <a href="tel:08002743785" className="flex items-center gap-2">
+                                <Phone className="w-5 h-5" /> Call 0800 274 3785
                             </a>
                         </Button>
                     </div>

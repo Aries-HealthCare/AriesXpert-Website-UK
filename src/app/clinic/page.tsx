@@ -146,7 +146,7 @@ export default function ClinicsPage() {
               </div>
 
               <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
-                Hospital-grade physical rehabilitation and pain relief center in Borivali West, Mumbai. Powered by Class IV Laser, High-Intensity IFT, Spinal Traction, and veteran senior hospital physiotherapists.
+                Hospital-grade physical rehabilitation and clinical wellness center in Canary Wharf, London. Powered by Class IV Laser, High-Intensity IFT, Spinal Traction, and senior HCPC-registered physiotherapists.
               </p>
 
               {/* Action Buttons Row */}
@@ -171,7 +171,7 @@ export default function ClinicsPage() {
                 >
                   <a href={`tel:${clinic.phone.replace(/[^0-9+]/g, '')}`} className="flex items-center gap-2 text-white">
                     <Phone className="w-4 h-4 text-emerald-400" />
-                    Call: +91 9136447006
+                    Call: {clinic.phone}
                   </a>
                 </Button>
 
@@ -181,9 +181,9 @@ export default function ClinicsPage() {
                   variant="outline"
                   className="h-13 px-7 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border-emerald-500/30 font-black text-xs sm:text-sm uppercase tracking-wider backdrop-blur-xl hover:scale-[1.02] transition-all"
                 >
-                  <a href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent('Hello Aries PhysioCare Borivali West Center, I would like to book a physiotherapy appointment.')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent(`Hello Aries PhysioCare ${clinic.subArea} Hub, I would like to book a physiotherapy appointment.`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <MessageCircle className="w-4 h-4 text-emerald-400" />
-                    WhatsApp Desk (+91 8591981880)
+                    WhatsApp Desk ({clinic.phone})
                   </a>
                 </Button>
               </div>
@@ -194,21 +194,21 @@ export default function ClinicsPage() {
                   <div className="flex items-center justify-center gap-1 text-amber-400 text-sm font-black">
                     <Star className="w-4 h-4 fill-amber-400" /> 4.9 / 5.0
                   </div>
-                  <div className="text-[11px] text-white/60 font-medium mt-0.5">285+ Google Reviews</div>
+                  <div className="text-[11px] text-white/60 font-medium mt-0.5">{clinic.reviewCount}+ Google Reviews</div>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-xl text-center">
-                  <div className="text-white text-sm font-black">8:00 AM – 9:30 PM</div>
-                  <div className="text-[11px] text-white/60 font-medium mt-0.5">Open 365 Days Daily</div>
+                  <div className="text-white text-sm font-black">{clinic.workingHours}</div>
+                  <div className="text-[11px] text-white/60 font-medium mt-0.5">{clinic.daysOpen}</div>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-xl text-center">
-                  <div className="text-emerald-400 text-sm font-black">100% BPT Certified</div>
-                  <div className="text-[11px] text-white/60 font-medium mt-0.5">Expert Physiotherapists</div>
+                  <div className="text-emerald-400 text-sm font-black">HCPC & CSP Reg.</div>
+                  <div className="text-[11px] text-white/60 font-medium mt-0.5">Chartered Physiotherapists</div>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-xl text-center">
-                  <div className="text-accent text-sm font-black">₹ 800 / Session</div>
+                  <div className="text-accent text-sm font-black">{clinic.regularSessionFee}</div>
                   <div className="text-[11px] text-white/60 font-medium mt-0.5">Standard In-Clinic Tariff</div>
                 </div>
               </div>
@@ -247,10 +247,10 @@ export default function ClinicsPage() {
 
                   <div className="absolute bottom-5 left-5 right-5 text-white">
                     <div className="text-[10px] font-black uppercase tracking-widest text-amber-400">
-                      Borivali West Flagship Clinic
+                      {clinic.badge || 'Flagship Clinical Hub'}
                     </div>
                     <h3 className="font-headline text-xl sm:text-2xl font-bold text-white mt-0.5">
-                      Parrk Riviera, New MHB Colony
+                      {clinic.address}
                     </h3>
                   </div>
                 </div>
@@ -282,7 +282,7 @@ export default function ClinicsPage() {
                       <Building2 className="w-3 h-3" /> Official Clinic Information
                     </div>
                     <h3 className="font-headline text-2xl font-black text-white">
-                      Borivali West Center
+                      {clinic.subArea} Clinical Hub
                     </h3>
                     <p className="text-xs text-white/70 leading-relaxed">
                       Walk-ins and scheduled appointments welcome. Complete diagnostic and physical therapy facilities on ground floor.
@@ -320,17 +320,18 @@ export default function ClinicsPage() {
                       </div>
                     </div>
 
-                    {/* Official Mobile Numbers */}
+                    {/* Official Phone Numbers */}
                     <div className="flex items-start gap-3.5 p-3 rounded-2xl bg-white/[0.03] border border-white/5">
                       <Phone className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                       <div className="space-y-1">
                         <div className="font-bold text-white">Clinic Direct Lines</div>
                         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-mono font-bold text-white/90">
-                          <a href="tel:+919136447006" className="text-primary hover:underline">+91 9136447006</a>
-                          <span className="text-white/30">·</span>
-                          <a href="tel:+919372681410" className="text-primary hover:underline">+91 9372681410</a>
-                          <span className="text-white/30">·</span>
-                          <a href="tel:+918591981880" className="text-primary hover:underline">+91 8591981880</a>
+                          {clinic.phones.map((p, pIdx) => (
+                            <React.Fragment key={p}>
+                              {pIdx > 0 && <span className="text-white/30">·</span>}
+                              <a href={`tel:${p.replace(/[^0-9+]/g, '')}`} className="text-primary hover:underline">{p}</a>
+                            </React.Fragment>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -341,12 +342,12 @@ export default function ClinicsPage() {
                       <div>
                         <div className="font-bold text-white">WhatsApp Front Desk</div>
                         <a
-                          href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent('Hello Aries PhysioCare Borivali West Center, I would like to book a physiotherapy appointment.')}`}
+                          href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent(`Hello Aries PhysioCare ${clinic.subArea} Hub, I would like to book a physiotherapy appointment.`)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-emerald-400 hover:underline font-mono font-bold text-xs"
                         >
-                          +91 8591981880 (Click to Chat)
+                          {clinic.phone} (Click to Chat)
                         </a>
                       </div>
                     </div>
@@ -369,7 +370,7 @@ export default function ClinicsPage() {
                       variant="outline"
                       className="h-12 rounded-xl border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-wider"
                     >
-                      <a href="tel:+919136447006" className="flex items-center justify-center gap-1.5">
+                      <a href={`tel:${clinic.phone.replace(/[^0-9+]/g, '')}`} className="flex items-center justify-center gap-1.5">
                         <Phone className="w-4 h-4 text-emerald-400" />
                         Call Desk
                       </a>
@@ -392,7 +393,7 @@ export default function ClinicsPage() {
                   <Award className="w-4 h-4" /> The Clinical Medical Board
                 </div>
                 <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-                  Specialists & Daily Shifts at Borivali West
+                  Specialists & Daily Shifts at {clinic.subArea} Hub
                 </h2>
                 <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto">
                   Consult with senior hospital-trained clinical physiotherapists available throughout the day.
@@ -508,10 +509,10 @@ export default function ClinicsPage() {
                   Consultation / Regular Therapy
                 </h3>
                 <div className="font-headline text-5xl sm:text-6xl font-black bg-gradient-to-r from-amber-300 via-rose-400 to-primary bg-clip-text text-transparent tracking-tight py-1">
-                  ₹ 800/-
+                  {clinic.consultationFee}
                 </div>
                 <p className="text-xs text-white/70 font-medium max-w-md mx-auto">
-                  Comprehensive physical assessment, electrotherapy modalities (IFT, Ultrasound, Laser), and specialized hands-on clinical therapy.
+                  Comprehensive musculoskeletal assessment, electrotherapy modalities (IFT, Ultrasound, Laser), and specialized hands-on clinical therapy.
                 </p>
               </div>
 
@@ -519,10 +520,10 @@ export default function ClinicsPage() {
               <div className="space-y-6 pt-4">
                 <div className="text-center space-y-1">
                   <h3 className="font-headline text-xl sm:text-2xl md:text-3xl font-black text-white">
-                    Physiotherapy Packages
+                    Physiotherapy Care Packages
                   </h3>
-                  <p className="text-xs sm:text-sm font-bold text-amber-300 tracking-wide uppercase">
-                    (Only on 100% Advance Payments)
+                  <p className="text-xs sm:text-sm font-bold text-emerald-300 tracking-wide uppercase">
+                    (Direct Private Health Insurance Billing Available)
                   </p>
                 </div>
 
@@ -584,14 +585,14 @@ export default function ClinicsPage() {
                   ))}
                 </div>
 
-                {/* Strict Notice Card Styled like Official Board Footer */}
-                <div className="p-5 rounded-2xl bg-rose-500/10 border-2 border-rose-500/30 text-center space-y-1 max-w-3xl mx-auto shadow-xl">
-                  <div className="text-rose-400 font-headline font-black text-base sm:text-lg flex items-center justify-center gap-2">
-                    <AlertCircle className="w-5 h-5 shrink-0 text-rose-400" />
-                    Bargaining is not permitted.
+                {/* Private Insurance & Self Pay Terms */}
+                <div className="p-5 rounded-2xl bg-primary/10 border-2 border-primary/30 text-center space-y-1 max-w-3xl mx-auto shadow-xl">
+                  <div className="text-primary font-headline font-black text-base sm:text-lg flex items-center justify-center gap-2">
+                    <ShieldCheck className="w-5 h-5 shrink-0 text-primary" />
+                    Private Health Insurance & Self-Pay Coverage
                   </div>
                   <p className="text-xs text-white/70 font-medium">
-                    If there are any offers or discounts available, they will be clearly advertised or displayed on our board.
+                    {clinic.pricingNotice}
                   </p>
                 </div>
               </div>
@@ -665,19 +666,19 @@ export default function ClinicsPage() {
           </div>
         </section>
 
-        {/* ── HOME VISIT & PAN-INDIA ALTERNATIVE ─────────────────────── */}
+        {/* ── HOME VISIT & UK-WIDE ALTERNATIVE ─────────────────────── */}
         <section className="py-16 md:py-20 z-10 relative bg-gradient-to-t from-black/80 via-transparent to-transparent">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-3xl bg-gradient-to-r from-white/[0.08] via-white/[0.04] to-primary/15 border-2 border-primary/30 shadow-2xl backdrop-blur-2xl flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="space-y-3 text-center md:text-left">
                 <div className="inline-flex items-center gap-1.5 text-amber-300 font-bold text-xs uppercase tracking-wider">
-                  <Home className="w-4 h-4" /> Can't Travel to Our Borivali Center?
+                  <Home className="w-4 h-4" /> Unable to Travel to Our Clinical Hub?
                 </div>
                 <h3 className="font-headline text-2xl sm:text-3xl font-black text-white">
                   Hospital-Grade Physiotherapy at Your Home
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 max-w-lg leading-relaxed">
-                  Our certified physiotherapists visit homes across all suburbs of Mumbai and major cities in India, bringing portable IFT, Ultrasound, and full rehabilitation modalities.
+                  Our HCPC-registered chartered physiotherapists visit homes across London, Manchester, Birmingham, Edinburgh, and major UK cities with portable electrotherapy modalities and rehabilitative equipment.
                 </p>
               </div>
 

@@ -28,6 +28,7 @@ export interface Treatment {
   sessionExpectations: string[];
   evidenceSummary: string;
   treatedConditions: string[];
+  gbpPricingEstimate?: string;
   cadPricingEstimate?: string;
   faqs?: {
     id?: string;

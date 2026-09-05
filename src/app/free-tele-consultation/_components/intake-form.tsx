@@ -121,7 +121,7 @@ export default function IntakeForm({ therapistId }: { therapistId: string }) {
                     <FormItem><FormLabel>Full Name</FormLabel><FormControl><Input placeholder="John Doe" {...field} className="h-12 bg-background/50" /></FormControl><FormMessage /></FormItem>
                   )} />
                   <FormField control={form.control} name="mobile" render={({ field }) => (
-                    <FormItem><FormLabel>Mobile Number</FormLabel><FormControl><Input placeholder="+91" {...field} className="h-12 bg-background/50" /></FormControl><FormMessage /></FormItem>
+                    <FormItem><FormLabel>Mobile Number</FormLabel><FormControl><Input placeholder="07123 456789 or +44..." {...field} className="h-12 bg-background/50" /></FormControl><FormMessage /></FormItem>
                   )} />
                 </div>
 

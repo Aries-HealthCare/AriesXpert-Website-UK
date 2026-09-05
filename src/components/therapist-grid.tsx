@@ -171,7 +171,7 @@ export function TherapistCard({ therapist, compact, onBook, isBooking }: Therapi
                         </h3>
                     </Link>
                     <p className="text-xs font-bold text-primary/90 mt-0.5 tracking-wide">
-                        {t.qualification || 'BPT, MPT'}
+                        {t.qualification || 'BSc (Hons) Physiotherapy, MCSP, HCPC'}
                     </p>
                 </div>
 
@@ -194,7 +194,7 @@ export function TherapistCard({ therapist, compact, onBook, isBooking }: Therapi
                     </div>
                     <div className="flex items-center justify-center gap-1.5 p-1.5 rounded-xl bg-secondary/30">
                         <MapPin className="w-3.5 h-3.5 text-primary shrink-0" />
-                        <span className="truncate max-w-[90px]">{t.city || 'Mumbai'}</span>
+                        <span className="truncate max-w-[90px]">{t.city || 'London'}</span>
                     </div>
                 </div>
             </CardContent>

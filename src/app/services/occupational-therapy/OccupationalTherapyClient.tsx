@@ -30,7 +30,7 @@ export default function OccupationalTherapyClient() {
 
     if (!service) return null;
 
-    const WHATSAPP_URL = `https://wa.me/919136447006?text=Hi, I need information about Home Occupational Therapy.`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=Hi, I need information about Home Occupational Therapy.`;
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -213,7 +213,7 @@ export default function OccupationalTherapyClient() {
                                 </div>
                                 <h2 className="font-headline text-4xl md:text-6xl font-black leading-tight">Your home is the <span className="text-primary">ultimate clinic.</span></h2>
                                 <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                                    At Aries PhysioCare, we realize that true recovery happens in your natural environment. Our therapists perform comprehensive home safety audits and suggest minor modifications that make a major impact on your ability to live independently.
+                                    At AriesXpert, we realize that true recovery happens in your natural environment. Our therapists perform comprehensive home safety audits and suggest minor modifications that make a major impact on your ability to live independently.
                                 </p>
                                 <ul className="space-y-6">
                                     {[
@@ -281,8 +281,8 @@ export default function OccupationalTherapyClient() {
                     </div>
 
                     <div className="mt-20 flex flex-wrap justify-center gap-12 text-white/40 font-black text-[10px] uppercase tracking-[0.4em]">
-                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> +91 9136447006</span>
-                        <span className="flex items-center gap-2"><Award className="w-5 h-5 text-accent" /> BPT/MPT Certified</span>
+                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> 0800 274 3785</span>
+                        <span className="flex items-center gap-2"><Award className="w-5 h-5 text-accent" /> HCPC & CSP Registered</span>
                         <span className="flex items-center gap-2"><Zap className="w-5 h-5 text-accent" /> Same-day Service</span>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { SURGICAL_REHAB_TIMELINES } from "@/lib/canadian-data";
+import { SURGICAL_REHAB_TIMELINES } from "@/lib/uk-data";
 import { ShieldCheck, Calendar, ArrowRight, CheckCircle2, AlertCircle, Clock } from "lucide-react";
 import Link from "next/link";
 

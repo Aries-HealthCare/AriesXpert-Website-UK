@@ -97,7 +97,7 @@ Regaining independence begins with functional milestones:
 - Proprioceptive neuromuscular facilitation (PNF) patterns for coordinated limb movement.
 
 ## 3. Family Training and Emotional Support
-Aries PhysioCare’s dedicated neurological team trains family members and primary caregivers in safe transfer mechanics, positioning protocols, and daily encouragement regimens.`,
+AriesXpert’s dedicated neurological team trains family members and primary caregivers in safe transfer mechanics, positioning protocols, and daily encouragement regimens.`,
     territory: 'Neurological Care',
     topic: 'Stroke & Neuro Rehab',
     publishedAt: '2026-02-05T00:00:00.000Z',

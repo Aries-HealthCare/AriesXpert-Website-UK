@@ -109,7 +109,7 @@ export default function AnalysisTool() {
     setIsDetectingLocation(true);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setCity("Mumbai Region (Aries Central)");
+        setCity("London Hub (Canary Wharf)");
         setIsDetectingLocation(false);
       },
       () => {
@@ -273,7 +273,7 @@ export default function AnalysisTool() {
                       <div className="space-y-2">
                         <Label className="text-xs font-bold uppercase tracking-wider text-foreground/60 pl-1">Operational City</Label>
                         <div className="flex gap-2">
-                          <Input placeholder="e.g. Mumbai" className="flex-1 h-14 bg-background/20 border-primary/10 rounded-xl shadow-inner font-medium text-base" value={city} onChange={(e) => setCity(e.target.value)} />
+                          <Input placeholder="e.g. London" className="flex-1 h-14 bg-background/20 border-primary/10 rounded-xl shadow-inner font-medium text-base" value={city} onChange={(e) => setCity(e.target.value)} />
                           <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl border-primary/20 text-primary hover:bg-primary hover:text-white" onClick={handleDetectLocation} disabled={isDetectingLocation}>
                             {isDetectingLocation ? <Loader2 className="animate-spin h-5 w-5" /> : <LocateFixed className="h-5 w-5" />}
                           </Button>
@@ -282,7 +282,7 @@ export default function AnalysisTool() {
                       <div className="space-y-2">
                         <Label className="text-xs font-bold uppercase tracking-wider text-foreground/60 pl-1">Mobile Access</Label>
                         <div className="flex gap-2">
-                          <Input type="tel" placeholder="+91" className="flex-1 h-14 bg-background/20 border-primary/10 rounded-xl shadow-inner font-medium text-base" value={mobile} onChange={(e) => setMobile(e.target.value)} disabled={isVerified} />
+                          <Input type="tel" placeholder="07... or +44..." className="flex-1 h-14 bg-background/20 border-primary/10 rounded-xl shadow-inner font-medium text-base" value={mobile} onChange={(e) => setMobile(e.target.value)} disabled={isVerified} />
                           {!isVerified && (
                             <Button variant="outline" className="h-14 px-5 rounded-xl font-bold text-xs uppercase tracking-wider border-primary/20 text-primary hover:bg-primary hover:text-white" onClick={handleSendOtp} disabled={isVerifying || !mobile}>
                               {otpSent ? 'Resend' : 'Send'}

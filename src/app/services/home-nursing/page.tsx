@@ -5,26 +5,26 @@ import SchemaMarkup from '@/components/seo/schema-markup';
 import { services } from '@/lib/placeholder-data';
 
 export const metadata: Metadata = {
-    title: 'Professional Home Nursing Services | Certified Nurses at Home | Aries PhysioCare',
-    description: 'Expert home nursing care across Mumbai, Pune, and major Indian cities. Specialized in post-operative care, wound management, critical care, and geriatric nursing by certified clinical experts.',
+    title: 'Professional Home Nursing Services | Certified Nurses at Home | AriesXpert UK',
+    description: 'Expert home nursing care across London, Manchester, and major UK cities. Specialized in post-operative care, wound management, complex care, and geriatric nursing by NMC-registered clinical experts.',
     keywords: [
         'home nursing services',
         'certified nurse at home',
         'post operative nursing care',
         'wound dressing at home',
         'critical care nursing at home',
-        'geriatric nursing india',
+        'geriatric nursing uk',
         'injection at home',
         'nursing for elderly at home'
     ],
     openGraph: {
         title: 'Hospital-Grade Nursing Care at Your Doorstep',
         description: 'Breathtakingly professional clinical care for your loved ones. Our certified nurses bridge the gap between hospital and home.',
-        url: 'https://www.ariesphysiocare.com/services/home-nursing',
+        url: 'https://www.ariesxpert.co.uk/services/home-nursing',
         images: [{ url: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=85&w=1200', width: 1200, height: 630, alt: 'Home Nursing Care' }],
     },
     alternates: {
-        canonical: 'https://www.ariesphysiocare.com/services/home-nursing',
+        canonical: 'https://www.ariesxpert.co.uk/services/home-nursing',
     },
 };
 
@@ -40,10 +40,10 @@ export default function HomeNursingPage() {
         "description": service.longDescription,
         "provider": {
             "@type": "MedicalOrganization",
-            "name": "Aries PhysioCare India",
-            "url": "https://www.ariesphysiocare.com"
+            "name": "AriesXpert UK",
+            "url": "https://www.ariesxpert.co.uk"
         },
-        "areaServed": "India",
+        "areaServed": "United Kingdom",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Clinical Nursing Programs",

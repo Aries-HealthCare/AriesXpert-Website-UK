@@ -27,22 +27,22 @@ import PricingPackagesSection from '@/components/landing/pricing-packages-sectio
 import GoogleReviews from '@/components/google-reviews';
 
 export const metadata: Metadata = {
-  title: 'Best In-Home Physiotherapy Services in the UK | Aries PhysioCare UK',
+  title: 'Best In-Home Physiotherapy Services in the UK | AriesXpert UK',
   description:
-    'Aries PhysioCare provides hospital-grade in-home and virtual chartered physiotherapy across London, Manchester, Birmingham, Edinburgh, Leeds & Glasgow. Registered with HCPC and CSP. Direct billing to Bupa, AXA Health, Aviva & Vitality.',
+    'AriesXpert provides hospital-grade in-home and virtual chartered physiotherapy across London, Manchester, Birmingham, Edinburgh, Leeds & Glasgow. Registered with HCPC and CSP. Direct billing to Bupa, AXA Health, Aviva & Vitality.',
   keywords: [
     'physiotherapy in uk',
     'in-home physiotherapy uk',
     'chartered physiotherapist uk',
     'hcpc registered physiotherapist',
-    'aries physiocare uk',
+    'ariesxpert uk',
     'private health insurance physiotherapy',
     'physiotherapy london',
     'physiotherapy manchester',
     'physiotherapy birmingham',
   ],
   alternates: {
-    canonical: 'https://uk.ariesphysiocare.com/physiotherapy-in-uk',
+    canonical: 'https://www.ariesxpert.co.uk/physiotherapy-in-uk',
   },
 };
 
@@ -168,7 +168,7 @@ export default function PhysiotherapyInUKPage() {
               HCPC &amp; CSP Regulated Chartered Clinicians
             </h2>
             <p className="text-muted-foreground text-base">
-              Every practitioner in the Aries PhysioCare UK network is registered with the Health and Care Professions Council.
+              Every practitioner in the AriesXpert UK network is registered with the Health and Care Professions Council.
             </p>
           </div>
 

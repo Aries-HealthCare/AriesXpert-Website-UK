@@ -90,39 +90,39 @@ function capitalize(str: string) {
 export const therapists: Therapist[] = [
   {
     id: 't1',
-    slug: 'dr-kajal-vora',
-    name: 'Dr. Kajal Vora',
-    qualification: 'MPT (Neurology), BPT',
-    experience: '12 Years',
+    slug: 'alastair-wright',
+    name: 'Alastair Wright',
+    qualification: 'BSc (Hons) Physiotherapy, MCSP, HCPC Registered',
+    experience: '14 Years',
     imageUrl: '/images/aries-emblem.png',
-    imageHint: 'certified physiotherapist'
+    imageHint: 'chartered physiotherapist'
   },
   {
     id: 't2',
-    slug: 'dr-twinkle-patel',
-    name: 'Dr. Twinkle Patel',
-    qualification: 'BPT, MIAP',
-    experience: '10 Years',
+    slug: 'charlotte-sinclair',
+    name: 'Charlotte Sinclair',
+    qualification: 'MSc Advanced Neurological Physiotherapy, MCSP, HCPC',
+    experience: '11 Years',
     imageUrl: '/images/aries-emblem.png',
-    imageHint: 'certified physiotherapist'
+    imageHint: 'chartered physiotherapist'
   },
   {
     id: 't3',
-    slug: 'dr-chloe-davis',
-    name: 'Dr. Chloe Davis',
-    qualification: 'MPT (Orthopedics)',
-    experience: '8 Years',
+    slug: 'edward-davies',
+    name: 'Edward Davies',
+    qualification: 'BSc (Hons) Physiotherapy, PGCert MSK, MCSP, HCPC',
+    experience: '9 Years',
     imageUrl: '/images/aries-emblem.png',
-    imageHint: 'certified physiotherapist'
+    imageHint: 'chartered physiotherapist'
   },
   {
     id: 't4',
-    slug: 'dr-sam-evans',
-    name: 'Dr. Sam Evans',
-    qualification: 'MPT (Sports)',
+    slug: 'fiona-macdougall',
+    name: 'Fiona MacDougall',
+    qualification: 'BSc Physiotherapy, MCSP, HCPC Registered',
     experience: '15 Years',
     imageUrl: '/images/aries-emblem.png',
-    imageHint: 'certified physiotherapist'
+    imageHint: 'chartered physiotherapist'
   }
 ];
 
@@ -141,67 +141,67 @@ export const specialities: Speciality[] = [
 export const locations: Location[] = [
   {
     id: 'loc-1',
-    city: 'Mumbai',
-    address: 'Borivali West / All Mumbai Hubs, Maharashtra',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
-    mapImageUrl: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'mumbai healthcare hub'
+    city: 'London',
+    address: 'Level 32, 1 Canada Square, Canary Wharf, London, E14 5AA',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
+    mapImageUrl: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=85&w=1200',
+    mapImageHint: 'london canary wharf healthcare hub'
   },
   {
     id: 'loc-2',
-    city: 'Pune',
-    address: 'Koregaon Park / Baner Hub, Maharashtra',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
-    mapImageUrl: 'https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'pune healthcare hub'
+    city: 'Manchester',
+    address: '1 Hardman Square, Spinningfields / Deansgate, Manchester, M3 3EB',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
+    mapImageUrl: 'https://images.unsplash.com/photo-1515586838455-8f8f940d6853?auto=format&fit=crop&q=85&w=1200',
+    mapImageHint: 'manchester deansgate healthcare hub'
   },
   {
     id: 'loc-3',
-    city: 'Bengaluru',
-    address: 'Indiranagar / Whitefield Hub, Karnataka',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
+    city: 'Birmingham',
+    address: 'Colmore Row & Jewellery Quarter Hub, Birmingham, B3 2BJ',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
     mapImageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'bengaluru healthcare hub'
+    mapImageHint: 'birmingham healthcare hub'
   },
   {
     id: 'loc-4',
-    city: 'Chennai',
-    address: 'Anna Nagar / Adyar Hub, Tamil Nadu',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
-    mapImageUrl: 'https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'chennai healthcare hub'
+    city: 'Edinburgh',
+    address: 'George Street, New Town & Stockbridge, Edinburgh, EH2 2HT',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
+    mapImageUrl: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=85&w=1200',
+    mapImageHint: 'edinburgh healthcare hub'
   },
   {
     id: 'loc-5',
-    city: 'Hyderabad',
-    address: 'Jubilee Hills / HITEC City Hub, Telangana',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
-    mapImageUrl: 'https://images.unsplash.com/photo-1605469237567-a39930679526?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'hyderabad healthcare hub'
+    city: 'Glasgow',
+    address: 'Buchanan Street & West End Hub, Glasgow, G1 2FF',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
+    mapImageUrl: 'https://images.unsplash.com/photo-1571494146906-86de15d3817b?auto=format&fit=crop&q=85&w=1200',
+    mapImageHint: 'glasgow healthcare hub'
   },
   {
     id: 'loc-6',
-    city: 'Delhi',
-    address: 'South Delhi / Gurugram Hub, Delhi NCR',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
+    city: 'Leeds',
+    address: 'Wellington Street & City Centre Hub, Leeds, LS1 4AP',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
     mapImageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'delhi ncr healthcare hub'
+    mapImageHint: 'leeds healthcare hub'
   },
   {
     id: 'loc-7',
-    city: 'Kolkata',
-    address: 'Salt Lake / Alipore Hub, West Bengal',
-    phone: '+91 9136447006',
-    timings: '8:00 AM - 9:30 PM',
+    city: 'Bristol',
+    address: 'Clifton & Harbourside Hub, Bristol, BS8 4AA',
+    phone: '0800 274 3785',
+    timings: '8:00 AM - 8:00 PM',
     mapImageUrl: 'https://images.unsplash.com/photo-1558431382-27e39cb14bc8?auto=format&fit=crop&q=85&w=1200',
-    mapImageHint: 'kolkata healthcare hub'
-  },
+    mapImageHint: 'bristol healthcare hub'
+  }
 ];
 
 const conditionList = [
@@ -219,9 +219,9 @@ export const therapyList = [
 export const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
 export function getLocalizedFaqs(geo: GeoPath | null, serviceName: string = "physiotherapy"): Faq[] {
-  const cityName = geo?.city?.name || 'Mumbai';
+  const cityName = geo?.city?.name || 'London';
   const areaName = geo?.area?.name || geo?.city?.name || 'your local area';
-  const stateName = geo?.state?.name || 'Maharashtra';
+  const stateName = geo?.state?.name || 'Greater London';
 
   const city = capitalize(cityName);
   const area = capitalize(areaName);
@@ -232,37 +232,37 @@ export function getLocalizedFaqs(geo: GeoPath | null, serviceName: string = "phy
     {
       id: 'lfaq-1',
       question: `What is home ${service.toLowerCase()}?`,
-      answer: `Home ${service.toLowerCase()} is a professional clinical service where a certified specialist visits your home in ${area} to provide sessions. At Aries PhysioCare (a division of Aries HealthCare International Pvt Ltd), we deliver hospital-grade expertise, ensuring comfort, safety, and faster recovery without the need for travel.`
+      answer: `Home ${service.toLowerCase()} is a professional clinical service where an HCPC-registered specialist visits your home in ${area} to provide sessions. At AriesXpert UK (a division of Aries HealthCare (UK) Ltd), we deliver hospital-grade expertise, ensuring comfort, safety, and faster recovery without the need for clinic travel.`
     },
     {
       id: 'lfaq-2',
       question: `How long does a typical session last?`,
-      answer: `A standard session usually lasts between 45 to 60 minutes. This includes a review of your progress, manual therapy, supervised exercises, and if required, the application of portable therapeutic modalities like IFT or Laser.`
+      answer: `A standard session usually lasts between 45 to 60 minutes. This includes a review of your progress, manual therapy, supervised exercises, and if required, the application of portable therapeutic modalities like electrotherapy or therapeutic ultrasound.`
     },
     {
       id: 'lfaq-3',
       question: `Do I need to provide any equipment?`,
-      answer: `No. Our therapists carry all necessary portable equipment required for your treatment, including specialized clinical machines and basic exercise tools. You only need to provide a comfortable space for the session to take place.`
+      answer: `No. Our Chartered Physiotherapists carry all necessary portable equipment required for your treatment, including specialized clinical modalities and targeted exercise tools. You only need to provide a comfortable space for the session to take place.`
     },
     {
       id: 'lfaq-4',
-      question: `Are your therapists qualified and certified?`,
-      answer: `Yes, absolutely. Every Aries specialist is a qualified professional with a BPT or MPT degree and is registered with the relevant clinical councils. They undergo additional rigorous internal training on our standardized clinical protocols.`
+      question: `Are your therapists qualified and registered in the UK?`,
+      answer: `Yes, absolutely. Every AriesXpert specialist is an HCPC-registered and Chartered Society of Physiotherapy (CSP) accredited clinician. They undergo enhanced DBS checks and advanced clinical governance compliance.`
     },
     {
       id: 'lfaq-5',
       question: `Is home ${service.toLowerCase()} as effective as clinic-based treatment?`,
-      answer: `In many cases, it is more effective. Treating you in your natural environment allows the therapist to understand your functional challenges better and design lifestyle-specific exercises. It also eliminates the stress and physical strain of commuting.`
+      answer: `In many cases, it is more effective. Treating you in your natural home environment allows your physiotherapist to understand your functional challenges better and design lifestyle-specific rehabilitation protocols. It also eliminates the stress and pain of London transport or commuting.`
     },
     {
       id: 'lfaq-6',
       question: `What should I wear during my session?`,
-      answer: `We recommend wearing loose, comfortable clothing like a track suit or shorts that allow easy movement and access to the area being treated (e.g., knee or shoulder).`
+      answer: `We recommend wearing loose, comfortable clothing like sportswear or shorts that allow easy movement and clear access to the joint or area being treated (e.g., knee or shoulder).`
     },
     {
       id: 'lfaq-7',
       question: `How many sessions will I need for recovery?`,
-      answer: `This depends entirely on your initial clinical assessment. While some acute conditions show results in 3-5 sessions, chronic or post-surgical cases may require 10-15 sessions for full functional restoration.`
+      answer: `This depends entirely on your initial clinical assessment. While some acute conditions show significant improvement in 3-5 sessions, chronic or post-surgical cases may require 10-15 sessions for full functional restoration.`
     },
     {
       id: 'lfaq-8',
@@ -287,12 +287,12 @@ export function getLocalizedFaqs(geo: GeoPath | null, serviceName: string = "phy
     {
       id: 'lfaq-12',
       question: `How do I pay for the sessions?`,
-      answer: `We offer flexible payment options including online transfers, UPI, and cash. You can choose to pay per session or opt for our discounted recovery packages.`
+      answer: `We offer direct billing for major UK private medical insurers (Bupa, AXA Health, Aviva, Vitality, WPA) as well as secure debit/credit card payments and bank transfers for self-paying patients. You can choose to pay per session or opt for our discounted recovery packages.`
     },
     {
       id: 'lfaq-13',
       question: `Is it safe for the therapist to visit during infectious periods?`,
-      answer: `Aries PhysioCare follows strict clinical hygiene and safety protocols. Our therapists use sanitized equipment, wear necessary protective gear, and follow hand-hygiene standards to ensure your safety.`
+      answer: `AriesXpert follows strict clinical hygiene and NHS/HCPC infection control protocols. Our therapists use sanitized equipment, wear necessary protective gear, and follow hand-hygiene standards to ensure your safety.`
     },
     {
       id: 'lfaq-14',
@@ -308,38 +308,43 @@ export function getLocalizedFaqs(geo: GeoPath | null, serviceName: string = "phy
 }
 
 export function getAreaSpecificContext(geo: GeoPath) {
-  const cityName = geo?.city?.name || 'Mumbai';
+  const cityName = geo?.city?.name || 'London';
   const areaName = geo?.area?.name || geo?.city?.name || 'Local Area';
 
   const contexts: Record<string, any> = {
-    'hinjewadi': {
-      lifestyle: 'As a major IT hub, Hinjewadi has a population largely consisting of young professionals who spend long hours at workstations.',
-      painPoints: 'postural discomfort, stress-related strain, and repetitive movement fatigue',
-      landmarks: ['Phase 1', 'Phase 2', 'Phase 3', 'EON IT Park']
+    'canary-wharf': {
+      lifestyle: 'Canary Wharf and the Docklands financial district has a dense population of financial and tech professionals who spend extended hours in desk-bound positions.',
+      painPoints: 'postural neck discomfort, upper back stiffness, repetitive strain injury (RSI), and workstation ergonomics',
+      landmarks: ['One Canada Square', 'Jubilee Place', 'Crossrail Place', 'Cabot Square']
     },
-    'kothrud': {
-      lifestyle: 'Kothrud is one of Pune\'s most established residential neighborhoods, with a significant population of senior citizens and families.',
-      painPoints: 'age-related mobility challenges, wellness management, and post-hospital recovery',
-      landmarks: ['Karve Road', 'Vanaz Corner', 'Ideal Colony']
+    'westminster-central': {
+      lifestyle: 'Central London and Westminster is a fast-paced metropolitan hub with government officials, diplomats, and corporate executives requiring flexible on-demand healthcare.',
+      painPoints: 'stress-induced tension, cervical spine fatigue, and sports performance optimization',
+      landmarks: ['Parliament Square', 'Mayfair', 'Covent Garden', 'St James Park']
     },
-    'colaba': {
-      lifestyle: 'Colaba is a historic district with a diverse population, including elderly long-term residents and active urban professionals.',
-      painPoints: 'geriatric care needs, general musculoskeletal support, and wellness optimization',
-      landmarks: ['Gateway of India', 'Colaba Causeway', 'Navy Nagar']
+    'kensington-chelsea': {
+      lifestyle: 'The Royal Borough of Kensington and Chelsea is an established residential area with discerning private residents and seniors seeking discreet home physiotherapy.',
+      painPoints: 'post-surgical joint rehabilitation, osteoarthritis management, and geriatric fall prevention',
+      landmarks: ['King\'s Road', 'Sloane Square', 'Kensington High Street', 'Hyde Park']
+    },
+    'deansgate-city-centre': {
+      lifestyle: 'Manchester City Centre and Deansgate is a thriving urban core populated by young professionals, creatives, and athletes.',
+      painPoints: 'sports injuries, running biomechanics, lower back strain, and posture restoration',
+      landmarks: ['Spinningfields', 'Deansgate', 'Castlefield', 'Manchester Arndale']
     },
     'default': {
-      lifestyle: `The residents of ${areaName} are part of a vibrant urban community in ${cityName} that values health and proactive clinical recovery.`,
-      painPoints: 'common health management issues, mobility support, and lifestyle-related clinical needs',
-      landmarks: [`${areaName} market`, 'local parks', 'major residential complexes']
+      lifestyle: `The residents of ${areaName} are part of an active community in ${cityName} that values rapid recovery, evidence-based physiotherapy, and restored independence.`,
+      painPoints: 'musculoskeletal pain, post-injury rehabilitation, and postural alignment',
+      landmarks: [`${areaName} high street`, 'local transport links', 'district parks']
     }
   };
 
-  return contexts[areaName.toLowerCase()] || contexts['default'];
+  return contexts[areaName.toLowerCase().replace(/\s+/g, '-')] || contexts[areaName.toLowerCase()] || contexts['default'];
 }
 
 export function getNearbyAreas(geo: GeoPath, serviceSlug: string = 'physiotherapy') {
   if (!geo.city) return [];
-  const stateSlug = geo.state?.slug || 'maharashtra';
+  const stateSlug = geo.state?.slug || 'england';
   const citySlug = geo.city.slug;
 
   return geo.city.areas
@@ -455,7 +460,7 @@ const getSymptomClinicalInfo = (name: string): SymptomDetail => {
   };
 
   if (lowerName.includes('stiffness') || lowerName.includes('spasm')) {
-    info.description = `${name} is a common clinical complaint involving perceived tightness and resistance to movement. At Aries PhysioCare, we specialize in high-precision tissue release to restore natural fluidity.`;
+    info.description = `${name} is a common clinical complaint involving perceived tightness and resistance to movement. At AriesXpert, we specialize in high-precision tissue release to restore natural fluidity.`;
     info.longDescription = `Addressing ${name} involves restoring tissue elasticity and optimized blood flow. We focus on relaxing overactive neural pathways to restore smooth movement and structural harmony. Our clinical experts use a combination of manual skill and portable technology to deliver elite care directly at home.`;
     info.causes = ['Prolonged static posture', 'Inadequate recovery protocols', 'Underlying degenerative changes', 'Repetitive mechanical stress', 'Neural irritation'];
     info.riskFactors = ['Office workers', 'Geriatric age groups', 'Individuals with high mechanical stress'];
@@ -858,7 +863,7 @@ export const services: Service[] = [
     slug: 'physiotherapy',
     description: 'Personalized physical therapy to restore movement and function.',
     icon: HeartPulse,
-    longDescription: 'Physiotherapy at home offers a convenient and effective way to receive expert care. At Aries PhysioCare, our certified physiotherapists bring hospital-grade treatment to your doorstep, utilizing advanced modalities and manual therapy techniques.',
+    longDescription: 'Physiotherapy at home offers a convenient and effective way to receive expert care. At AriesXpert, our chartered physiotherapists bring hospital-grade treatment to your doorstep, utilizing advanced modalities and manual therapy techniques.',
     conditions: physiotherapyConditions
   },
   {
@@ -867,7 +872,7 @@ export const services: Service[] = [
     slug: 'occupational-therapy',
     description: 'Specialized intervention to help you regain independence in daily life activities.',
     icon: Accessibility,
-    longDescription: 'Occupational Therapy (OT) at Aries PhysioCare is dedicated to helping individuals of all ages achieve independence in their daily lives. Our experts focus on "occupations"—the meaningful activities that make up your day, from self-care to work and play. We address physical, cognitive, and sensory challenges through personalized clinical protocols, environmental adaptations, and evidence-based functional training delivered in the comfort of your home.',
+    longDescription: 'Occupational Therapy (OT) at AriesXpert is dedicated to helping individuals of all ages achieve independence in their daily lives. Our experts focus on "occupations"—the meaningful activities that make up your day, from self-care to work and play. We address physical, cognitive, and sensory challenges through personalized clinical protocols, environmental adaptations, and evidence-based functional training delivered in the comfort of your home.',
     conditions: [
       {
         id: 'ot-cond-1',
@@ -955,7 +960,7 @@ export const services: Service[] = [
     slug: 'dietician',
     description: 'Evidence-based nutrition management for disease recovery and peak wellness.',
     icon: CookingPot,
-    longDescription: 'Nutrition is the cornerstone of clinical recovery and long-term health. At Aries PhysioCare, our Clinical Dieticians provide evidence-based nutrition counseling tailored to your unique metabolic needs. We go beyond generic meal plans, offering specialized medical nutrition therapy for diabetes, cardiac health, weight management, and post-operative recovery, all within the convenience of your home.',
+    longDescription: 'Nutrition is the cornerstone of clinical recovery and long-term health. At AriesXpert, our Clinical Dieticians provide evidence-based nutrition counseling tailored to your unique metabolic needs. We go beyond generic meal plans, offering specialized medical nutrition therapy for diabetes, cardiac health, weight management, and post-operative recovery, all within the convenience of your home.',
     conditions: [
       {
         id: 'diet-cond-1',
@@ -1017,7 +1022,7 @@ export const services: Service[] = [
     slug: 'home-nursing',
     description: 'Skilled clinical nursing care for post-op, chronic illness, and complex recovery.',
     icon: Stethoscope,
-    longDescription: 'Aries PhysioCare provides hospital-grade nursing services in the comfort of your home. Our highly trained and certified nurses specialize in complex clinical tasks, including advanced wound management, medication administration, vitals monitoring, and specialized post-operative care. We bridge the gap between hospital discharge and full recovery with professional rigor and compassionate attention.',
+    longDescription: 'AriesXpert provides hospital-grade nursing services in the comfort of your home. Our highly trained and certified nurses specialize in complex clinical tasks, including advanced wound management, medication administration, vitals monitoring, and specialized post-operative care. We bridge the gap between hospital discharge and full recovery with professional rigor and compassionate attention.',
     conditions: [
       {
         id: 'nursing-cond-1',
@@ -1141,7 +1146,7 @@ export const services: Service[] = [
     slug: 'speech-therapy',
     description: 'Expert intervention for speech, language, communication, and swallowing disorders.',
     icon: Mic2,
-    longDescription: 'Speech-Language Pathology (SLP) at Aries PhysioCare focuses on restoring the vital human connection of communication and the essential function of swallowing. Our specialists work with children and adults to overcome challenges ranging from developmental speech delays and stuttering to post-stroke aphasia and cognitive-communication disorders, providing evidence-based therapy in the comfort of your home.',
+    longDescription: 'Speech-Language Pathology (SLP) at AriesXpert focuses on restoring the vital human connection of communication and the essential function of swallowing. Our specialists work with children and adults to overcome challenges ranging from developmental speech delays and stuttering to post-stroke aphasia and cognitive-communication disorders, providing evidence-based therapy in the comfort of your home.',
     conditions: [
       {
         id: 'speech-cond-1',
@@ -1223,10 +1228,24 @@ export const faqs: Faq[] = [
 
 export const Countries = [
   {
-    name: "India",
-    slug: "india",
+    name: "United Kingdom",
+    slug: "uk",
     isActive: true,
     seoEnabled: true,
+    states: IndianStates,
+  },
+  {
+    name: "United Kingdom",
+    slug: "united-kingdom",
+    isActive: true,
+    seoEnabled: true,
+    states: IndianStates,
+  },
+  {
+    name: "United Kingdom",
+    slug: "india", // legacy fallback alias
+    isActive: true,
+    seoEnabled: false,
     states: IndianStates,
   }
 ];

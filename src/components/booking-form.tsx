@@ -56,16 +56,16 @@ const steps = [
 
 const bookingSchema = z.object({
   fullName: z.string().min(1, 'Full name is required'),
-  phone: z.string().min(10, 'Valid 10-digit phone number is required'),
+  phone: z.string().min(10, 'Valid UK contact number is required'),
   email: z.string().email('Invalid email address'),
-  state: z.string().min(1, 'State is required'),
+  state: z.string().min(1, 'Nation / Region is required'),
   city: z.string().min(1, 'City is required'),
-  area: z.string().min(1, 'Area Hub is required'),
+  area: z.string().min(1, 'Locality Hub is required'),
   address: z.string().min(1, 'Full address is required'),
   service: z.string().min(1, 'Service is required'),
   date: z.date({ required_error: 'Please select an appointment date' }),
   time: z.string().min(1, 'Please select a preferred time slot'),
-  paymentMethod: z.enum(['card', 'upi', 'cash']).default('card'),
+  paymentMethod: z.enum(['card', 'insurance', 'cash']).default('card'),
   condition: z.string().optional(),
 });
 
@@ -186,7 +186,7 @@ export default function BookingForm({
     const result = await submitAppointmentLead({
       ...data,
       therapist: therapist || undefined,
-      country: 'India',
+      country: 'United Kingdom',
       ...getStoredAttribution(),
       planDays: selectedPlanDays,
       pricing: planPricing,
@@ -265,7 +265,7 @@ export default function BookingForm({
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-[0.25em] text-primary">
-                Aries PhysioCare • Home Visit
+                AriesXpert • Home Visit
               </span>
             </div>
             <h2 className="text-xl md:text-2xl font-bold font-headline tracking-tight text-foreground">
@@ -369,7 +369,7 @@ export default function BookingForm({
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="e.g. 9876543210"
+                            placeholder="e.g. 07123 456789 or +44 7123 456789"
                             type="tel"
                             {...field}
                             className="h-12 bg-white/[0.04] dark:bg-black/30 border-white/10 hover:border-primary/40 focus:border-primary rounded-xl text-sm font-medium"
@@ -391,7 +391,7 @@ export default function BookingForm({
                       </FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="e.g. rahul@gmail.com"
+                          placeholder="e.g. james.smith@example.co.uk"
                           type="email"
                           {...field}
                           className="h-12 bg-white/[0.04] dark:bg-black/30 border-white/10 hover:border-primary/40 focus:border-primary rounded-xl text-sm font-medium"
@@ -417,7 +417,7 @@ export default function BookingForm({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                            State
+                            Nation / Region
                           </FormLabel>
                           <Select
                             onValueChange={(val) => {
@@ -429,7 +429,7 @@ export default function BookingForm({
                           >
                             <FormControl>
                               <SelectTrigger className="h-11 bg-white/[0.04] dark:bg-black/40 border-white/10 rounded-xl text-xs">
-                                <SelectValue placeholder="Select State" />
+                                <SelectValue placeholder="Select Region" />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent className="glassmorphic">
@@ -451,7 +451,7 @@ export default function BookingForm({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                            City
+                            City / Metro Hub
                           </FormLabel>
                           <Select
                             onValueChange={(val) => {
@@ -485,12 +485,12 @@ export default function BookingForm({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-                            Area Hub
+                            Locality Hub / Postcode
                           </FormLabel>
                           <Select onValueChange={field.onChange} value={field.value} disabled={!selectedCity}>
                             <FormControl>
                               <SelectTrigger className="h-11 bg-white/[0.04] dark:bg-black/40 border-white/10 rounded-xl text-xs">
-                                <SelectValue placeholder="Select Area" />
+                                <SelectValue placeholder="Select Locality" />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent className="glassmorphic">
@@ -513,11 +513,11 @@ export default function BookingForm({
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                          <Building2 className="w-3.5 h-3.5 text-primary" /> Complete Street Address (Flat / House No., Landmark)
+                          <Building2 className="w-3.5 h-3.5 text-primary" /> Complete Street Address (Flat / House No., Postcode)
                         </FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="e.g. Flat 402, Sea Breeze Apts, 14th Road, Bandra West, Mumbai 400050"
+                            placeholder="e.g. Flat 12, 1 Canada Square, Canary Wharf, London E14 5AA"
                             {...field}
                             className="h-20 bg-white/[0.04] dark:bg-black/40 border-white/10 hover:border-primary/40 focus:border-primary rounded-xl text-xs resize-none"
                           />
@@ -568,17 +568,17 @@ export default function BookingForm({
                       Select Care Package (Location-Based Savings)
                     </Label>
                     <Badge variant="outline" className="text-[10px] font-mono text-cyan-400 border-cyan-500/30">
-                      Tier: {locationTier.name} (₹{locationTier.basePrice}/sess)
+                      Tier: {locationTier.name} (£{locationTier.basePrice}/sess)
                     </Badge>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5">
                     {[
-                      { id: '1', name: '1 Session', rate: `₹${locationTier.basePrice}`, total: `₹${locationTier.basePrice}`, badge: 'Single Visit' },
-                      { id: '10', name: '10 Days Plan', rate: `₹${locationTier.packages.days10.ratePerSession}/sess`, total: `₹${locationTier.packages.days10.totalPrice}`, badge: `Save ₹${locationTier.packages.days10.totalSavings}` },
-                      { id: '15', name: '15 Days Plan', rate: `₹${locationTier.packages.days15.ratePerSession}/sess`, total: `₹${locationTier.packages.days15.totalPrice}`, badge: `Save ₹${locationTier.packages.days15.totalSavings}` },
-                      { id: '20', name: '20 Days Plan', rate: `₹${locationTier.packages.days20.ratePerSession}/sess`, total: `₹${locationTier.packages.days20.totalPrice}`, badge: `Save ₹${locationTier.packages.days20.totalSavings}` },
-                      { id: '30', name: '30 Days Plan', rate: `₹${locationTier.packages.days30.ratePerSession}/sess`, total: `₹${locationTier.packages.days30.totalPrice}`, badge: `★ Save ₹${locationTier.packages.days30.totalSavings}`, highlight: true },
+                      { id: '1', name: '1 Session', rate: `£${locationTier.basePrice}`, total: `£${locationTier.basePrice}`, badge: 'Single Visit' },
+                      { id: '10', name: '10 Days Plan', rate: `£${locationTier.packages.days10.ratePerSession}/sess`, total: `£${locationTier.packages.days10.totalPrice}`, badge: `Save £${locationTier.packages.days10.totalSavings}` },
+                      { id: '15', name: '15 Days Plan', rate: `£${locationTier.packages.days15.ratePerSession}/sess`, total: `£${locationTier.packages.days15.totalPrice}`, badge: `Save £${locationTier.packages.days15.totalSavings}` },
+                      { id: '20', name: '20 Days Plan', rate: `£${locationTier.packages.days20.ratePerSession}/sess`, total: `£${locationTier.packages.days20.totalPrice}`, badge: `Save £${locationTier.packages.days20.totalSavings}` },
+                      { id: '30', name: '30 Days Plan', rate: `£${locationTier.packages.days30.ratePerSession}/sess`, total: `£${locationTier.packages.days30.totalPrice}`, badge: `★ Save £${locationTier.packages.days30.totalSavings}`, highlight: true },
                     ].map((plan) => {
                       const isSelected = selectedPlanDays === plan.id;
                       return (
@@ -700,9 +700,9 @@ export default function BookingForm({
                           className="grid grid-cols-1 sm:grid-cols-3 gap-3"
                         >
                           {[
-                            { value: 'card', label: 'Credit / Debit Card', desc: 'Secure payment gateway link', icon: CreditCard },
-                            { value: 'upi', label: 'UPI / Digital QR', desc: 'GPay, PhonePe, Paytm, QR', icon: Smartphone },
-                            { value: 'cash', label: 'Pay After Session', desc: 'Direct to therapist post-visit', icon: Banknote },
+                            { value: 'card', label: 'Credit / Debit Card', desc: 'Secure online payment via Stripe', icon: CreditCard },
+                            { value: 'insurance', label: 'Health Insurance', desc: 'Bupa, AXA Health, Aviva, Vitality', icon: ShieldCheck },
+                            { value: 'cash', label: 'Pay Post-Session', desc: 'Direct invoice after therapist visit', icon: Banknote },
                           ].map((method) => {
                             const isSelected = paymentMethod === method.value;
                             return (
@@ -753,15 +753,15 @@ export default function BookingForm({
                     <div>
                       <p className="text-xs font-bold text-foreground">{planPricing.title}</p>
                       <p className="text-[11px] text-muted-foreground">
-                        Location Tier: <strong className="text-foreground">{locationTier.name}</strong> • ₹{planPricing.rate}/session
+                        Location Tier: <strong className="text-foreground">{locationTier.name}</strong> • £{planPricing.rate}/session
                       </p>
                     </div>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="text-lg font-mono font-black text-emerald-400">₹{planPricing.total.toLocaleString('en-IN')}</p>
+                    <p className="text-lg font-mono font-black text-emerald-400">£{planPricing.total.toLocaleString('en-GB')}</p>
                     {planPricing.savings > 0 && (
                       <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded-full">
-                        Savings: ₹{planPricing.savings.toLocaleString('en-IN')}
+                        Savings: £{planPricing.savings.toLocaleString('en-GB')}
                       </span>
                     )}
                   </div>
@@ -803,7 +803,7 @@ export default function BookingForm({
                     <div className="space-y-1 p-3 rounded-xl bg-white/[0.02] border border-white/5">
                       <p className="text-[9px] font-bold uppercase tracking-widest text-muted-foreground">Schedule</p>
                       <p className="font-bold text-foreground text-sm">
-                        {form.getValues('date')?.toLocaleDateString('en-IN', {
+                        {form.getValues('date')?.toLocaleDateString('en-GB', {
                           weekday: 'short',
                           day: 'numeric',
                           month: 'short',
@@ -839,12 +839,12 @@ export default function BookingForm({
                     </div>
                     <div className="text-right">
                       <p className="text-xl font-black font-mono text-emerald-400">
-                        ₹{planPricing.total.toLocaleString('en-IN')}
+                        £{planPricing.total.toLocaleString('en-GB')}
                       </p>
                       {planPricing.savings > 0 && (
                         <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded-full inline-flex items-center gap-1">
                           <TrendingDown className="w-3 h-3" />
-                          Saved ₹{planPricing.savings.toLocaleString('en-IN')}
+                          Saved £{planPricing.savings.toLocaleString('en-GB')}
                         </span>
                       )}
                     </div>

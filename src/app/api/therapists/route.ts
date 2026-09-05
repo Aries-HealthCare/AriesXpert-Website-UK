@@ -54,8 +54,8 @@ function filterCatalog(
 
       if (qState && !tState.includes(qState) && !qState.includes(tState)) return false;
       if (qCity) {
-        if (qCity.includes('thane') || qCity.includes('mumbai') || qCity.includes('navi')) {
-          return tCity.includes('thane') || tCity.includes('mumbai') || tCity.includes('navi');
+        if (qCity.includes('london') || qCity.includes('westminster') || qCity.includes('canary')) {
+          return tCity.includes('london') || (t.areas && t.areas.some(a => a.toLowerCase().includes('london')));
         }
         return tCity.includes(qCity) || qCity.includes(tCity);
       }
@@ -189,20 +189,20 @@ function normalise(therapist: any): TherapistCard {
     name,
     qualification: typeof therapist.qualification === 'string' && therapist.qualification 
       ? therapist.qualification 
-      : (therapist.professionalInfo?.qualification || 'BPT, MPT'),
+      : (therapist.professionalInfo?.qualification || 'BSc (Hons) Physiotherapy, MCSP, HCPC'),
     specialization:
       (typeof therapist.primarySpecialization === 'string' && therapist.primarySpecialization) ||
       specializations[0] ||
       'Physiotherapy',
     experience,
-    city: typeof therapist.city === 'string' ? therapist.city : 'Mumbai',
-    state: typeof therapist.state === 'string' ? therapist.state : 'Maharashtra',
+    city: typeof therapist.city === 'string' ? therapist.city : 'London',
+    state: typeof therapist.state === 'string' ? therapist.state : 'Greater London',
     areas: finalAreas,
     rating: Number.isFinite(therapist.rating) && therapist.rating > 0 ? Number(therapist.rating) : 4.9,
     reviewCount: typeof therapist.reviewCount === 'number' ? therapist.reviewCount : 85,
     imageUrl,
     isAvailable: therapist.acceptingTelehealthRequests !== false,
-    languages: Array.isArray(therapist.languages) && therapist.languages.length > 0 ? therapist.languages : ['English', 'Hindi'],
+    languages: Array.isArray(therapist.languages) && therapist.languages.length > 0 ? therapist.languages : ['English'],
     services: Array.isArray(therapist.serviceTypes) && therapist.serviceTypes.length > 0 
       ? therapist.serviceTypes 
       : (Array.isArray(therapist.professionalInfo?.serviceTypes) ? therapist.professionalInfo.serviceTypes : ['Home Visit Physiotherapy', 'Post-Op Rehab']),
@@ -210,7 +210,7 @@ function normalise(therapist: any): TherapistCard {
     isVerified: true,
     education: typeof therapist.qualification === 'string' && therapist.qualification
       ? [therapist.qualification]
-      : ['Bachelor of Physiotherapy (BPT)'],
+      : ['BSc (Hons) Physiotherapy, MCSP, HCPC'],
     feedback: Array.isArray(therapist.feedback) ? therapist.feedback : [],
   };
 }

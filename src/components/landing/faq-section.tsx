@@ -5,7 +5,7 @@ export default function FaqSection() {
     <LocalizedFaqSection 
       className="bg-secondary/30" 
       title="Commonly Asked Questions"
-      description="Learn more about how Aries PhysioCare brings Chartered Clinical Physiotherapy to your doorstep across the UK."
+      description="Learn more about how AriesXpert brings Chartered Clinical Physiotherapy to your doorstep across the UK."
     />
   );
 }

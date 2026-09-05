@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { TREATMENTS_UNIVERSE } from "@/lib/canadian-data";
+import { TREATMENTS_UNIVERSE } from "@/lib/uk-data";
 import { Zap, ChevronRight, CheckCircle2, Calendar } from "lucide-react";
 import { BookingModal } from '@/components/booking-modal';
 
@@ -37,9 +37,9 @@ export default function TreatmentsPage() {
                 <span className="text-xs font-mono uppercase text-clinical-cyan font-bold tracking-wider">
                   {treatment.category.replace("-", " ")}
                 </span>
-                {treatment.cadPricingEstimate && (
+                {(treatment.gbpPricingEstimate || treatment.cadPricingEstimate) && (
                   <span className="text-[11px] font-mono text-slate-400">
-                    Direct Billed in Canada
+                    Direct Insurer Billing (UK)
                   </span>
                 )}
               </div>

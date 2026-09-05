@@ -39,8 +39,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ariesxpert.co.uk'),
   title: {
-    default: 'Aries PhysioCare UK | In-Home & Virtual HCPC Registered Physiotherapy',
-    template: '%s | Aries PhysioCare UK',
+    default: 'AriesXpert UK | In-Home & Virtual HCPC Registered Physiotherapy',
+    template: '%s | AriesXpert UK',
   },
   description:
     'Hospital-grade in-home and virtual physiotherapy across London, Manchester, Birmingham, Edinburgh & UK. Direct billing to Bupa, AXA Health, Aviva, Vitality & WPA. HCPC & CSP registered clinicians.',

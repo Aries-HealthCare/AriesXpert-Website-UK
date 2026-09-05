@@ -30,7 +30,7 @@ const COMMON_CONDITIONS = [
 ];
 
 const TRUST_ITEMS = [
-    { icon: Shield, text: 'BPT/MPT Verified Therapists' },
+    { icon: Shield, text: 'HCPC & CSP Registered Clinicians' },
     { icon: Clock, text: 'Same-Day Appointments' },
     { icon: HeartPulse, text: 'Advanced Portable Equipment' },
     { icon: Star, text: '4.8★ Average Rating' },
@@ -38,7 +38,7 @@ const TRUST_ITEMS = [
 ];
 
 const HOW_IT_WORKS = [
-    { step: '01', title: 'Book or Call', desc: (loc: string) => `Click Book Now or call +91 9136447006. Tell us you need a physio in ${loc}.` },
+    { step: '01', title: 'Book or Call', desc: (loc: string) => `Click Book Now or call 0800 274 3785. Tell us you need a physio in ${loc}.` },
     { step: '02', title: 'Get Matched', desc: (loc: string) => `We assign the nearest certified therapist covering ${loc}.` },
     { step: '03', title: 'Confirmation', desc: () => "We send you the therapist's name, credentials, and ETA." },
     { step: '04', title: 'Home Session', desc: () => 'Your therapist arrives with all equipment and delivers clinical-grade care.' },
@@ -49,7 +49,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
     const cityPageSlug = `physiotherapy-in-${location.citySlug}`;
     const cityData = citySeoPages.find(c => c.citySlug === location.citySlug);
 
-    const WHATSAPP_URL = `https://wa.me/918591981880?text=${encodeURIComponent(`Hi! I need home physiotherapy in ${location.locationName}, ${location.cityName}. Please share details.`)}`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=${encodeURIComponent(`Hi! I need home physiotherapy in ${location.locationName}, ${location.cityName}. Please share details.`)}`;
 
     // Build breadcrumb
     const breadcrumbs = [
@@ -63,7 +63,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
 
     const jsonLd = [
         getLocalBusinessSchema({
-            name: `Aries PhysioCare — ${location.locationName}, ${location.cityName}`,
+            name: `AriesXpert UK — ${location.locationName}, ${location.cityName}`,
             description: location.metaDescription,
             city: location.cityName,
             state: location.stateName,
@@ -87,7 +87,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                     name: `How quickly can a physiotherapist reach ${location.locationName}?`,
                     acceptedAnswer: {
                         '@type': 'Answer',
-                        text: `For most areas in ${location.locationName}, ${location.cityName}, we can arrange a same-day appointment. Call +91 9136447006 for the fastest slot.`,
+                        text: `For most areas in ${location.locationName}, ${location.cityName}, we can arrange a same-day appointment. Call 0800 274 3785 for the fastest slot.`,
                     },
                 },
                 {
@@ -95,7 +95,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                     name: `Do you have physiotherapists who visit homes in ${location.locationName}?`,
                     acceptedAnswer: {
                         '@type': 'Answer',
-                        text: `Yes! Aries PhysioCare has dedicated therapists covering ${location.locationName} and nearby areas. All therapists are BPT/MPT certified and bring clinical-grade portable equipment.`,
+                        text: `Yes! AriesXpert UK has dedicated Chartered Physiotherapists covering ${location.locationName} and nearby areas. All therapists are HCPC/CSP certified and bring clinical-grade portable equipment.`,
                     },
                 },
                 {
@@ -103,7 +103,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                     name: `What physiotherapy services are available in ${location.locationName}?`,
                     acceptedAnswer: {
                         '@type': 'Answer',
-                        text: `All Aries PhysioCare services are available in ${location.locationName} — including physiotherapy, sports injury rehab, post-surgery care, neuro rehab, elderly care, and more.`,
+                        text: `All AriesXpert UK services are available in ${location.locationName} — including musculoskeletal physiotherapy, sports injury rehab, post-surgery care, neuro rehab, elderly care, and more.`,
                     },
                 },
                 {
@@ -111,7 +111,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                     name: `How do I book a home physiotherapy session in ${location.locationName}?`,
                     acceptedAnswer: {
                         '@type': 'Answer',
-                        text: `Call +91 9136447006, WhatsApp +91 9372681410, or use the book button above. Mention ${location.locationName} as your location and we'll confirm availability instantly.`,
+                        text: `Call 0800 274 3785, WhatsApp 0800 274 3785, or use the book button above. Mention ${location.locationName} as your location and we'll confirm availability instantly.`,
                     },
                 },
             ],
@@ -178,8 +178,8 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                                     Book Home Visit in {location.locationName}
                                 </BookAppointmentButton>
                                 <Button asChild size="lg" variant="outline" className="h-14 px-8 font-bold text-white border-white/40 hover:bg-white/10 bg-transparent">
-                                    <a href="tel:+919136447006" className="flex items-center gap-2">
-                                        <Phone className="w-5 h-5" /> Call +91 9136447006
+                                    <a href="tel:08002743785" className="flex items-center gap-2">
+                                        <Phone className="w-5 h-5" /> Call 0800 274 3785
                                     </a>
                                 </Button>
                             </div>
@@ -187,10 +187,10 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                             {/* Social proof */}
                             <div className="flex flex-wrap justify-center gap-6 pt-6">
                                 {[
-                                    { val: '450+', label: 'Therapists Pan-India' },
+                                    { val: '150+', label: 'HCPC Chartered Therapists' },
                                     { val: 'Same Day', label: 'Appointments Available' },
                                     { val: '4.8★', label: 'Average Patient Rating' },
-                                    { val: '100%', label: 'BPT/MPT Certified' },
+                                    { val: '100%', label: 'HCPC & CSP Registered' },
                                 ].map((item, i) => (
                                     <div key={i} className="text-center">
                                         <div className="text-2xl font-black text-accent">{item.val}</div>
@@ -225,10 +225,10 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                                     <HeartPulse className="w-3.5 h-3.5" /> Home Physiotherapy in {location.locationName}
                                 </div>
                                 <h2 className="font-headline text-3xl md:text-4xl font-extrabold leading-tight">
-                                    Why Residents of <span className="text-primary">{location.locationName}</span> Choose Aries PhysioCare
+                                    Why Residents of <span className="text-primary">{location.locationName}</span> Choose AriesXpert
                                 </h2>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Getting physiotherapy treatment in {location.locationName}, {location.cityName} no longer means long commutes to clinics. Aries PhysioCare's certified therapists bring clinical-grade care directly to your home — with the same quality you'd expect from top hospitals in {location.cityName}.
+                                    Getting physiotherapy treatment in {location.locationName}, {location.cityName} no longer means long commutes to clinics. AriesXpert's certified therapists bring clinical-grade care directly to your home — with the same quality you'd expect from top hospitals in {location.cityName}.
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     Whether you're recovering from surgery, managing chronic pain, or rehabilitating a sports injury, our {location.locationName} team is equipped with advanced portable physiotherapy equipment — including IFT, Ultrasound Therapy, TENS, and Laser — to deliver effective results at your doorstep.
@@ -237,7 +237,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     {[
                                         `Home visits across ${location.locationName}`,
-                                        'Certified BPT/MPT therapists',
+                                        'HCPC & CSP registered physiotherapists',
                                         'IFT, US, TENS, Laser equipment',
                                         'Same-day appointments',
                                         'Clinical progress tracking',
@@ -304,7 +304,7 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                                 Services Available in <span className="text-primary">{location.locationName}</span>
                             </h2>
                             <p className="text-muted-foreground max-w-xl mx-auto">
-                                Every Aries PhysioCare service is available at your home in {location.locationName}.
+                                Every AriesXpert service is available at your home in {location.locationName}.
                             </p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -427,11 +427,11 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                             {[
                                 {
                                     q: `How quickly can a physiotherapist reach ${location.locationName}?`,
-                                    a: `For most patients in ${location.locationName}, we can arrange a same-day appointment. For early morning or weekend slots, we recommend booking at least a few hours in advance. Call +91 9136447006 for the fastest slot.`,
+                                    a: `For most patients in ${location.locationName}, we can arrange a same-day appointment. For early morning or weekend slots, we recommend booking at least a few hours in advance. Call 0800 274 3785 for the fastest slot.`,
                                 },
                                 {
                                     q: `Do you have physiotherapists who visit homes in ${location.locationName}?`,
-                                    a: `Yes! Aries PhysioCare has dedicated therapists covering ${location.locationName} and surrounding areas in ${location.cityName}. All are BPT/MPT certified and bring clinical-grade portable equipment for home sessions.`,
+                                    a: `Yes! AriesXpert UK has dedicated Chartered Physiotherapists covering ${location.locationName} and surrounding areas in ${location.cityName}. All are HCPC/CSP certified and bring clinical-grade portable equipment for home sessions.`,
                                 },
                                 {
                                     q: `What conditions can be treated by home physiotherapy in ${location.locationName}?`,
@@ -439,11 +439,11 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                                 },
                                 {
                                     q: `How do I book a home physiotherapy session in ${location.locationName}?`,
-                                    a: `Simply call +91 9136447006, WhatsApp +91 9372681410, or click the Book button above. Mention ${location.locationName} as your location and your condition and we'll confirm a therapist within the hour.`,
+                                    a: `Simply call 0800 274 3785, WhatsApp 0800 274 3785, or click the Book button above. Mention ${location.locationName} as your location and your condition and we'll confirm a therapist within the hour.`,
                                 },
                                 {
                                     q: `What does home physiotherapy cost in ${location.locationName}?`,
-                                    a: `Session pricing starts from ₹800 depending on the service type and package. We offer discounted recovery packages and corporate packages. Call us for an exact quote for your specific condition in ${location.locationName}.`,
+                                    a: `Session pricing starts from £85 for regional hubs and £100 for greater London areas. Direct billing available for Bupa, AXA Health, Aviva, Vitality, and WPA policyholders. Call us for an exact quote for your specific condition in ${location.locationName}.`,
                                 },
                             ].map((faq, i) => (
                                 <Card key={i} className="glassmorphic">
@@ -484,9 +484,9 @@ export default function AreaLandingPageTemplate({ location }: AreaLandingPageTem
                             </Button>
                         </div>
                         <div className="mt-8 flex items-center justify-center gap-6 text-white/60 text-sm">
-                            <span className="flex items-center gap-1.5"><Phone className="w-4 h-4" /> +91 9136447006</span>
+                            <span className="flex items-center gap-1.5"><Phone className="w-4 h-4" /> 0800 274 3785</span>
                             <span>•</span>
-                            <span className="flex items-center gap-1.5"><MessageCircle className="w-4 h-4" /> +91 9372681410</span>
+                            <span className="flex items-center gap-1.5"><MessageCircle className="w-4 h-4" /> Free Helpline</span>
                         </div>
                     </div>
                 </section>

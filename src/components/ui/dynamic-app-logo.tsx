@@ -34,7 +34,7 @@ export function DynamicAppLogo({
         <div className="relative w-full h-full rounded-full bg-card/90 backdrop-blur-md border border-white/20 dark:border-white/10 flex items-center justify-center overflow-hidden shadow-sm">
           <Image
             src="/images/Arieslogo.png"
-            alt="Aries PhysioCare"
+            alt="AriesXpert UK"
             width={size}
             height={size}
             className="w-full h-full object-contain p-1 rounded-full"
@@ -49,7 +49,7 @@ export function DynamicAppLogo({
             Aries<span className="text-primary font-black">Xpert</span>
           </span>
           <span className="text-[9px] font-bold uppercase tracking-widest text-muted-foreground">
-            PhysioCare Network
+            UK Clinical Network
           </span>
         </div>
       )}

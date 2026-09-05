@@ -28,7 +28,7 @@ export interface CitySeoData {
     canonicalUrl: string;
 }
 
-const BASE = 'https://uk.ariesphysiocare.com';
+const BASE = 'https://www.ariesxpert.co.uk';
 
 export const citySeoPages: CitySeoData[] = [
     {
@@ -37,12 +37,12 @@ export const citySeoPages: CitySeoData[] = [
         citySlug: 'london',
         stateSlug: 'england',
         pageSlug: 'physiotherapy-in-london',
-        metaTitle: 'Best In-Home Physiotherapy in London | Aries PhysioCare UK',
+        metaTitle: 'Best In-Home Physiotherapy in London | AriesXpert UK',
         metaDescription: 'Top-rated chartered in-home physiotherapy across Greater London. HCPC & CSP registered physios in Westminster, Kensington, Chelsea, City & North London. Direct billing to Bupa, AXA Health, Aviva & Vitality. Book same-day!',
         keywords: ['physiotherapy in london', 'home physiotherapy london', 'chartered physiotherapist london', 'physio at home london', 'bupa physiotherapy london', 'axa health physiotherapy london', 'physiotherapy westminster', 'physiotherapy kensington'],
         heroHeading: 'Chartered In-Home Physiotherapy in London',
         heroSubheading: 'Hospital-grade physical therapy and orthopedic rehabilitation delivered to your residence, mews, or office anywhere across Greater London.',
-        localIntro: 'London’s fast-paced corporate life and high desk hours in the City and Canary Wharf lead to acute postural strain, sciatica, and cervical spine stiffness. Aries PhysioCare brings HCPC and CSP registered chartered physiotherapists directly to your doorstep across London, eliminating long NHS waiting lists and clinic travel times.',
+        localIntro: 'London’s fast-paced corporate life and high desk hours in the City and Canary Wharf lead to acute postural strain, sciatica, and cervical spine stiffness. AriesXpert brings HCPC and CSP registered chartered physiotherapists directly to your doorstep across London, eliminating long NHS waiting lists and clinic travel times.',
         whySection: 'Every physiotherapist in our UK network is registered with the Health and Care Professions Council (HCPC) and the Chartered Society of Physiotherapy (CSP), with direct billing for all major UK private medical insurers.',
         stats: [
             { label: 'Active Clinicians in London', value: '75+' },
@@ -72,7 +72,7 @@ export const citySeoPages: CitySeoData[] = [
         citySlug: 'manchester',
         stateSlug: 'england',
         pageSlug: 'physiotherapy-in-manchester',
-        metaTitle: 'Chartered In-Home Physiotherapy in Manchester | Aries PhysioCare UK',
+        metaTitle: 'Chartered In-Home Physiotherapy in Manchester | AriesXpert UK',
         metaDescription: 'Expert HCPC registered home physiotherapy across Manchester City Centre, Salford Quays, Didsbury, Altrincham & Cheshire. Direct billing to Bupa & AXA Health.',
         keywords: ['physiotherapy in manchester', 'home physio manchester', 'chartered physio manchester', 'physiotherapy didsbury', 'physio salford quays'],
         heroHeading: 'In-Home Physiotherapy in Manchester',
@@ -103,7 +103,7 @@ export const citySeoPages: CitySeoData[] = [
         citySlug: 'birmingham',
         stateSlug: 'england',
         pageSlug: 'physiotherapy-in-birmingham',
-        metaTitle: 'In-Home Physiotherapy in Birmingham & West Midlands | Aries PhysioCare UK',
+        metaTitle: 'In-Home Physiotherapy in Birmingham & West Midlands | AriesXpert UK',
         metaDescription: 'Chartered home physical therapy in Birmingham, Edgbaston, Solihull, and Sutton Coldfield. HCPC verified specialists with private medical insurance direct billing.',
         keywords: ['physiotherapy in birmingham', 'home physio birmingham', 'physio edgbaston', 'physiotherapy solihull'],
         heroHeading: 'In-Home Physiotherapy in Birmingham',
@@ -134,7 +134,7 @@ export const citySeoPages: CitySeoData[] = [
         citySlug: 'edinburgh',
         stateSlug: 'scotland',
         pageSlug: 'physiotherapy-in-edinburgh',
-        metaTitle: 'Chartered In-Home Physiotherapy in Edinburgh | Aries PhysioCare UK',
+        metaTitle: 'Chartered In-Home Physiotherapy in Edinburgh | AriesXpert UK',
         metaDescription: 'HCPC chartered home physiotherapy in Edinburgh New Town, Stockbridge, West End, Morningside, and Leith. Direct billing to all UK insurers.',
         keywords: ['physiotherapy in edinburgh', 'home physio edinburgh', 'chartered physio scotland', 'physio stockbridge'],
         heroHeading: 'In-Home Physiotherapy in Edinburgh',

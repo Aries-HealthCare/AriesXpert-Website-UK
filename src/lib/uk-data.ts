@@ -15,7 +15,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     tagline: "Restoring joint mechanics, spine alignment, and movement integrity.",
     description: "Evidence-informed assessment and physical rehabilitation for bone, joint, ligament, and muscle conditions.",
     iconName: "Activity",
-    longDescription: "Our Canadian registered physiotherapists utilize advanced clinical reasoning, manual joint mobilizations, soft-tissue techniques, and individualized exercise prescription to resolve pain at its biomechanical source. Whether you are dealing with persistent lumbar discomfort or an acute sports injury, we build a structured path back to fluid movement.",
+    longDescription: "Our HCPC-registered Chartered Physiotherapists utilize advanced clinical reasoning, manual joint mobilizations, soft-tissue techniques, and individualized exercise prescription to resolve pain at its biomechanical source. Whether you are dealing with persistent lumbar discomfort or an acute sports injury, we build a structured path back to fluid movement.",
     clinicalObjectives: [
       "Alleviate acute and chronic pain without excessive pharmacological reliance",
       "Restore full functional range of motion and joint kinematics",
@@ -30,7 +30,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     title: "Sports Injury & Athletic Performance Rehabilitation",
     slug: "sports-rehabilitation",
     tagline: "From acute injury to return-to-sport mastery.",
-    description: "High-performance recovery protocols for athletes, runners, weekend warriors, and active Canadians.",
+    description: "High-performance recovery protocols for athletes, runners, weekend warriors, and active individuals across the UK.",
     iconName: "Zap",
     longDescription: "Sports physiotherapy is more than resting an injury—it is about restoring tissue capacity, explosive power, agility, and neuromuscular control. We utilize objective biomechanical tests, force-vector loading, and sport-specific drills to ensure safe return to peak performance.",
     clinicalObjectives: [
@@ -80,7 +80,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "geriatric-mobility",
     title: "Geriatric Physiotherapy & Fall Prevention",
     slug: "geriatric-physiotherapy",
-    tagline: "Empowering Canadian seniors with strength, stability, and independence.",
+    tagline: "Empowering UK seniors with strength, stability, and independence.",
     description: "Dedicated in-home and clinic-based care to improve balance, bone density, and safe living.",
     iconName: "HeartHandshake",
     longDescription: "Aging should never mean giving up the activities you love. Our geriatric physiotherapy programs focus on core stability, lower limb power, joint conservation, and home safety audits to dramatically reduce fall risk and maintain vitality.",
@@ -575,7 +575,8 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "High-level randomized controlled trials demonstrate that manual therapy combined with active therapeutic exercise yields superior pain and functional outcomes compared to passive modalities or exercise alone.",
     treatedConditions: ["lumbar-spondylosis", "rotator-cuff-injury", "sciatica", "cervical-spondylosis", "frozen-shoulder"],
-    cadPricingEstimate: "Included in standard Canadian registered physiotherapy session ($95–$130/visit)"
+    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)",
+    cadPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
   },
   {
     id: "exercise-therapy",
@@ -599,7 +600,8 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Therapeutic exercise is universally recognized across global clinical guidelines as the primary intervention for long-term musculoskeletal recovery.",
     treatedConditions: ["acl-tear", "lumbar-spondylosis", "osteoarthritis", "rotator-cuff-injury"],
-    cadPricingEstimate: "Included in standard Canadian registered physiotherapy session ($95–$130/visit)"
+    gbpPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)",
+    cadPricingEstimate: "Included in standard UK Chartered Physiotherapy session (£85–£130/visit)"
   },
   {
     id: "dry-needling",
@@ -623,7 +625,8 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Clinical trials confirm dry needling accelerates short- and medium-term pain reduction and improves range of motion when integrated into a comprehensive rehabilitation plan.",
     treatedConditions: ["rotator-cuff-injury", "lumbar-spondylosis", "carpal-tunnel-syndrome", "plantar-fasciitis"],
-    cadPricingEstimate: "Available within registered physiotherapy sessions where certified ($95–$140/visit)"
+    gbpPricingEstimate: "Available within Chartered Physiotherapy sessions where certified (£85–£140/visit)",
+    cadPricingEstimate: "Available within Chartered Physiotherapy sessions where certified (£85–£140/visit)"
   },
   {
     id: "spinal-decompression",
@@ -647,7 +650,8 @@ export const TREATMENTS_UNIVERSE: Treatment[] = [
     ],
     evidenceSummary: "Effective in reducing radiating neural symptoms and expanding intervertebral foramen space for nerve relief.",
     treatedConditions: ["sciatica", "lumbar-spondylosis", "cervical-spondylosis", "disc-bulge-herniation"],
-    cadPricingEstimate: "Integrated into clinic-based spine therapy packages ($110–$145/session)"
+    gbpPricingEstimate: "Integrated into clinic-based spine therapy packages (£85–£145/session)",
+    cadPricingEstimate: "Integrated into clinic-based spine therapy packages (£85–£145/session)"
   }
 ];
 

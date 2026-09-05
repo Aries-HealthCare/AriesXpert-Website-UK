@@ -15,16 +15,16 @@ import SchemaMarkup from "@/components/seo/SchemaMarkup";
 import PricingPackagesSection from "@/components/landing/pricing-packages-section";
 
 export const metadata = {
-  title: "Aries PhysioCare UK | In-Home & Virtual HCPC Registered Physiotherapy",
+  title: "AriesXpert UK | In-Home & Virtual HCPC Registered Physiotherapy",
   description: "Hospital-grade in-home and virtual registered physiotherapy across London, Manchester, Birmingham, Edinburgh & UK. Direct billing to Bupa, AXA Health, Aviva & Vitality.",
   alternates: {
     canonical: "https://www.ariesxpert.co.uk",
   },
   openGraph: {
-    title: "Aries PhysioCare UK | In-Home & Virtual HCPC Registered Physiotherapy",
+    title: "AriesXpert UK | In-Home & Virtual HCPC Registered Physiotherapy",
     description: "Modern physical rehabilitation delivered to your home or virtually across the United Kingdom. Direct billing, 0 wait times, and HCPC Chartered care.",
     url: "https://www.ariesxpert.co.uk",
-    siteName: "Aries PhysioCare UK",
+    siteName: "AriesXpert UK",
     locale: "en_GB",
     type: "website",
   },
@@ -34,7 +34,7 @@ export default function Home() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
-    "name": "Aries PhysioCare UK",
+    "name": "AriesXpert UK",
     "url": "https://www.ariesxpert.co.uk",
     "logo": "https://www.ariesxpert.co.uk/logo.png",
     "contactPoint": {

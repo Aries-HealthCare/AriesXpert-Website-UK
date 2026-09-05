@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { SERVICE_CATEGORIES } from "@/lib/canadian-data";
+import { SERVICE_CATEGORIES } from "@/lib/uk-data";
 import { Activity, ChevronRight, CheckCircle2, Home, Video, Building2, Calendar } from "lucide-react";
 import { BookingModal } from '@/components/booking-modal';
 

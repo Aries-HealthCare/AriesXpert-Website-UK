@@ -31,7 +31,7 @@ export default function CareTakerClient() {
 
     if (!service) return null;
 
-    const WHATSAPP_URL = `https://wa.me/919136447006?text=Hi, I need information about Home Care Taker services.`;
+    const WHATSAPP_URL = `https://wa.me/448002743785?text=Hi, I need information about Home Care Taker services.`;
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -282,9 +282,9 @@ export default function CareTakerClient() {
                     </div>
 
                     <div className="mt-20 flex flex-wrap justify-center gap-12 text-white/40 font-black text-[10px] uppercase tracking-[0.4em]">
-                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> +91 9136447006</span>
+                        <span className="flex items-center gap-2"><Phone className="w-5 h-5 text-accent" /> 0800 274 3785</span>
                         <span className="flex items-center gap-2"><Clock className="w-5 h-5 text-accent" /> 12h/24h Shifts</span>
-                        <span className="flex items-center gap-2"><Award className="w-5 h-5 text-accent" /> Trusted by 5000+ Families</span>
+                        <span className="flex items-center gap-2"><Award className="w-5 h-5 text-accent" /> Trusted Clinical Care</span>
                     </div>
                 </div>
             </section>

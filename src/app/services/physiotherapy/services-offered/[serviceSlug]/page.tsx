@@ -78,14 +78,14 @@ const getServiceDetail = (slug: string) => {
   const details: any = {
     name,
     slug,
-    description: `Expert-led home ${name.toLowerCase()} services provided by Aries PhysioCare. We deliver hospital-grade clinical excellence directly to your doorstep.`,
+    description: `Expert-led home ${name.toLowerCase()} services provided by AriesXpert. We deliver hospital-grade clinical excellence directly to your doorstep.`,
     imageUrl,
     imageHint
   };
   const dynamicFaqs = [
     { id: 's1', question: `What is the clinical process for ${name}?`, answer: `Our expert physiotherapists begin with a thorough biomechanical assessment, followed by an evidence-based ${name} treatment plan utilizing advanced portable modalities.` },
     { id: 's2', question: `Are the therapists providing ${name} certified?`, answer: `Absolutely. All our practitioners are highly vetted, certified experts with specialized training in providing elite ${name} services.` },
-    { id: 's3', question: `Can I receive ${name} at home?`, answer: `Yes, Aries PhysioCare brings hospital-grade ${name} directly to your home using state-of-the-art portable equipment.` }
+    { id: 's3', question: `Can I receive ${name} at home?`, answer: `Yes, AriesXpert brings hospital-grade ${name} directly to your home using state-of-the-art portable equipment.` }
   ];
 
   if (lowerSlug.includes('sports')) {
@@ -190,7 +190,7 @@ export default function ServiceOfferedDetailPage() {
               <h4 className="font-headline font-bold text-lg mb-2">Clinical Standards</h4>
               <p className="text-xs text-muted-foreground mb-4 leading-relaxed">This service is delivered following strict international clinical protocols and safety standards.</p>
               <Button className="w-full neon-accent-border" size="sm" asChild>
-                <a href="tel:+919876543210">Call Specialist</a>
+                <a href="tel:08002743785">Call Specialist</a>
               </Button>
             </div>
           </aside>
@@ -208,7 +208,7 @@ export default function ServiceOfferedDetailPage() {
                   </div>
                   <div className="prose prose-lg dark:prose-invert text-muted-foreground leading-relaxed">
                     <p>{service.longDescription}</p>
-                    <p>At Aries PhysioCare, we recognize that every patient has a unique physiological narrative. Our {service.name.toLowerCase()} service is meticulously designed to restore function and enhance performance within your home environment.</p>
+                    <p>At AriesXpert, we recognize that every patient has a unique physiological narrative. Our {service.name.toLowerCase()} service is meticulously designed to restore function and enhance performance within your home environment.</p>
                   </div>
                 </div>
                 <div className="relative aspect-square w-full rounded-[2.5rem] overflow-hidden soft-shadow border border-primary/10">

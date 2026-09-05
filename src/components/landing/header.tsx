@@ -96,7 +96,7 @@ export default function Header() {
             <div className="relative h-12 w-40 sm:w-48 md:h-14 md:w-56 xl:h-16 xl:w-60 2xl:w-72 transition-all duration-300 group-hover:opacity-95">
               <Image
                 src="/logo-light.png"
-                alt="Aries PhysioCare - UK"
+                alt="AriesXpert UK"
                 fill
                 sizes="(max-width: 640px) 160px, (max-width: 1024px) 224px, 288px"
                 className="object-contain block dark:hidden object-center xl:object-left"
@@ -104,7 +104,7 @@ export default function Header() {
               />
               <Image
                 src="/logo-dark.png"
-                alt="Aries PhysioCare - UK"
+                alt="AriesXpert UK"
                 fill
                 sizes="(max-width: 640px) 160px, (max-width: 1024px) 224px, 288px"
                 className="object-contain hidden dark:block object-center xl:object-left"
@@ -264,19 +264,19 @@ function MobileMenu({ currentLocationName }: { currentLocationName: string | nul
               <div className="relative h-12 w-48">
                 <Image
                   src="/logo-light.png"
-                  alt="Aries PhysioCare - UK"
+                  alt="AriesXpert UK"
                   fill
                   className="object-contain block dark:hidden object-left"
                 />
                 <Image
                   src="/logo-dark.png"
-                  alt="Aries PhysioCare - UK"
+                  alt="AriesXpert UK"
                   fill
                   className="object-contain hidden dark:block object-left"
                 />
               </div>
               <span className="text-[10px] font-mono text-muted-foreground font-semibold">
-                Aries PhysioCare - UK
+                AriesXpert UK
               </span>
             </Link>
           </SheetTitle>

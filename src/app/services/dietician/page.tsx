@@ -5,26 +5,25 @@ import SchemaMarkup from '@/components/seo/schema-markup';
 import { services } from '@/lib/placeholder-data';
 
 export const metadata: Metadata = {
-    title: 'Clinical Dietician at Home | Expert Medical Nutrition Therapy | Aries PhysioCare',
-    description: 'Evidence-based clinical dietician services at your doorstep. Specialized medical nutrition therapy for diabetes, hypertension, PCOS, weight management, and post-surgery recovery across Mumbai, Pune, and major Indian cities.',
+    title: 'Clinical Dietitian at Home | Expert Medical Nutrition Therapy | AriesXpert UK',
+    description: 'Evidence-based clinical dietitian services at your doorstep. Specialized medical nutrition therapy for diabetes, hypertension, weight management, and post-surgery recovery across London, Manchester, and major UK cities.',
     keywords: [
         'clinical dietician at home',
         'medical nutrition therapy',
         'dietician for diabetes',
         'nutrition for hypertension',
-        'PCOS diet specialist',
         'weight loss clinical program',
         'heart healthy diet plan',
         'home nutrition consultation'
     ],
     openGraph: {
         title: 'Professional Medical Nutrition Therapy at Your Doorstep',
-        description: 'Master your metabolic health with our expert clinical dieticians. Personalized, science-backed nutrition plans delivered in your home.',
-        url: 'https://www.ariesphysiocare.com/services/dietician',
+        description: 'Master your metabolic health with our expert clinical dietitians. Personalized, science-backed nutrition plans delivered in your home.',
+        url: 'https://www.ariesxpert.co.uk/services/dietician',
         images: [{ url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=85&w=1200', width: 1200, height: 630, alt: 'Clinical Dietician' }],
     },
     alternates: {
-        canonical: 'https://www.ariesphysiocare.com/services/dietician',
+        canonical: 'https://www.ariesxpert.co.uk/services/dietician',
     },
 };
 
@@ -40,10 +39,10 @@ export default function DieticianPage() {
         "description": service.longDescription,
         "provider": {
             "@type": "MedicalOrganization",
-            "name": "Aries PhysioCare India",
-            "url": "https://www.ariesphysiocare.com"
+            "name": "AriesXpert UK",
+            "url": "https://www.ariesxpert.co.uk"
         },
-        "areaServed": "India",
+        "areaServed": "United Kingdom",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Clinical Nutrition Programs",

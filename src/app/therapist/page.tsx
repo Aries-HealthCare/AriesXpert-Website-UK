@@ -18,7 +18,7 @@ import { TherapistCard as TherapistCardComponent } from '@/components/therapist-
 import { VERIFIED_THERAPISTS_CATALOG } from '@/lib/verified-therapists';
 import { cn } from '@/lib/utils';
 
-const CITIES = ['All', 'Mumbai', 'Delhi', 'Bengaluru', 'Pune', 'Hyderabad', 'Chennai', 'Kolkata', 'Ahmedabad'];
+const CITIES = ['All', 'London', 'Manchester', 'Birmingham', 'Edinburgh', 'Glasgow', 'Bristol', 'Leeds', 'Cardiff', 'Belfast'];
 const SPECS = ['All', 'Orthopedics', 'Neurology', 'Sports', 'Pediatrics', 'Geriatrics', "Women's Health", 'Pain Management'];
 
 export default function TherapistsPage() {
@@ -40,7 +40,7 @@ export default function TherapistsPage() {
         if (selectedCity && selectedCity !== 'All') {
             const sc = selectedCity.toLowerCase();
             const tc = (t.city || '').toLowerCase();
-            const matchCity = tc.includes(sc) || sc.includes(tc) || (sc.includes('bangalore') && tc.includes('bengaluru')) || (sc.includes('bengaluru') && tc.includes('bangalore'));
+            const matchCity = tc.includes(sc) || sc.includes(tc);
             if (!matchCity) return false;
         }
         if (selectedSpec && selectedSpec !== 'All') {
@@ -87,21 +87,21 @@ export default function TherapistsPage() {
                         </nav>
                         <div className="max-w-4xl mx-auto text-center space-y-6">
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
-                                <Shield className="w-4 h-4 text-accent" /> 474+ Verified Specialists
+                                <Shield className="w-4 h-4 text-accent" /> HCPC & CSP Registered Specialists
                             </div>
                             <h1 className="font-headline text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
                                 Meet Our Expert<br /><span className="text-accent">Physiotherapists</span>
                             </h1>
                             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-                                Every Aries therapist is rigorously vetted, BPT/MPT certified, and trained to deliver hospital-grade care at your home.
+                                Every Aries therapist is rigorously vetted, HCPC & CSP registered, and trained to deliver hospital-grade care at your home.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <BookAppointmentButton size="lg" className="h-14 px-10 text-base font-bold neon-accent-border">
                                     Book Home Visit Now
                                 </BookAppointmentButton>
                                 <Button asChild size="lg" variant="outline" className="h-14 px-10 text-base font-bold text-white border-white/40 hover:bg-white/10 bg-transparent">
-                                    <a href="tel:+919136447006" className="flex items-center gap-2">
-                                        <Phone className="w-4 h-4" /> Call +91 9136447006
+                                    <a href="tel:08002743785" className="flex items-center gap-2">
+                                        <Phone className="w-4 h-4" /> Call 0800 274 3785
                                     </a>
                                 </Button>
                             </div>
@@ -122,7 +122,7 @@ export default function TherapistsPage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {[
-                                { icon: Shield, title: 'BPT/MPT Certified', desc: 'Recognised physiotherapy degrees' },
+                                { icon: Shield, title: 'HCPC & CSP Registered', desc: 'Legally licensed UK physiotherapists' },
                                 { icon: Award, title: 'Multi-stage Vetting', desc: 'Clinical competency screening' },
                                 { icon: HeartPulse, title: 'Advanced Equipment', desc: 'Portable IFT, Laser, Ultrasound' },
                                 { icon: Clock, title: 'Punctual & Reliable', desc: 'On-time with real-time tracking' },
@@ -231,12 +231,12 @@ export default function TherapistsPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button asChild size="lg" className="h-12 px-8 font-bold">
-                                    <a href="tel:+919136447006" className="flex items-center gap-2">
-                                        <Phone className="w-4 h-4" /> Call +91 9136447006
+                                    <a href="tel:08002743785" className="flex items-center gap-2">
+                                        <Phone className="w-4 h-4" /> Call 0800 274 3785
                                     </a>
                                 </Button>
                                 <Button asChild size="lg" variant="outline" className="h-12 px-8 font-bold">
-                                    <a href="https://wa.me/918591981880" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                    <a href="https://wa.me/448002743785" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                         <MessageCircle className="w-4 h-4" /> WhatsApp Us
                                     </a>
                                 </Button>
@@ -250,11 +250,11 @@ export default function TherapistsPage() {
                     <div className="container mx-auto px-4 md:px-6 text-center max-w-2xl">
                         <div className="flex items-center justify-center gap-2 mb-4">
                             <Users className="w-5 h-5 text-primary" />
-                            <span className="text-xs font-bold uppercase tracking-widest text-primary">Are You a Physiotherapist?</span>
+                            <span className="text-xs font-bold uppercase tracking-widest text-primary">Are You a Chartered Physiotherapist?</span>
                         </div>
-                        <h2 className="font-headline text-2xl md:text-3xl font-bold mb-4">Join the Aries PhysioCare Network</h2>
+                        <h2 className="font-headline text-2xl md:text-3xl font-bold mb-4">Join the Aries PhysioCare UK Network</h2>
                         <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
-                            Be part of India's fastest-growing home healthcare network. Get consistent bookings, flexible timing, and a premium brand behind you.
+                            Be part of the UK's leading mobile clinical physiotherapy network. Get consistent bookings, flexible scheduling, and direct insurer clearing support.
                         </p>
                         <Button asChild size="lg" className="h-12 px-8 font-bold">
                             <Link href="/work-with-us/for-physiotherapists">Apply as a Therapist</Link>

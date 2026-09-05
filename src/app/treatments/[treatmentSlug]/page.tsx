@@ -3,7 +3,7 @@
 import React, { useState, use } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getTreatmentBySlug } from "@/lib/canadian-data";
+import { getTreatmentBySlug } from "@/lib/uk-data";
 import { BookingModal } from '@/components/booking-modal';
 import { Zap, CheckCircle2, Calendar, ShieldCheck, Clock, Layers } from "lucide-react";
 
@@ -105,9 +105,9 @@ export default function TreatmentDetailPage({ params }: TreatmentPageProps) {
             <p className="text-xs text-slate-300 leading-relaxed">
               {treatment.evidenceSummary}
             </p>
-            {treatment.cadPricingEstimate && (
+            {(treatment.gbpPricingEstimate || treatment.cadPricingEstimate) && (
               <div className="p-3 rounded-xl bg-slate-950 border border-slate-850 text-xs text-clinical-cyan">
-                <strong>Pricing & Insurance:</strong> {treatment.cadPricingEstimate}
+                <strong>Pricing & Insurance:</strong> {treatment.gbpPricingEstimate || treatment.cadPricingEstimate}
               </div>
             )}
           </div>

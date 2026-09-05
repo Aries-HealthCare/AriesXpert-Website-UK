@@ -19,7 +19,7 @@ export async function getTelehealthTherapists(): Promise<TeleTherapist[]> {
     .map((therapist: any) => ({
       id: therapist.id,
       name: therapist.name,
-      qualification: therapist.qualification || 'BPT, MPT',
+      qualification: therapist.qualification || 'BSc (Hons) Physiotherapy, MCSP, HCPC',
       experience: therapist.experience || '5+ Years',
       specialization: therapist.specialization || 'Physiotherapy',
       imageUrl: therapist.imageUrl || '/images/aries-emblem.png',

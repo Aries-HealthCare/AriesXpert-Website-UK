@@ -15,73 +15,73 @@ const benefits = [
   { title: "Steady Patient Flow", description: "Get access to a consistent stream of patients in your preferred locality." },
   { title: "Technology-Enabled Practice", description: "Use our AriesXpert app to manage appointments, track progress, and reduce administrative work." },
   { title: "Clinical Growth & Learning", description: "Benefit from continuous training, workshops, and access to standardized protocols." },
-  { title: "Pan-India & Global Opportunities", description: "Grow with us as we expand our footprint across new cities and countries." },
+  { title: "UK-Wide & Global Opportunities", description: "Grow with us as we expand our footprint across NHS trust partnerships and private care hubs." },
 ];
 
 const jobOpenings = [
   {
     id: "job-1",
-    title: "Senior Physiotherapist (Neurology)",
+    title: "Senior Chartered Physiotherapist (Neurology)",
     role: "Physiotherapist",
-    city: "Mumbai",
-    area: "Andheri West",
-    location: "Mumbai, Maharashtra",
+    city: "London",
+    area: "Canary Wharf",
+    location: "London, Greater London",
     type: "Full-time",
     experience: "5+ Years",
-    description: "As a Senior Neuro-Physiotherapist at Aries, you will lead complex clinical cases involving stroke recovery, Parkinson's, and spinal injuries. You will be responsible for designing high-fidelity recovery roadmaps, supervising junior therapists, and utilizing advanced neuro-rehab modalities at the patient's home.",
-    requirements: ["MPT in Neurology", "Experience with task-oriented training", "Strong clinical documentation skills"]
+    description: "As a Senior Neuro-Physiotherapist at AriesXpert UK, you will lead complex clinical cases involving stroke recovery, Parkinson's, and spinal cord injuries. You will design high-fidelity recovery roadmaps and oversee home-based neuro-rehabilitation across London.",
+    requirements: ["BSc/MSc Physiotherapy", "HCPC Registration & CSP Membership", "Experience with neuro-motor re-education"]
   },
   {
     id: "job-2",
-    title: "Consultant Physiotherapist (Sports)",
+    title: "Consultant Musculoskeletal Physiotherapist",
     role: "Consultant",
-    city: "Pune",
-    area: "Kothrud",
-    location: "Pune, Maharashtra",
+    city: "Manchester",
+    area: "Deansgate",
+    location: "Manchester, Greater Manchester",
     type: "Full-time",
-    experience: "3+ Years",
-    description: "Lead our sports medicine initiative in Pune. You will work with professional and amateur athletes to restore movement economy and performance. Expertise in biomechanical screening and portable therapeutic modalities (Laser/IFT) is essential.",
-    requirements: ["BPT/MPT Sports", "Certification in Manual Therapy", "Athelete management experience"]
+    experience: "4+ Years",
+    description: "Lead our musculoskeletal and sports medicine hub in Manchester. You will work with active professionals and athletic patients restoring biomechanical economy, post-surgical knee/hip rehabilitation, and spinal care.",
+    requirements: ["MCSP & HCPC Registered", "Postgraduate MSK Qualification", "Manual therapy & diagnostic expertise"]
   },
   {
     id: "job-3",
-    title: "Home Healthcare Physiotherapist",
+    title: "Community Mobile Physiotherapist",
     role: "Physiotherapist",
-    city: "Bengaluru",
-    area: "Whitefield",
-    location: "Bengaluru, Karnataka",
+    city: "Birmingham",
+    area: "Edgbaston",
+    location: "Birmingham, West Midlands",
     type: "Full-time / Part-time",
-    experience: "1+ Years",
-    description: "Join our primary clinical team in Bengaluru. Deliver evidence-based home sessions for orthopedic and post-operative cases. You will use the AriesXpert app to track patient milestones and coordinate care with our medical directorate.",
-    requirements: ["BPT Degree", "Passion for home-based clinical care", "Effective communication"]
+    experience: "2+ Years",
+    description: "Deliver evidence-based in-home physiotherapy across Birmingham. Work with orthopedic, geriatric, and mobility-impaired patients, utilizing our clinical telemetry app to track milestones.",
+    requirements: ["HCPC Registered Physiotherapist", "Enhanced DBS Clearance", "Full UK Driving Licence / Mobile Mobility"]
   },
   {
     id: "job-4",
-    title: "Geriatric Care Specialist",
+    title: "Geriatric & Complex Care Specialist",
     role: "Specialist",
-    city: "Chennai",
-    area: "Adyar",
-    location: "Chennai, Tamil Nadu",
+    city: "Edinburgh",
+    area: "New Town",
+    location: "Edinburgh, Scotland",
     type: "Full-time",
-    experience: "4+ Years",
-    description: "Specialized role focusing on senior independence and fall prevention in Chennai. You will conduct environmental safety assessments and design gentle yet effective functional mobilization plans for the elderly.",
-    requirements: ["BPT", "Experience in Geriatric Rehab", "Patient and compassionate approach"]
+    experience: "3+ Years",
+    description: "Specialized clinical role focusing on older adult mobility, post-hospital discharge transitions, and fall prevention in Edinburgh.",
+    requirements: ["HCPC Registration", "Experience in Frailty and Geriatric Rehab", "Compassionate patient-centred approach"]
   },
   {
     id: "job-5",
-    title: "Clinical Coordinator",
+    title: "Clinical Care Coordinator",
     role: "Coordinator",
-    city: "Delhi NCR",
-    area: "Saket",
-    location: "Delhi NCR",
+    city: "London",
+    area: "Westminster",
+    location: "London, Greater London",
     type: "Full-time",
     experience: "2+ Years",
-    description: "Manage clinical logistics and patient intake for the Delhi region. You will bridge the gap between patient symptoms and therapist allocation, ensuring every case follows Aries' high clinical standards.",
-    requirements: ["Healthcare Management/BPT", "Excellent organizational skills", "Client relation expertise"]
+    description: "Manage clinical intake and patient allocation across our London network, liaising with private medical insurers (Bupa, AXA, Aviva, Vitality) and coordinating consultant home visits.",
+    requirements: ["Healthcare Background / BSc Physiotherapy", "Healthcode / Insurer Billing Experience", "Strong clinical communication"]
   }
 ];
 
-const cities = ["Mumbai", "Pune", "Bengaluru", "Chennai", "Delhi NCR"];
+const cities = ["London", "Manchester", "Birmingham", "Edinburgh"];
 const roles = ["Physiotherapist", "Consultant", "Specialist", "Coordinator"];
 
 export default function ForPhysiotherapistsPage() {
@@ -125,7 +125,7 @@ export default function ForPhysiotherapistsPage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <div className="max-w-4xl mx-auto glassmorphic rounded-2xl p-8 md:p-12 soft-shadow">
               <h1 className="font-headline text-4xl md:text-6xl font-bold text-white tracking-tight">
-                Work With <span className="text-accent">Aries PhysioCare</span>
+                Work With <span className="text-accent">AriesXpert UK</span>
               </h1>
               <p className="mt-4 text-lg md:text-xl text-white/90 font-medium">
                 Build a rewarding career delivering expert home healthcare with flexibility, respect, and growth.
@@ -147,7 +147,7 @@ export default function ForPhysiotherapistsPage() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 text-primary text-[10px] font-black uppercase tracking-[0.2em]">
               The Aries Edge
             </div>
-            <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">Why Join Aries PhysioCare?</h2>
+            <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">Why Join AriesXpert UK?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, idx) => (

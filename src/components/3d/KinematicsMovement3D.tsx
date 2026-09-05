@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { BIOMECHANICAL_MOVEMENTS } from "@/lib/canadian-data";
+import { BIOMECHANICAL_MOVEMENTS } from "@/lib/uk-data";
 import { Activity, Compass, AlertTriangle, CheckCircle2, Calendar } from "lucide-react";
 import Link from "next/link";
 

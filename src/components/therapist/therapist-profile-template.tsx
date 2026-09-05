@@ -275,14 +275,14 @@ export default function TherapistProfileTemplate({ therapist }: TherapistProfile
                                         </div>
 
                                         <Button asChild size="lg" variant="outline" className="w-full h-14 rounded-2xl font-black text-[#25D366] border-[#25D366]/20 hover:bg-[#25D366]/5 transition-all">
-                                            <a href={`https://wa.me/918591981880?text=${encodeURIComponent(whatsappText)}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                                            <a href={`https://wa.me/448002743785?text=${encodeURIComponent(whatsappText)}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
                                                 <MessageCircle className="w-6 h-6 fill-[#25D366] text-white" /> WhatsApp Specialist
                                             </a>
                                         </Button>
 
                                         <Button asChild size="lg" variant="ghost" className="w-full h-12 rounded-2xl font-bold text-muted-foreground hover:text-primary transition-all">
-                                            <a href="tel:+919136447006" className="flex items-center justify-center gap-2">
-                                                <Phone className="w-4 h-4" /> Call Helpdesk
+                                            <a href="tel:08002743785" className="flex items-center justify-center gap-2">
+                                                <Phone className="w-4 h-4" /> Call 0800 274 3785
                                             </a>
                                         </Button>
                                     </div>

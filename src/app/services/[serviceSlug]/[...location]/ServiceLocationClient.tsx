@@ -84,7 +84,7 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
         return null;
     }
 
-    const cityName = geoPath.city?.name || 'Mumbai';
+    const cityName = geoPath.city?.name || 'London';
     const areaName = geoPath.area?.name || cityName;
     const subAreaName = geoPath.subArea?.name || areaName;
     const capitalizedArea = capitalize(subAreaName);
@@ -128,7 +128,7 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
         const result = await submitAppointmentLead(withStoredAttribution({
             ...data,
             service: service.name,
-            country: 'India',
+            country: 'United Kingdom',
             state: geoPath.state?.name || '',
             city: data.city,
             area: geoPath.area?.name || 'Local',
@@ -171,12 +171,13 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
     };
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-background overflow-hidden selection:bg-primary selection:text-white">
             <SchemaMarkup data={faqSchema} />
-            {/* HERO SECTION */}
-            <section className="relative min-h-[80vh] flex items-center pt-24 pb-16 overflow-hidden bg-background">
-                <div className="absolute inset-0 z-0 opacity-5">
-                    <Image src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=85&w=2400" alt={`Home ${serviceName} in ${capitalizedArea}`} fill className="object-cover" priority />
+            {/* 1. Ultra High-Conversion Hero */}
+            <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden border-b border-border/40">
+                <div className="absolute inset-0 bg-radial-at-t from-primary/5 via-background to-background pointer-events-none -z-10" />
+                <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[140px] pointer-events-none -z-10 animate-pulse" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none opacity-40">
                 </div>
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -197,10 +198,10 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                 <Button size="lg" className="h-16 px-10 text-xl font-bold neon-accent-border shadow-2xl" asChild>
-                                    <a href="tel:+919136447006"><Phone className="mr-3 w-6 h-6" /> Call Specialist</a>
+                                    <a href="tel:08002743785"><Phone className="mr-3 w-6 h-6" /> Call Specialist</a>
                                 </Button>
                                 <Button size="lg" variant="outline" className="h-16 px-10 text-xl font-bold glassmorphic" asChild>
-                                    <Link href={`https://wa.me/919136447006?text=Hi, I need home ${serviceName.toLowerCase()} in ${capitalizedArea}`} target="_blank">
+                                    <Link href={`https://wa.me/448002743785?text=Hi, I need home ${serviceName.toLowerCase()} in ${capitalizedArea}`} target="_blank">
                                         <MessageCircle className="mr-3 w-6 h-6 text-green-500" /> WhatsApp
                                     </Link>
                                 </Button>
@@ -226,7 +227,7 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
                                                         <FormField control={form.control} name="phone" render={({ field }) => (
                                                             <FormItem>
                                                                 <FormLabel className="text-[10px] font-black uppercase tracking-widest">Mobile No.</FormLabel>
-                                                                <FormControl><Input placeholder="+91" {...field} className="h-12 bg-background/40" disabled={isVerified} /></FormControl>
+                                                                <FormControl><Input placeholder="07... or +44..." {...field} className="h-12 bg-background/40" disabled={isVerified} /></FormControl>
                                                                 <FormMessage />
                                                             </FormItem>
                                                         )} />
@@ -293,7 +294,7 @@ export default function ServiceLocationClient({ serviceSlug, location }: Service
                 <div className="container mx-auto px-4 text-center mb-16 space-y-6">
                     <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">Why Choose Home {serviceName} in {capitalizedArea}?</h2>
                     <p className="text-lg text-muted-foreground leading-relaxed font-medium max-w-4xl mx-auto">
-                        {areaContext.lifestyle} Residents of {capitalizedArea} often face challenges with {areaContext.painPoints}. Aries PhysioCare brings hospital-grade clinical excellence near landmarks like {areaContext.landmarks[0]}.
+                        {areaContext.lifestyle} Residents of {capitalizedArea} often face challenges with {areaContext.painPoints}. AriesXpert brings hospital-grade clinical excellence near landmarks like {areaContext.landmarks[0]}.
                     </p>
                 </div>
             </section>
