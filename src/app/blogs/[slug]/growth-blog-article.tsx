@@ -79,11 +79,12 @@ function getConditionTheme(post: GrowthBlogPost): ConditionTheme {
 
   // 1. Degenerative Disc Disease (Dedicated Reference Layout)
   if (isDDD) {
+    const dddImg = post.imageUrl || '/images/blog/spine/degenerative-disc-disease-spine-care.jpg';
     return {
-      isDDD: true,
+      isDDD: false,
       badgeText: 'SPINE HEALTH',
       heroBackdropImage: '/images/blog/hero_ddd_clean_panoramic.png',
-      heroRightImage: '/images/blog/hero_right_arch_clean.png',
+      heroRightImage: dddImg,
       cursiveSlogan: {
         line1: 'Stronger',
         line2: 'Spine',

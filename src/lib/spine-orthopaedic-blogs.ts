@@ -10,7 +10,7 @@ export const SPINE_ORTHOPAEDIC_BLOGS: GrowthBlogPost[] = [
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/what-we-treat/conditions-spine.webp',
+    imageUrl: '/images/blog/spine/spine-and-back-conditions-guide.jpg',
     content: `# Spine & Back Conditions: Anatomy, Clinical Disorders & Modern Physiotherapy Rehabilitation
 
 ## 1. Introduction: Understanding Spinal Health
@@ -62,7 +62,7 @@ If back pain persists beyond 7–10 days, interferes with sleep, or radiates dow
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-17T00:00:00.000Z',
-    imageUrl: '/images/blog/lumbar-spine-rehab.jpg',
+    imageUrl: '/images/blog/spine/low-back-pain-causes-symptoms-treatment.jpg',
     content: `# Low Back Pain: Causes, Clinical Symptoms & Advanced Physiotherapy Treatment at Home
 
 ## 1. Introduction: Understanding Lower Back Pain
@@ -113,7 +113,7 @@ Do not ignore back pain that restricts your daily mobility. Contact Aries Physio
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-16T00:00:00.000Z',
-    imageUrl: '/images/precision-recovery/stage3-track.webp',
+    imageUrl: '/images/blog/spine/chronic-low-back-pain-rehabilitation.jpg',
     content: `# Chronic Low Back Pain: Neuromuscular Re-Education & Long-Term Spine Rehabilitation
 
 ## 1. Introduction: Understanding Chronic Low Back Pain
@@ -164,7 +164,7 @@ Chronic back pain does not mean you must live with permanent limitations. Contac
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-15T00:00:00.000Z',
-    imageUrl: '/images/clinics/flagship-treatment-2.png',
+    imageUrl: '/images/blog/spine/acute-back-pain-first-aid-physiotherapy.jpg',
     content: `# Acute Back Pain: First 72-Hour Protocols, Pain Desensitization & Fast-Track Recovery
 
 ## 1. Introduction: Understanding Acute Back Episodes
@@ -215,7 +215,7 @@ If acute back pain strikes, do not struggle in agony. Contact Aries PhysioCare f
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-14T00:00:00.000Z',
-    imageUrl: '/images/blog/mechanical-back-pain-rehab.jpg',
+    imageUrl: '/images/blog/spine/mechanical-back-pain-causes-exercises.jpg',
     content: `# Mechanical Back Pain: Biomechanical Causes, Postural Triggers & Movement-Based Rehab
 
 ## 1. Introduction: Understanding Mechanical Back Pain
@@ -266,7 +266,7 @@ Solve mechanical back pain at its biomechanical root. Contact Aries PhysioCare t
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-13T00:00:00.000Z',
-    imageUrl: '/images/physiotherapy/program-arthritis.jpg',
+    imageUrl: '/images/blog/spine/lumbar-spondylosis-physiotherapy-management.jpg',
     content: `# Lumbar Spondylosis: Joint Preservation, Osteoarthritis Management & Physiotherapy Protocols
 
 ## 1. Introduction: Understanding Lumbar Spondylosis
@@ -317,7 +317,7 @@ Maintain a healthy, flexible spine as you age. Contact Aries PhysioCare for comp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-12T00:00:00.000Z',
-    imageUrl: '/images/blog/lumbar-spondylitis-care.jpg',
+    imageUrl: '/images/blog/spine/lumbar-spondylitis-symptoms-and-care.jpg',
     content: `# Lumbar Spondylitis: Inflammatory Spine Management, Pain Relief & Rehabilitation
 
 ## 1. Introduction: Understanding Lumbar Spondylitis
@@ -368,7 +368,7 @@ Early clinical management prevents long-term spinal stiffening. Contact Aries Ph
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-11T00:00:00.000Z',
-    imageUrl: '/images/blog/disc-herniation-rehab.jpg',
+    imageUrl: '/images/blog/spine/lumbar-disc-prolapse-non-surgical-recovery.jpg',
     content: `# Lumbar Disc Prolapse: Non-Surgical Recovery, Disc Centralization & Rehabilitation Timeline
 
 ## 1. Introduction: Understanding Lumbar Disc Prolapse
@@ -419,7 +419,7 @@ Avoid unnecessary surgery with structured conservative treatment. Contact Aries 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-10T00:00:00.000Z',
-    imageUrl: '/images/blog/disc_health_cross_section.png',
+    imageUrl: '/images/blog/spine/slipped-disc-herniated-disc-treatment.jpg',
     content: `# Slipped Disc & Herniated Disc: Complete Guide to Symptoms, Healing Biology & Physio Care
 
 ## 1. Introduction: Understanding Disc Herniation
@@ -470,7 +470,7 @@ If back and leg pain are compromising your work and sleep, get expert home care.
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-09T00:00:00.000Z',
-    imageUrl: '/images/blog/promo_move_better.png',
+    imageUrl: '/images/blog/spine/disc-bulge-causes-reversal-physiotherapy.jpg',
     content: `# Disc Bulge: Understanding the Early Warning Signs, Reversal Protocols & Spine Protection
 
 ## 1. Introduction: Understanding Disc Bulge
@@ -521,7 +521,7 @@ Do not let a minor disc bulge turn into an agonizing herniation. Contact Aries P
     territory: 'Spine Health',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-05T00:00:00.000Z',
-    imageUrl: '/images/blog/hero_ddd_clean_panoramic.png',
+    imageUrl: '/images/blog/spine/degenerative-disc-disease-spine-care.jpg',
     content: `# Degenerative Disc Disease (DDD): Pathomechanics, Pain Relief & Active Spine Conditioning
 
 ## 1. Introduction: Understanding Degenerative Disc Disease
@@ -579,7 +579,7 @@ Do not let chronic spinal stiffness restrict your daily life. Contact Aries Phys
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-07T00:00:00.000Z',
-    imageUrl: '/images/blog/sciatica-nerve-relief.jpg',
+    imageUrl: '/images/blog/spine/sciatica-nerve-pain-relief-exercises.jpg',
     content: `# Sciatica Nerve Pain: Root Causes, Dermatomal Radiation & Advanced Physiotherapy Relief
 
 ## 1. Introduction: Understanding Sciatica
@@ -630,7 +630,7 @@ End excruciating sciatic nerve pain with expert clinical care. Contact Aries Phy
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-06T00:00:00.000Z',
-    imageUrl: '/images/precision-recovery/bodymap-insight.webp',
+    imageUrl: '/images/blog/spine/lumbar-radiculopathy-diagnosis-treatment.jpg',
     content: `# Lumbar Radiculopathy: Nerve Root Compression, Neurological Deficits & Rehab Protocols
 
 ## 1. Introduction: Understanding Lumbar Radiculopathy
@@ -681,7 +681,7 @@ Do not ignore weakness or numbness in your leg. Contact Aries PhysioCare for spe
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-05T00:00:00.000Z',
-    imageUrl: '/images/blog/spinal-stenosis-gait.jpg',
+    imageUrl: '/images/blog/spine/spinal-stenosis-neurogenic-claudication.jpg',
     content: `# Spinal Stenosis: Neurogenic Claudication, Shopping Cart Sign & Flexion-Biased Physio
 
 ## 1. Introduction: Understanding Spinal Stenosis
@@ -732,7 +732,7 @@ Regain your walking independence and vitality. Contact Aries PhysioCare for spec
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-04T00:00:00.000Z',
-    imageUrl: '/images/precision-recovery/stage1-assess.webp',
+    imageUrl: '/images/blog/spine/spondylolisthesis-vertebral-slip-physiotherapy.jpg',
     content: `# Spondylolisthesis: Vertebral Slippage Grading, Core Stabilization & Non-Surgical Care
 
 ## 1. Introduction: Understanding Spondylolisthesis
@@ -783,7 +783,7 @@ Stabilize your spine and eliminate pain safely. Contact Aries PhysioCare for exp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-03T00:00:00.000Z',
-    imageUrl: '/images/physiotherapy/program-cervical.jpg',
+    imageUrl: '/images/blog/spine/ankylosing-spondylitis-spine-mobility-exercises.jpg',
     content: `# Ankylosing Spondylitis: Axial Spondyloarthritis, Posture Preservation & Breathing Drills
 
 ## 1. Introduction: Understanding Ankylosing Spondylitis
@@ -833,7 +833,7 @@ Fight spinal stiffness and preserve your upright posture. Contact Aries PhysioCa
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-02T00:00:00.000Z',
-    imageUrl: '/images/precision-recovery/stage2-plan.webp',
+    imageUrl: '/images/blog/spine/sacroiliac-si-joint-dysfunction-rehab.jpg',
     content: `# Sacroiliac (SI) Joint Dysfunction: Pelvic Torsion, Pain Triggers & Stabilization Rehab
 
 ## 1. Introduction: Understanding Sacroiliac Joint Dysfunction
@@ -884,7 +884,7 @@ End frustrating, misdiagnosed pelvic and back pain. Contact Aries PhysioCare for
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-01T00:00:00.000Z',
-    imageUrl: '/images/care-taker/care-proto-mobility.jpg',
+    imageUrl: '/images/blog/spine/coccydynia-tailbone-pain-relief-physiotherapy.jpg',
     content: `# Coccyx Pain (Coccydynia): Tailbone Trauma, Pelvic Floor Tension & Non-Surgical Relief
 
 ## 1. Introduction: Understanding Coccydynia
@@ -936,7 +936,7 @@ Do not suffer through painful sitting. Contact Aries PhysioCare for discreet, sp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-31T00:00:00.000Z',
-    imageUrl: '/images/clinics/flagship-spinal-4.png',
+    imageUrl: '/images/blog/spine/facet-joint-syndrome-lumbar-spine-treatment.jpg',
     content: `# Facet Joint Syndrome: Zygapophyseal Arthropathy, Extension Catching & Physio Care
 
 ## 1. Introduction: Understanding Facet Joint Syndrome
@@ -987,7 +987,7 @@ Free locked facet joints and eliminate back pain. Contact Aries PhysioCare for s
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-30T00:00:00.000Z',
-    imageUrl: '/images/physiotherapy/physio-understanding-treatment.jpg',
+    imageUrl: '/images/blog/spine/back-muscle-spasm-causes-quick-relief.jpg',
     content: `# Back Muscle Spasms: Acute Guarding, Trigger Points & Fast-Acting Physiotherapy Relief
 
 ## 1. Introduction: Understanding Back Muscle Spasms
@@ -1039,7 +1039,7 @@ Do not suffer in bed trapped by agonizing spasms. Contact Aries PhysioCare for r
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-29T00:00:00.000Z',
-    imageUrl: '/images/occupational-therapy/ot-proto-ergo.jpg',
+    imageUrl: '/images/blog/spine/postural-back-pain-desk-workers-ergonomics.jpg',
     content: `# Postural Back Pain: Upper & Lower Crossed Syndromes, Desk Ergonomics & Corrective Rehab
 
 ## 1. Introduction: Understanding Postural Back Pain
@@ -1090,7 +1090,7 @@ Eliminate chronic desk fatigue and restore your natural posture. Contact Aries P
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-28T00:00:00.000Z',
-    imageUrl: '/images/physiotherapy/program-lumbar.jpg',
+    imageUrl: '/images/blog/spine/thoracic-spine-pain-mid-back-rehabilitation.jpg',
     content: `# Thoracic Spine Pain: Mid-Back Stiffness, Costovertebral Dysfunction & Mobility Rehab
 
 ## 1. Introduction: Understanding Thoracic Spine Pain
@@ -1142,7 +1142,7 @@ Breathe freely and move without mid-back catching. Contact Aries PhysioCare for 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-27T00:00:00.000Z',
-    imageUrl: '/images/occupational-therapy/ot-proto-pediatric.jpg',
+    imageUrl: '/images/blog/spine/scheuermanns-kyphosis-adolescent-spine-rehab.jpg',
     content: `# Scheuermann’s Kyphosis: Adolescent Structural Roundback, Sorensen Criteria & Physio Care
 
 ## 1. Introduction: Understanding Scheuermann’s Kyphosis
@@ -1193,7 +1193,7 @@ Early adolescent intervention is vital before skeletal maturity closes growth pl
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-26T00:00:00.000Z',
-    imageUrl: '/images/precision-recovery/stage4-advance.webp',
+    imageUrl: '/images/blog/spine/scoliosis-non-surgical-physiotherapy-schroth.jpg',
     content: `# Scoliosis: Cobb Angle Management, Schroth Method & Non-Surgical 3D Spine Rehabilitation
 
 ## 1. Introduction: Understanding Scoliosis
@@ -1244,7 +1244,7 @@ Manage scoliosis proactively with specialized 3D physiotherapy. Contact Aries Ph
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/occupational-therapy/ot-approach-hands.jpg',
+    imageUrl: '/images/blog/spine/hyperkyphosis-rounded-shoulders-treatment.jpg',
     content: `# Hyperkyphosis: Dowager’s Hump, Postural Roundback & Extensor Muscle Rehabilitation
 
 ## 1. Introduction: Understanding Hyperkyphosis
@@ -1295,7 +1295,7 @@ Stand tall, breathe better, and protect your spine from progressive rounding. Co
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/anterior-pelvic-tilt-rehab.jpg',
+    imageUrl: '/images/blog/spine/lumbar-hyperlordosis-anterior-pelvic-tilt.jpg',
     content: `# Lumbar Hyperlordosis: Anterior Pelvic Tilt, Swayback & Pelvic Resetting Physiotherapy
 
 ## 1. Introduction: Understanding Lumbar Hyperlordosis
@@ -1347,7 +1347,7 @@ Restore balanced pelvic alignment and relieve chronic lower back fatigue. Contac
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/home-nursing/nursing-safety-care.jpg',
+    imageUrl: '/images/blog/spine/spinal-fracture-compression-fracture-rehab.jpg',
     content: `# Spinal Fracture Rehabilitation: Vertebral Compression, Safe Bracing & Bone Healing Protocols
 
 ## 1. Introduction: Understanding Spinal Compression Fractures
@@ -1398,7 +1398,7 @@ Recover safely from a spinal fracture under expert clinical guidance. Contact Ar
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/home-nursing/nursing-service-post-surgical.jpg',
+    imageUrl: '/images/blog/spine/post-spinal-surgery-rehabilitation-timeline.jpg',
     content: `# Post-Spinal Surgery Rehabilitation: Discectomy, Laminectomy & Fusion Recovery Protocols
 
 ## 1. Introduction: Understanding Post-Surgical Spine Recovery
@@ -1449,7 +1449,7 @@ Ensure the success of your spinal surgery with specialized in-home rehabilitatio
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/physiotherapy/program-post-surgical.jpg',
+    imageUrl: '/images/blog/spine/failed-back-surgery-syndrome-fbss-physio.jpg',
     content: `# Failed Back Surgery Syndrome (FBSS): Neurogenic Pain, Epidural Fibrosis & Graded Rehab
 
 ## 1. Introduction: Understanding Failed Back Surgery Syndrome
@@ -1501,7 +1501,7 @@ You do not have to live in despair after spine surgery. Contact Aries PhysioCare
     territory: 'Spine Health',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-04T00:00:00.000Z',
-    imageUrl: '/images/blog/related_habits_spine.png',
+    imageUrl: '/images/blog/spine/5-everyday-habits-that-harm-your-spine.jpg',
     content: `# 5 Everyday Habits That Harm Your Spine: Biomechanics, Postural Strain & Prevention
 
 ## 1. Introduction: Everyday Spine Biomechanics
@@ -1558,7 +1558,7 @@ If postural fatigue, neck stiffness, or lower back aching persists despite works
     territory: 'Treatment',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-03T00:00:00.000Z',
-    imageUrl: '/images/blog/related_mri_spine.png',
+    imageUrl: '/images/blog/spine/physiotherapy-vs-surgery-for-disc-problems.jpg',
     content: `# Physiotherapy vs. Surgery for Disc Problems: Clinical Evidence, Recovery Timelines & Outcomes
 
 ## 1. Introduction: Non-Surgical vs. Surgical Pathways
@@ -1613,7 +1613,7 @@ While conservative therapy is extraordinarily successful, immediate emergency me
     territory: 'Exercise',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-02T00:00:00.000Z',
-    imageUrl: '/images/blog/related_exercises_spine.png',
+    imageUrl: '/images/blog/spine/top-7-exercises-for-a-stronger-lower-back.jpg',
     content: `# Spine Stability & Core Armor: Evidence-Based Clinical Activation Protocols
 
 ## 1. Introduction: Active Muscular Armor & Core Stability
