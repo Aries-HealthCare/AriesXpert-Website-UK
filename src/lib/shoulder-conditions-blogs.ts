@@ -9,7 +9,8 @@ export const SHOULDER_CONDITIONS_BLOGS: GrowthBlogPost[] = [
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/frozen-shoulder.jpg',
+    imageUrl: '/images/blog/shoulder/frozen-shoulder-capsular-release-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'Aries PhysioCare specialist performing gentle glenohumeral capsular release and mobility therapy for a patient with frozen shoulder.',
     content: `# Frozen Shoulder (Adhesive Capsulitis): Stages of Freezing, Capsular Volume & Physiotherapy Recovery
 
 ## 1. Introduction: Understanding the Condition
@@ -64,7 +65,8 @@ Do not allow shoulder stiffness to progress into permanent mobility loss. Contac
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/adhesive-capsulitis.jpg',
+    imageUrl: '/images/blog/shoulder/adhesive-capsulitis-freezing-stage-rehab-aries-physiocare.webp',
+    imageAlt: 'Clinical physiotherapist in Aries PhysioCare uniform guiding pain-free shoulder mobilization for freezing-stage adhesive capsulitis.',
     content: `# Adhesive Capsulitis: Synovial Inflammation, Fibroblastic Proliferation & Multi-Stage Rehabilitation
 
 ## 1. Introduction: Understanding the Condition
@@ -119,7 +121,8 @@ If progressive shoulder stiffness is impacting your independence and sleep, cont
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/rotator-cuff-injury.jpg',
+    imageUrl: '/images/blog/shoulder/rotator-cuff-injury-clinical-rehab-guide-aries-physiocare.webp',
+    imageAlt: 'Athletic patient performing supervised rotator cuff strengthening with resistance bands under the guidance of an Aries PhysioCare therapist.',
     content: `# Rotator Cuff Injury: Musculotendinous Tears, Dynamic Stabilization & Non-Surgical Clinical Care
 
 ## 1. Introduction: Understanding the Condition
@@ -174,7 +177,8 @@ Experiencing persistent shoulder weakness and overhead pain? Contact Aries Physi
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/rotator-cuff-tear.jpg',
+    imageUrl: '/images/blog/shoulder/rotator-cuff-tear-non-surgical-management-aries-physiocare.webp',
+    imageAlt: 'Targeted non-surgical rotator cuff rehabilitation and scapular stabilization guided by an Aries PhysioCare physiotherapist.',
     content: `# Rotator Cuff Tear: Partial vs. Full-Thickness Lesions, Biomechanics & In-Home Physical Therapy
 
 ## 1. Introduction: Understanding the Condition
@@ -229,7 +233,8 @@ Before considering surgical repair for a rotator cuff tear, explore evidence-bas
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/rotator-cuff-tendinopathy.jpg',
+    imageUrl: '/images/blog/shoulder/rotator-cuff-tendinopathy-remodeling-protocol-aries-physiocare.webp',
+    imageAlt: 'Physiotherapist coaching progressive tendon loading exercises for rotator cuff tendinopathy at an Aries PhysioCare center.',
     content: `# Rotator Cuff Tendinopathy: Tendon Remodeling, Angiofibroblastic Hyperplasia & Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -284,7 +289,8 @@ Overcome chronic rotator cuff discomfort through scientifically validated tendon
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-impingement-syndrome.jpg',
+    imageUrl: '/images/blog/shoulder/shoulder-impingement-syndrome-subacromial-decompression-aries-physiocare.webp',
+    imageAlt: 'Subacromial shoulder decompression exercises and dynamic stabilization led by an Aries PhysioCare specialist.',
     content: `# Shoulder Impingement Syndrome: Subacromial Space Narrowing, Acromial Morphology & Kinetic Chain Rehab
 
 ## 1. Introduction: Understanding the Condition
@@ -339,7 +345,8 @@ Do not let shoulder impingement progress into a full rotator cuff tear. Contact 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-bursitis.jpg',
+    imageUrl: '/images/blog/shoulder/shoulder-bursitis-subacromial-inflammation-relief-aries-physiocare.webp',
+    imageAlt: 'Subacromial bursitis therapy and gentle shoulder pain relief exercises guided by an Aries PhysioCare rehabilitation expert.',
     content: `# Shoulder Bursitis: Subacromial-Subdeltoid Synovial Distension, Painful Arcs & Physical Therapy
 
 ## 1. Introduction: Understanding the Condition
@@ -394,7 +401,8 @@ Persistent shoulder burning and sleep-disrupting pain are classic signs of bursa
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-instability.jpg',
+    imageUrl: '/images/blog/shoulder/shoulder-instability-multidirectional-stabilization-aries-physiocare.webp',
+    imageAlt: 'Dynamic rotator cuff and scapular stabilization training for multidirectional shoulder instability at Aries PhysioCare.',
     content: `# Shoulder Instability: Anterior, Posterior & Multidirectional Laxity Managed with Neuromuscular Therapy
 
 ## 1. Introduction: Understanding the Condition
@@ -449,7 +457,8 @@ If feelings of shoulder looseness or instability are restricting your activity, 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-dislocation.jpg',
+    imageUrl: '/images/blog/shoulder/shoulder-dislocation-acute-reduction-rehab-aries-physiocare.webp',
+    imageAlt: 'Post-reduction shoulder dislocation rehabilitation and neuromuscular shoulder control supervised by an Aries PhysioCare clinician.',
     content: `# Shoulder Dislocation: Post-Reduction Immobilization, Glenoid Rim Integrity & Phased Rehabilitation
 
 ## 1. Introduction: Understanding the Condition
@@ -504,7 +513,8 @@ Recovering from a recent shoulder dislocation? Contact Aries PhysioCare today fo
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/recurrent-shoulder-dislocation.jpg',
+    imageUrl: '/images/blog/shoulder/recurrent-shoulder-dislocation-dynamic-stabilization-aries-physiocare.webp',
+    imageAlt: 'Patient performing dynamic shoulder stabilization exercises to prevent recurrent shoulder dislocation at Aries PhysioCare.',
     content: `# Recurrent Shoulder Dislocation: Glenoid Bone Loss, Dynamic Bracing & Neuromuscular Retraining
 
 ## 1. Introduction: Understanding the Condition
@@ -559,7 +569,8 @@ Take control of chronic shoulder slipping and recurrent instability. Contact Ari
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/labral-tear.jpg',
+    imageUrl: '/images/blog/shoulder/glenoid-labral-tear-biomechanics-recovery-aries-physiocare.webp',
+    imageAlt: 'Clinical rehabilitation for glenoid labral tear focusing on deep rotator cuff stability with an Aries PhysioCare physiotherapist.',
     content: `# Glenoid Labral Tear: Bankart Lesions, Glenoid Depth Preservation & Non-Operative Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -614,7 +625,8 @@ Experiencing deep shoulder clicking, catching, and persistent instability? Conta
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/slap-tear.jpg',
+    imageUrl: '/images/blog/shoulder/slap-tear-superior-labrum-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'Targeted physical therapy for superior labrum SLAP tear recovery guided by an Aries PhysioCare shoulder specialist.',
     content: `# SLAP Tear (Superior Labrum Anterior to Posterior): Bicipital Anchor Strain & Kinetic Chain Rehab
 
 ## 1. Introduction: Understanding the Condition
@@ -669,7 +681,8 @@ Deep, clicking shoulder pain during overhead reaching demands specialized clinic
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/biceps-tendinitis.jpg',
+    imageUrl: '/images/blog/shoulder/biceps-tendinitis-long-head-rehabilitation-aries-physiocare.webp',
+    imageAlt: 'Long head biceps tendinitis rehabilitation and eccentric bicipital tendon strengthening at Aries PhysioCare.',
     content: `# Biceps Tendinitis: Long Head Tenosynovitis, Bicipital Groove Friction & Targeted Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -724,7 +737,8 @@ Anterior shoulder pain from biceps tendinitis requires expert clinical guidance 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/supraspinatus-tendinitis.jpg',
+    imageUrl: '/images/blog/shoulder/supraspinatus-tendinitis-vascular-watershed-care-aries-physiocare.webp',
+    imageAlt: 'Supraspinatus tendon rehabilitation and scapular plane loading guided by an Aries PhysioCare physical therapist.',
     content: `# Supraspinatus Tendinitis: Hypovascular Zone Pathology, Subacromial Pinch & Clinical Management
 
 ## 1. Introduction: Understanding the Condition
@@ -779,7 +793,8 @@ Do not ignore persistent lateral shoulder pain. Contact Aries PhysioCare today f
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/acromioclavicular-joint-injury.jpg',
+    imageUrl: '/images/blog/shoulder/acromioclavicular-ac-joint-sprain-rehab-aries-physiocare.webp',
+    imageAlt: 'Acromioclavicular AC joint sprain recovery and shoulder girdle stabilization supervised by an Aries PhysioCare expert.',
     content: `# Acromioclavicular (AC) Joint Injury: Separations, Coracoclavicular Ligament Sprains & Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -834,7 +849,8 @@ Suffered a fall or blow to the top of your shoulder? Contact Aries PhysioCare to
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-arthritis.jpg',
+    imageUrl: '/images/blog/shoulder/glenohumeral-shoulder-osteoarthritis-joint-preservation-aries-physiocare.webp',
+    imageAlt: 'Joint preservation therapy and gentle range-of-motion mobilization for shoulder osteoarthritis at Aries PhysioCare.',
     content: `# Shoulder Arthritis (Glenohumeral Osteoarthritis): Cartilage Preservation & Gentle Mobility Therapy
 
 ## 1. Introduction: Understanding the Condition
@@ -889,7 +905,8 @@ Do not allow shoulder arthritis to steal your daily independence. Contact Aries 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/scapular-dyskinesis.jpg',
+    imageUrl: '/images/blog/shoulder/scapular-dyskinesis-scapulohumeral-rhythm-restoration-aries-physiocare.webp',
+    imageAlt: 'Scapulohumeral rhythm restoration and serratus anterior activation supervised by an Aries PhysioCare therapist.',
     content: `# Scapular Dyskinesis: Kibler Classification, Serratus Anterior Inhibition & Postural Recalibration
 
 ## 1. Introduction: Understanding the Condition
@@ -944,7 +961,8 @@ Abnormal shoulder blade movement is the hidden root of most chronic shoulder con
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/post-shoulder-surgery.jpg',
+    imageUrl: '/images/blog/shoulder/post-shoulder-surgery-rehabilitation-timeline-aries-physiocare.webp',
+    imageAlt: 'Phased post-operative shoulder surgery rehabilitation and guided passive motion with an Aries PhysioCare clinician.',
     content: `# Post-Shoulder Surgery Rehabilitation: Phased Sling Weaning, Passive ROM & Tissue Healing Protocols
 
 ## 1. Introduction: Understanding the Condition
@@ -999,7 +1017,8 @@ Protect your surgical investment and achieve a full, confident recovery. Contact
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Shoulder Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/shoulder/shoulder-replacement-rehab.jpg',
+    imageUrl: '/images/blog/shoulder/shoulder-arthroplasty-replacement-rehabilitation-protocol-aries-physiocare.webp',
+    imageAlt: 'Total and reverse shoulder replacement recovery protocols guided by an Aries PhysioCare rehabilitation specialist.',
     content: `# Shoulder Replacement Rehabilitation: Total & Reverse Shoulder Arthroplasty Clinical Recovery
 
 ## 1. Introduction: Understanding the Condition

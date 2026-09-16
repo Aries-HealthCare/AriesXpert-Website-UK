@@ -14,6 +14,7 @@ export interface GrowthBlogPost {
   publishedAt?: string;
   url?: string;
   imageUrl?: string;
+  imageAlt?: string;
   cta?: string;
 }
 
@@ -81,7 +82,8 @@ If lower back pain persists beyond 7 days, radiates down your legs, or interfere
     territory: 'Physiotherapy & Spine Care',
     topic: 'Back Pain & Spine',
     publishedAt: '2026-02-15T00:00:00.000Z',
-    imageUrl: '/images/blog/general/evidence-based-lower-back-pain-rehabilitation-at-home.jpg',
+    imageUrl: '/images/blog/general/evidence-based-lower-back-pain-rehabilitation-at-home-aries-physiocare.webp',
+    imageAlt: 'In-home lower back pain rehabilitation and clinical manual therapy administered by an Aries PhysioCare physiotherapist.',
   },
   {
     id: 'post-knee-osteoarthritis-management',
@@ -137,7 +139,8 @@ Do not let knee stiffness compromise your independence. Contact Aries PhysioCare
     territory: 'Orthopedic Rehabilitation',
     topic: 'Knee & Joint Pain',
     publishedAt: '2026-02-10T00:00:00.000Z',
-    imageUrl: '/images/blog/general/managing-knee-osteoarthritis-quadriceps-strengthening-home-care.jpg',
+    imageUrl: '/images/blog/general/managing-knee-osteoarthritis-quadriceps-strengthening-home-care-aries-physiocare.webp',
+    imageAlt: 'Home-based knee osteoarthritis care, isometric quad strengthening, and joint mobilization by an Aries PhysioCare specialist.',
   },
   {
     id: 'post-stroke-neuro-recovery-timeline',
@@ -191,7 +194,8 @@ Immediate structured intervention is essential to capitalize on neuroplastic pot
     territory: 'Neurological Care',
     topic: 'Stroke & Neuro Rehab',
     publishedAt: '2026-02-05T00:00:00.000Z',
-    imageUrl: '/images/blog/general/post-stroke-neurological-rehabilitation-timeline-and-neuroplasticity.jpg',
+    imageUrl: '/images/blog/general/post-stroke-neurological-rehabilitation-timeline-and-neuroplasticity-aries-physiocare.webp',
+    imageAlt: 'Neurological stroke rehabilitation timeline and neuroplasticity gait training guided by an Aries PhysioCare therapist.',
   },
   {
     id: 'post-stroke-rehab-complete-guide',
@@ -245,7 +249,8 @@ Connect with Aries PhysioCare to arrange a specialized in-home neurological reha
     territory: 'Neurological Care',
     topic: 'Stroke & Neuro Rehab',
     publishedAt: '2026-02-01T00:00:00.000Z',
-    imageUrl: '/images/blog/general/stroke-rehabilitation-at-home-a-complete-guide.jpg',
+    imageUrl: '/images/blog/general/stroke-rehabilitation-at-home-a-complete-guide-aries-physiocare.webp',
+    imageAlt: 'Comprehensive home stroke rehabilitation and functional mobility coaching by an Aries PhysioCare clinician.',
   },
   {
     id: 'post-understanding-neuroplasticity',
@@ -299,7 +304,8 @@ Maximize your recovery window with evidence-based neuro-rehabilitation. Contact 
     territory: 'Neurological Care',
     topic: 'Brain & Neuroplasticity',
     publishedAt: '2026-01-28T00:00:00.000Z',
-    imageUrl: '/images/blog/general/understanding-neuroplasticity-in-stroke-recovery.jpg',
+    imageUrl: '/images/blog/general/understanding-neuroplasticity-in-stroke-recovery-aries-physiocare.webp',
+    imageAlt: 'Therapist-assisted movement training to stimulate brain rewiring and neuroplasticity in stroke recovery at Aries PhysioCare.',
   },
   {
     id: 'post-balance-training-after-stroke',
@@ -353,7 +359,8 @@ Do not let balance insecurity confine you to a chair. Contact Aries PhysioCare t
     territory: 'Physiotherapy',
     topic: 'Gait & Balance',
     publishedAt: '2026-01-25T00:00:00.000Z',
-    imageUrl: '/images/blog/general/balance-training-after-stroke-steps-to-safer-movement.jpg',
+    imageUrl: '/images/blog/general/balance-training-after-stroke-steps-to-safer-movement-aries-physiocare.webp',
+    imageAlt: 'Supervised gait and balance retraining for stroke survivors using parallel bars at an Aries PhysioCare center.',
   }
 ];
 

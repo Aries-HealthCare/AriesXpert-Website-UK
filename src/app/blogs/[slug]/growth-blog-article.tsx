@@ -29,6 +29,8 @@ import { Button } from '@/components/ui/button';
 import { useRequestCallback } from '@/components/request-callback-provider';
 import type { GrowthBlogPost } from '@/lib/growth-blog-posts';
 import { SPINE_ORTHOPAEDIC_BLOGS } from '@/lib/spine-orthopaedic-blogs';
+import { NECK_CONDITIONS_BLOGS } from '@/lib/neck-conditions-blogs';
+import { SHOULDER_CONDITIONS_BLOGS } from '@/lib/shoulder-conditions-blogs';
 
 interface SectionData {
   id: string;
@@ -1261,7 +1263,11 @@ export function GrowthBlogArticle({ post }: { post: GrowthBlogPost }) {
       ];
     }
 
-    const allPosts = SPINE_ORTHOPAEDIC_BLOGS;
+    const allPosts = [
+      ...SHOULDER_CONDITIONS_BLOGS,
+      ...NECK_CONDITIONS_BLOGS,
+      ...SPINE_ORTHOPAEDIC_BLOGS,
+    ];
     const pool = allPosts.filter((p) => p.slug !== post.slug);
 
     // Filter by same topic or territory
@@ -1283,6 +1289,7 @@ export function GrowthBlogArticle({ post }: { post: GrowthBlogPost }) {
         description: p.summary,
         readTime: '6 min read',
         imageUrl: p.imageUrl || theme.heroRightImage,
+        imageAlt: p.imageAlt || `${p.title} | Aries PhysioCare Journal`,
       };
     });
   }, [post.slug, post.topic, post.territory, conditionTheme.isDDD]);
@@ -1879,7 +1886,7 @@ export function GrowthBlogArticle({ post }: { post: GrowthBlogPost }) {
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
                   <Image
                     src={article.imageUrl}
-                    alt={article.title}
+                    alt={(article as any).imageAlt || article.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

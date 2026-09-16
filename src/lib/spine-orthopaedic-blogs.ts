@@ -10,7 +10,8 @@ export const SPINE_ORTHOPAEDIC_BLOGS: GrowthBlogPost[] = [
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/spine-and-back-conditions-guide.jpg',
+    imageUrl: '/images/blog/spine/spine-and-back-conditions-guide-aries-physiocare.webp',
+    imageAlt: 'Aries PhysioCare physiotherapist conducting comprehensive spinal mobility and mechanical diagnosis on an adult patient.',
     content: `# Spine & Back Conditions: Anatomy, Clinical Disorders & Modern Physiotherapy Rehabilitation
 
 ## 1. Introduction: Understanding Spinal Health
@@ -62,7 +63,8 @@ If back pain persists beyond 7–10 days, interferes with sleep, or radiates dow
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-17T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/low-back-pain-causes-symptoms-treatment.jpg',
+    imageUrl: '/images/blog/spine/low-back-pain-causes-symptoms-treatment-aries-physiocare.webp',
+    imageAlt: 'Targeted lower back pain assessment and gentle segmental mobilization administered by an Aries PhysioCare clinician.',
     content: `# Low Back Pain: Causes, Clinical Symptoms & Advanced Physiotherapy Treatment at Home
 
 ## 1. Introduction: Understanding Lower Back Pain
@@ -113,7 +115,8 @@ Do not ignore back pain that restricts your daily mobility. Contact Aries Physio
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-16T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/chronic-low-back-pain-rehabilitation.jpg',
+    imageUrl: '/images/blog/spine/chronic-low-back-pain-rehabilitation-aries-physiocare.webp',
+    imageAlt: 'Long-term neuromuscular core retraining and spinal stabilization for chronic back pain at an Aries PhysioCare clinic.',
     content: `# Chronic Low Back Pain: Neuromuscular Re-Education & Long-Term Spine Rehabilitation
 
 ## 1. Introduction: Understanding Chronic Low Back Pain
@@ -164,7 +167,8 @@ Chronic back pain does not mean you must live with permanent limitations. Contac
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-15T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/acute-back-pain-first-aid-physiotherapy.jpg',
+    imageUrl: '/images/blog/spine/acute-back-pain-first-aid-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'First 72-hour acute back pain relief and safe directional preference positioning with an Aries PhysioCare therapist.',
     content: `# Acute Back Pain: First 72-Hour Protocols, Pain Desensitization & Fast-Track Recovery
 
 ## 1. Introduction: Understanding Acute Back Episodes
@@ -215,7 +219,8 @@ If acute back pain strikes, do not struggle in agony. Contact Aries PhysioCare f
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-14T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/mechanical-back-pain-causes-exercises.jpg',
+    imageUrl: '/images/blog/spine/mechanical-back-pain-causes-exercises-aries-physiocare.webp',
+    imageAlt: 'Movement-based mechanical back pain treatment and lumbopelvic rhythm retraining guided by an Aries PhysioCare specialist.',
     content: `# Mechanical Back Pain: Biomechanical Causes, Postural Triggers & Movement-Based Rehab
 
 ## 1. Introduction: Understanding Mechanical Back Pain
@@ -266,7 +271,8 @@ Solve mechanical back pain at its biomechanical root. Contact Aries PhysioCare t
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-13T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/lumbar-spondylosis-physiotherapy-management.jpg',
+    imageUrl: '/images/blog/spine/lumbar-spondylosis-physiotherapy-management-aries-physiocare.webp',
+    imageAlt: 'Joint preservation therapy and gentle lumbar traction for lumbar spondylosis at Aries PhysioCare.',
     content: `# Lumbar Spondylosis: Joint Preservation, Osteoarthritis Management & Physiotherapy Protocols
 
 ## 1. Introduction: Understanding Lumbar Spondylosis
@@ -317,7 +323,8 @@ Maintain a healthy, flexible spine as you age. Contact Aries PhysioCare for comp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-12T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/lumbar-spondylitis-symptoms-and-care.jpg',
+    imageUrl: '/images/blog/spine/lumbar-spondylitis-symptoms-and-care-aries-physiocare.webp',
+    imageAlt: 'Non-impact spinal mobility exercises and pain desensitization for lumbar spondylitis with an Aries PhysioCare expert.',
     content: `# Lumbar Spondylitis: Inflammatory Spine Management, Pain Relief & Rehabilitation
 
 ## 1. Introduction: Understanding Lumbar Spondylitis
@@ -368,7 +375,8 @@ Early clinical management prevents long-term spinal stiffening. Contact Aries Ph
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-11T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/lumbar-disc-prolapse-non-surgical-recovery.jpg',
+    imageUrl: '/images/blog/spine/lumbar-disc-prolapse-non-surgical-recovery-aries-physiocare.webp',
+    imageAlt: 'Non-surgical lumbar disc prolapse centralization and core motor control guided by an Aries PhysioCare physiotherapist.',
     content: `# Lumbar Disc Prolapse: Non-Surgical Recovery, Disc Centralization & Rehabilitation Timeline
 
 ## 1. Introduction: Understanding Lumbar Disc Prolapse
@@ -419,7 +427,8 @@ Avoid unnecessary surgery with structured conservative treatment. Contact Aries 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-10T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/slipped-disc-herniated-disc-treatment.jpg',
+    imageUrl: '/images/blog/spine/slipped-disc-herniated-disc-treatment-aries-physiocare.webp',
+    imageAlt: 'Herniated disc recovery exercises and safe spinal offloading supervised by an Aries PhysioCare spine specialist.',
     content: `# Slipped Disc & Herniated Disc: Complete Guide to Symptoms, Healing Biology & Physio Care
 
 ## 1. Introduction: Understanding Disc Herniation
@@ -470,7 +479,8 @@ If back and leg pain are compromising your work and sleep, get expert home care.
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-09T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/disc-bulge-causes-reversal-physiotherapy.jpg',
+    imageUrl: '/images/blog/spine/disc-bulge-causes-reversal-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'Evidence-based disc bulge reversal protocols and deep core engagement practiced with an Aries PhysioCare clinician.',
     content: `# Disc Bulge: Understanding the Early Warning Signs, Reversal Protocols & Spine Protection
 
 ## 1. Introduction: Understanding Disc Bulge
@@ -521,7 +531,8 @@ Do not let a minor disc bulge turn into an agonizing herniation. Contact Aries P
     territory: 'Spine Health',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-05T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/degenerative-disc-disease-spine-care.jpg',
+    imageUrl: '/images/blog/spine/degenerative-disc-disease-spine-care-aries-physiocare.webp',
+    imageAlt: 'Active spinal conditioning and hydrostatic disc pressure management for degenerative disc disease at Aries PhysioCare.',
     content: `# Degenerative Disc Disease (DDD): Pathomechanics, Pain Relief & Active Spine Conditioning
 
 ## 1. Introduction: Understanding Degenerative Disc Disease
@@ -579,7 +590,8 @@ Do not let chronic spinal stiffness restrict your daily life. Contact Aries Phys
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-07T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/sciatica-nerve-pain-relief-exercises.jpg',
+    imageUrl: '/images/blog/spine/sciatica-nerve-pain-relief-exercises-aries-physiocare.webp',
+    imageAlt: 'Sciatic nerve mobilization, straight leg gliding, and root decompression guided by an Aries PhysioCare physiotherapist.',
     content: `# Sciatica Nerve Pain: Root Causes, Dermatomal Radiation & Advanced Physiotherapy Relief
 
 ## 1. Introduction: Understanding Sciatica
@@ -630,7 +642,8 @@ End excruciating sciatic nerve pain with expert clinical care. Contact Aries Phy
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-06T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/lumbar-radiculopathy-diagnosis-treatment.jpg',
+    imageUrl: '/images/blog/spine/lumbar-radiculopathy-diagnosis-treatment-aries-physiocare.webp',
+    imageAlt: 'Clinical evaluation and neural decompression therapy for lumbar radiculopathy at an Aries PhysioCare center.',
     content: `# Lumbar Radiculopathy: Nerve Root Compression, Neurological Deficits & Rehab Protocols
 
 ## 1. Introduction: Understanding Lumbar Radiculopathy
@@ -681,7 +694,8 @@ Do not ignore weakness or numbness in your leg. Contact Aries PhysioCare for spe
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-05T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/spinal-stenosis-neurogenic-claudication.jpg',
+    imageUrl: '/images/blog/spine/spinal-stenosis-neurogenic-claudication-aries-physiocare.webp',
+    imageAlt: 'Flexion-biased gait training and walking endurance conditioning for spinal stenosis with an Aries PhysioCare therapist.',
     content: `# Spinal Stenosis: Neurogenic Claudication, Shopping Cart Sign & Flexion-Biased Physio
 
 ## 1. Introduction: Understanding Spinal Stenosis
@@ -732,7 +746,8 @@ Regain your walking independence and vitality. Contact Aries PhysioCare for spec
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-04T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/spondylolisthesis-vertebral-slip-physiotherapy.jpg',
+    imageUrl: '/images/blog/spine/spondylolisthesis-vertebral-slip-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'Neutral spine stabilization and abdominal wall bracing for spondylolisthesis recovery at Aries PhysioCare.',
     content: `# Spondylolisthesis: Vertebral Slippage Grading, Core Stabilization & Non-Surgical Care
 
 ## 1. Introduction: Understanding Spondylolisthesis
@@ -783,7 +798,8 @@ Stabilize your spine and eliminate pain safely. Contact Aries PhysioCare for exp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-03T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/ankylosing-spondylitis-spine-mobility-exercises.jpg',
+    imageUrl: '/images/blog/spine/ankylosing-spondylitis-spine-mobility-exercises-aries-physiocare.webp',
+    imageAlt: 'Thoracic extension, costovertebral breathing, and spinal mobility exercises for ankylosing spondylitis at Aries PhysioCare.',
     content: `# Ankylosing Spondylitis: Axial Spondyloarthritis, Posture Preservation & Breathing Drills
 
 ## 1. Introduction: Understanding Ankylosing Spondylitis
@@ -833,7 +849,8 @@ Fight spinal stiffness and preserve your upright posture. Contact Aries PhysioCa
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-02T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/sacroiliac-si-joint-dysfunction-rehab.jpg',
+    imageUrl: '/images/blog/spine/sacroiliac-si-joint-dysfunction-rehab-aries-physiocare.webp',
+    imageAlt: 'Sacroiliac SI joint manual realignment and pelvic belt stabilization guided by an Aries PhysioCare specialist.',
     content: `# Sacroiliac (SI) Joint Dysfunction: Pelvic Torsion, Pain Triggers & Stabilization Rehab
 
 ## 1. Introduction: Understanding Sacroiliac Joint Dysfunction
@@ -884,7 +901,8 @@ End frustrating, misdiagnosed pelvic and back pain. Contact Aries PhysioCare for
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-01T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/coccydynia-tailbone-pain-relief-physiotherapy.jpg',
+    imageUrl: '/images/blog/spine/coccydynia-tailbone-pain-relief-physiotherapy-aries-physiocare.webp',
+    imageAlt: 'Pelvic floor relaxation and non-surgical tailbone coccydynia relief therapy at an Aries PhysioCare clinic.',
     content: `# Coccyx Pain (Coccydynia): Tailbone Trauma, Pelvic Floor Tension & Non-Surgical Relief
 
 ## 1. Introduction: Understanding Coccydynia
@@ -936,7 +954,8 @@ Do not suffer through painful sitting. Contact Aries PhysioCare for discreet, sp
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-31T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/facet-joint-syndrome-lumbar-spine-treatment.jpg',
+    imageUrl: '/images/blog/spine/facet-joint-syndrome-lumbar-spine-treatment-aries-physiocare.webp',
+    imageAlt: 'Zygapophyseal facet joint offloading and flexion-biased pain relief supervised by an Aries PhysioCare clinician.',
     content: `# Facet Joint Syndrome: Zygapophyseal Arthropathy, Extension Catching & Physio Care
 
 ## 1. Introduction: Understanding Facet Joint Syndrome
@@ -987,7 +1006,8 @@ Free locked facet joints and eliminate back pain. Contact Aries PhysioCare for s
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-30T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/back-muscle-spasm-causes-quick-relief.jpg',
+    imageUrl: '/images/blog/spine/back-muscle-spasm-causes-quick-relief-aries-physiocare.webp',
+    imageAlt: 'Rapid back muscle spasm relief through gentle myofascial release and heat therapy with an Aries PhysioCare therapist.',
     content: `# Back Muscle Spasms: Acute Guarding, Trigger Points & Fast-Acting Physiotherapy Relief
 
 ## 1. Introduction: Understanding Back Muscle Spasms
@@ -1039,7 +1059,8 @@ Do not suffer in bed trapped by agonizing spasms. Contact Aries PhysioCare for r
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-29T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/postural-back-pain-desk-workers-ergonomics.jpg',
+    imageUrl: '/images/blog/spine/postural-back-pain-desk-workers-ergonomics-aries-physiocare.webp',
+    imageAlt: 'Ergonomic workstation adjustment and postural corrective exercises for desk workers at Aries PhysioCare.',
     content: `# Postural Back Pain: Upper & Lower Crossed Syndromes, Desk Ergonomics & Corrective Rehab
 
 ## 1. Introduction: Understanding Postural Back Pain
@@ -1090,7 +1111,8 @@ Eliminate chronic desk fatigue and restore your natural posture. Contact Aries P
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-28T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/thoracic-spine-pain-mid-back-rehabilitation.jpg',
+    imageUrl: '/images/blog/spine/thoracic-spine-pain-mid-back-rehabilitation-aries-physiocare.webp',
+    imageAlt: 'Mid-back thoracic spine mobilization and rib cage expansion exercises guided by an Aries PhysioCare clinician.',
     content: `# Thoracic Spine Pain: Mid-Back Stiffness, Costovertebral Dysfunction & Mobility Rehab
 
 ## 1. Introduction: Understanding Thoracic Spine Pain
@@ -1142,7 +1164,8 @@ Breathe freely and move without mid-back catching. Contact Aries PhysioCare for 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-27T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/scheuermanns-kyphosis-adolescent-spine-rehab.jpg',
+    imageUrl: '/images/blog/spine/scheuermanns-kyphosis-adolescent-spine-rehab-aries-physiocare.webp',
+    imageAlt: 'Structural roundback Scheuermann kyphosis correction and extensor strengthening with an Aries PhysioCare specialist.',
     content: `# Scheuermann’s Kyphosis: Adolescent Structural Roundback, Sorensen Criteria & Physio Care
 
 ## 1. Introduction: Understanding Scheuermann’s Kyphosis
@@ -1193,7 +1216,8 @@ Early adolescent intervention is vital before skeletal maturity closes growth pl
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-01-26T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/scoliosis-non-surgical-physiotherapy-schroth.jpg',
+    imageUrl: '/images/blog/spine/scoliosis-non-surgical-physiotherapy-schroth-aries-physiocare.webp',
+    imageAlt: 'Non-surgical 3D Schroth scoliosis spinal de-rotation and elongation exercises at Aries PhysioCare.',
     content: `# Scoliosis: Cobb Angle Management, Schroth Method & Non-Surgical 3D Spine Rehabilitation
 
 ## 1. Introduction: Understanding Scoliosis
@@ -1244,7 +1268,8 @@ Manage scoliosis proactively with specialized 3D physiotherapy. Contact Aries Ph
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/hyperkyphosis-rounded-shoulders-treatment.jpg',
+    imageUrl: '/images/blog/spine/hyperkyphosis-rounded-shoulders-treatment-aries-physiocare.webp',
+    imageAlt: 'Hyperkyphosis correction, Dowager hump reduction, and scapular retraining supervised by an Aries PhysioCare therapist.',
     content: `# Hyperkyphosis: Dowager’s Hump, Postural Roundback & Extensor Muscle Rehabilitation
 
 ## 1. Introduction: Understanding Hyperkyphosis
@@ -1295,7 +1320,8 @@ Stand tall, breathe better, and protect your spine from progressive rounding. Co
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/lumbar-hyperlordosis-anterior-pelvic-tilt.jpg',
+    imageUrl: '/images/blog/spine/lumbar-hyperlordosis-anterior-pelvic-tilt-aries-physiocare.webp',
+    imageAlt: 'Pelvic resetting and gluteal activation exercises to correct anterior pelvic tilt hyperlordosis at Aries PhysioCare.',
     content: `# Lumbar Hyperlordosis: Anterior Pelvic Tilt, Swayback & Pelvic Resetting Physiotherapy
 
 ## 1. Introduction: Understanding Lumbar Hyperlordosis
@@ -1347,7 +1373,8 @@ Restore balanced pelvic alignment and relieve chronic lower back fatigue. Contac
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/spinal-fracture-compression-fracture-rehab.jpg',
+    imageUrl: '/images/blog/spine/spinal-fracture-compression-fracture-rehab-aries-physiocare.webp',
+    imageAlt: 'Safe vertebral compression fracture rehabilitation and protected spinal movement with an Aries PhysioCare expert.',
     content: `# Spinal Fracture Rehabilitation: Vertebral Compression, Safe Bracing & Bone Healing Protocols
 
 ## 1. Introduction: Understanding Spinal Compression Fractures
@@ -1398,7 +1425,8 @@ Recover safely from a spinal fracture under expert clinical guidance. Contact Ar
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/post-spinal-surgery-rehabilitation-timeline.jpg',
+    imageUrl: '/images/blog/spine/post-spinal-surgery-rehabilitation-timeline-aries-physiocare.webp',
+    imageAlt: 'Post-spinal fusion and discectomy recovery protocol guided by an Aries PhysioCare rehabilitation specialist.',
     content: `# Post-Spinal Surgery Rehabilitation: Discectomy, Laminectomy & Fusion Recovery Protocols
 
 ## 1. Introduction: Understanding Post-Surgical Spine Recovery
@@ -1449,7 +1477,8 @@ Ensure the success of your spinal surgery with specialized in-home rehabilitatio
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-18T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/failed-back-surgery-syndrome-fbss-physio.jpg',
+    imageUrl: '/images/blog/spine/failed-back-surgery-syndrome-fbss-physio-aries-physiocare.webp',
+    imageAlt: 'Gentle graded rehabilitation and neurogenic desensitization for failed back surgery syndrome at Aries PhysioCare.',
     content: `# Failed Back Surgery Syndrome (FBSS): Neurogenic Pain, Epidural Fibrosis & Graded Rehab
 
 ## 1. Introduction: Understanding Failed Back Surgery Syndrome
@@ -1501,7 +1530,8 @@ You do not have to live in despair after spine surgery. Contact Aries PhysioCare
     territory: 'Spine Health',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-04T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/5-everyday-habits-that-harm-your-spine.jpg',
+    imageUrl: '/images/blog/spine/5-everyday-habits-that-harm-your-spine-aries-physiocare.webp',
+    imageAlt: 'Physiotherapist demonstrating protective spine ergonomics and daily movement habits at Aries PhysioCare.',
     content: `# 5 Everyday Habits That Harm Your Spine: Biomechanics, Postural Strain & Prevention
 
 ## 1. Introduction: Everyday Spine Biomechanics
@@ -1558,7 +1588,8 @@ If postural fatigue, neck stiffness, or lower back aching persists despite works
     territory: 'Treatment',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-03T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/physiotherapy-vs-surgery-for-disc-problems.jpg',
+    imageUrl: '/images/blog/spine/physiotherapy-vs-surgery-for-disc-problems-aries-physiocare.webp',
+    imageAlt: 'Evidence-based conservative spine care and disc restoration guided by an Aries PhysioCare physiotherapist.',
     content: `# Physiotherapy vs. Surgery for Disc Problems: Clinical Evidence, Recovery Timelines & Outcomes
 
 ## 1. Introduction: Non-Surgical vs. Surgical Pathways
@@ -1613,7 +1644,8 @@ While conservative therapy is extraordinarily successful, immediate emergency me
     territory: 'Exercise',
     topic: 'Spine & Back Care',
     publishedAt: '2026-02-02T00:00:00.000Z',
-    imageUrl: '/images/blog/spine/top-7-exercises-for-a-stronger-lower-back.jpg',
+    imageUrl: '/images/blog/spine/top-7-exercises-for-a-stronger-lower-back-aries-physiocare.webp',
+    imageAlt: 'Core stability and protective spine conditioning exercises coached by an Aries PhysioCare clinician.',
     content: `# Spine Stability & Core Armor: Evidence-Based Clinical Activation Protocols
 
 ## 1. Introduction: Active Muscular Armor & Core Stability

@@ -9,7 +9,8 @@ export const NECK_CONDITIONS_BLOGS: GrowthBlogPost[] = [
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/neck-pain.jpg',
+    imageUrl: '/images/blog/neck/neck-pain-cervical-spine-guide-aries-physiocare.webp',
+    imageAlt: 'Aries PhysioCare specialist performing gentle cervical spine assessment and manual traction for acute neck pain relief.',
     content: `# Neck Pain (Cervicalgia): Clinical Assessment, Postural Strain & Evidence-Based Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -66,7 +67,8 @@ Do not allow chronic cervical stiffness to limit your daily life. Contact Aries 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-spondylosis.jpg',
+    imageUrl: '/images/blog/neck/cervical-spondylosis-neck-arthritis-care-aries-physiocare.webp',
+    imageAlt: 'Evidence-based cervical spondylosis therapy and facet joint decompression administered by an Aries PhysioCare clinician.',
     content: `# Cervical Spondylosis: Osteoarthritis, Foraminal Preservation & In-Home Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -123,7 +125,8 @@ Maintain healthy joint function and stay pain-free as you age. Contact Aries Phy
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-spondylitis.jpg',
+    imageUrl: '/images/blog/neck/cervical-spondylitis-inflammatory-neck-care-aries-physiocare.webp',
+    imageAlt: 'Gentle cervical spondylitis mobility and inflammatory pain management delivered by an Aries PhysioCare physiotherapist.',
     content: `# Cervical Spondylitis: Inflammatory Neck Flares, Enthesitis & Clinical Rehabilitation
 
 ## 1. Introduction: Understanding the Condition
@@ -179,7 +182,8 @@ Safeguard your cervical mobility and prevent long-term spinal rigidity. Contact 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-disc-prolapse.jpg',
+    imageUrl: '/images/blog/neck/cervical-disc-prolapse-extrusion-recovery-aries-physiocare.webp',
+    imageAlt: 'Non-surgical cervical disc prolapse decompression and directional preference exercises with an Aries PhysioCare expert.',
     content: `# Cervical Disc Prolapse: Non-Surgical Decompression, Nerve Root Relief & Physio Protocols
 
 ## 1. Introduction: Understanding the Condition
@@ -235,7 +239,8 @@ Avoid unnecessary spinal surgery and conquer radiating arm pain safely. Contact 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-radiculopathy.jpg',
+    imageUrl: '/images/blog/neck/cervical-radiculopathy-pinched-nerve-relief-aries-physiocare.webp',
+    imageAlt: 'Neurodynamic cervical nerve gliding and foraminal decompression therapy guided by an Aries PhysioCare specialist.',
     content: `# Cervical Radiculopathy: Pinched Nerve Radiation, Dermatomal Testing & Targeted Physiotherapy
 
 ## 1. Introduction: Understanding the Condition
@@ -291,7 +296,8 @@ Relieve pinched nerve pain and restore full strength to your arm. Contact Aries 
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-disc-bulge.jpg',
+    imageUrl: '/images/blog/neck/cervical-disc-bulge-causes-reversal-aries-physiocare.webp',
+    imageAlt: 'Cervical disc bulge reversal protocols and deep cervical flexor retraining at an Aries PhysioCare clinic.',
     content: `# Cervical Disc Bulge: Annular Strain, Axial Offloading & Evidence-Based Neck Care
 
 ## 1. Introduction: Understanding the Condition
@@ -348,7 +354,8 @@ Address a cervical disc bulge early before it progresses to nerve root entrapmen
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-stenosis.jpg',
+    imageUrl: '/images/blog/neck/cervical-stenosis-canal-narrowing-rehab-aries-physiocare.webp',
+    imageAlt: 'Careful cervical canal stenosis rehabilitation and neural offloading guided by an Aries PhysioCare physiotherapist.',
     content: `# Cervical Spinal Stenosis: Central Canal Narrowing, Foraminal Opening & Safe Mobilization
 
 ## 1. Introduction: Understanding the Condition
@@ -405,7 +412,8 @@ Manage cervical stenosis safely and maintain confident mobility. Contact Aries P
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervicogenic-headache.jpg',
+    imageUrl: '/images/blog/neck/cervicogenic-headache-suboccipital-relief-aries-physiocare.webp',
+    imageAlt: 'Suboccipital myofascial release and upper cervical joint mobilization for cervicogenic headache relief at Aries PhysioCare.',
     content: `# Cervicogenic Headache: Upper Cervical Dysfunction, C1-C3 Referral & Physiotherapy Relief
 
 ## 1. Introduction: Understanding the Condition
@@ -462,7 +470,8 @@ Stop suffering from persistent, misdiagnosed headaches. Contact Aries PhysioCare
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/text-neck-syndrome.jpg',
+    imageUrl: '/images/blog/neck/text-neck-syndrome-screen-posture-rehab-aries-physiocare.webp',
+    imageAlt: 'Corrective posture retraining and workstation ergonomic adjustments for text neck syndrome with an Aries PhysioCare therapist.',
     content: `# Text Neck Syndrome: Digital Strain, Gravitational Head Forward Load & Corrective Therapy
 
 ## 1. Introduction: Understanding the Condition
@@ -519,7 +528,8 @@ Break free from digital neck strain and restore your natural posture. Contact Ar
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/whiplash-injury.jpg',
+    imageUrl: '/images/blog/neck/whiplash-injury-cervical-acceleration-deceleration-aries-physiocare.webp',
+    imageAlt: 'Gentle soft-tissue mobilization and pain desensitization for whiplash injury recovery at Aries PhysioCare.',
     content: `# Whiplash Associated Disorders (WAD): Acute Sprain, Ligamentous Healing & Phased Rehab
 
 ## 1. Introduction: Understanding the Condition
@@ -575,7 +585,8 @@ Recover fully from whiplash trauma under expert clinical guidance. Contact Aries
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/torticollis.jpg',
+    imageUrl: '/images/blog/neck/torticollis-wry-neck-acute-relief-aries-physiocare.webp',
+    imageAlt: 'Acute wry neck torticollis relief through sternocleidomastoid myofascial release by an Aries PhysioCare clinician.',
     content: `# Acute Torticollis (Wry Neck): Sternocleidomastoid Spasm, Facet Impingement & Gentle Physio
 
 ## 1. Introduction: Understanding the Condition
@@ -632,7 +643,8 @@ Unlock your neck safely and eliminate acute torticollis pain. Contact Aries Phys
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/upper-trapezius-spasm.jpg',
+    imageUrl: '/images/blog/neck/upper-trapezius-spasm-trigger-point-relief-aries-physiocare.webp',
+    imageAlt: 'Upper trapezius trigger point release and scapular postural retraining administered by an Aries PhysioCare specialist.',
     content: `# Upper Trapezius Muscle Spasm: Scapular Dyskinesis, Myofascial Trigger Points & Clinical Care
 
 ## 1. Introduction: Understanding the Condition
@@ -689,7 +701,8 @@ Eliminate painful shoulder knots and chronic neck tension permanently. Contact A
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/postural-neck-pain.jpg',
+    imageUrl: '/images/blog/neck/postural-neck-pain-upper-crossed-syndrome-aries-physiocare.webp',
+    imageAlt: 'Postural realignment and scapular retraction exercises for upper crossed syndrome guided by an Aries PhysioCare therapist.',
     content: `# Postural Neck Pain: Upper Crossed Syndrome, Scapulothoracic Mechanics & Ergonomic Recovery
 
 ## 1. Introduction: Understanding the Condition
@@ -746,7 +759,8 @@ Correct your posture, eliminate chronic neck fatigue, and stand tall with confid
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/cervical-myelopathy.jpg',
+    imageUrl: '/images/blog/neck/cervical-myelopathy-spinal-cord-compression-rehab-aries-physiocare.webp',
+    imageAlt: 'Safe balance, gait protection, and non-compressive neck protocols for cervical myelopathy at Aries PhysioCare.',
     content: `# Cervical Spondylotic Myelopathy: Cord Compression Signs, Gait Safety & Graded Physio Protocols
 
 ## 1. Introduction: Understanding the Condition
@@ -803,7 +817,8 @@ Protect your neurological health and preserve independent walking balance. Conta
     territory: 'Orthopaedic & Musculoskeletal',
     topic: 'Neck Conditions',
     publishedAt: '2026-03-01T00:00:00.000Z',
-    imageUrl: '/images/blog/neck/post-cervical-surgery.jpg',
+    imageUrl: '/images/blog/neck/post-cervical-spine-surgery-rehabilitation-timeline-aries-physiocare.webp',
+    imageAlt: 'Supervised post-cervical spine surgery recovery and safe postural ambulation with an Aries PhysioCare physiotherapist.',
     content: `# Post-Cervical Spine Surgery Rehabilitation: ACDF, Disc Replacement & Fusion Recovery Pathways
 
 ## 1. Introduction: Understanding the Condition
