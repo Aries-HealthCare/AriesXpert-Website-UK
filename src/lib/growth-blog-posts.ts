@@ -19,12 +19,14 @@ export interface GrowthBlogPost {
 
 import { SPINE_ORTHOPAEDIC_BLOGS } from './spine-orthopaedic-blogs';
 import { NECK_CONDITIONS_BLOGS } from './neck-conditions-blogs';
+import { SHOULDER_CONDITIONS_BLOGS } from './shoulder-conditions-blogs';
 
 const API_BASE =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, '') ||
   'https://api.ariesxpert.com/api/v1';
 
 const FALLBACK_CLINICAL_ARTICLES: GrowthBlogPost[] = [
+  ...SHOULDER_CONDITIONS_BLOGS,
   ...NECK_CONDITIONS_BLOGS,
   ...SPINE_ORTHOPAEDIC_BLOGS,
   {

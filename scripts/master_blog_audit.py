@@ -99,12 +99,13 @@ def audit_file(file_path):
     return all_passed
 
 def main():
-    ok1 = audit_file('src/lib/neck-conditions-blogs.ts')
-    ok2 = audit_file('src/lib/spine-orthopaedic-blogs.ts')
-    ok3 = audit_file('src/lib/growth-blog-posts.ts')
+    ok1 = audit_file('src/lib/shoulder-conditions-blogs.ts')
+    ok2 = audit_file('src/lib/neck-conditions-blogs.ts')
+    ok3 = audit_file('src/lib/spine-orthopaedic-blogs.ts')
+    ok4 = audit_file('src/lib/growth-blog-posts.ts')
 
     print("\n" + ("="*70))
-    if ok1 and ok2 and ok3:
+    if ok1 and ok2 and ok3 and ok4:
         print("🎉 MASTER AUDIT PASSED: 100% OF ALL BLOGS HAVE EXACT 7 POINTS, ZERO EXERCISES & VALID IMAGES!")
     else:
         print("❌ MASTER AUDIT FAILED ON ONE OR MORE BLOGS")
